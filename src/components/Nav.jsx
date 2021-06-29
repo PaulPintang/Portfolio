@@ -7,9 +7,11 @@ const Nav = () => {
         <div className="nav-h">
           <div className="flex">
             <div className="name">
-              <h1>
-                <span>P</span>IN<span>.</span>
-              </h1>
+              <a href="https://heyimpaul.netlify.app" rel="noreferrer">
+                <h1>
+                  <span>P</span>IN<span>.</span>
+                </h1>
+              </a>
             </div>
             <div>
               <ul>

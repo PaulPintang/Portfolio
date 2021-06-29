@@ -15,9 +15,10 @@ header {
 header .nav-h {
   height: 120px;
 }
-header .name {
+header .name a {
   font-size: 11px;
   letter-spacing: 3px;
+  color: white;
 }
 header i {
   font-size: 16px;

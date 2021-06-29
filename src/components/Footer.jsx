@@ -9,7 +9,11 @@ const Footer = () => {
         <div className="footer-details">
           <div className="flex">
             <small>Designed by Paul Justine &copy; 2021</small>
-            <a href="https://github.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/puldyastin/Portfolio"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-github"></i>
             </a>
           </div>
