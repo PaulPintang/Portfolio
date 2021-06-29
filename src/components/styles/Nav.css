@@ -1,0 +1,31 @@
+header {
+  /* background-color: #141422; */
+  background-color: #0e1625;
+  color: #dddddd;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+
+  -webkit-transition: background-color 0.1s;
+  -ms-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+header .nav-h {
+  height: 120px;
+}
+header .name {
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+header i {
+  font-size: 16px;
+}
+header a {
+  font-size: 13.5px;
+  font-weight: bolder;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
+}

@@ -1,0 +1,28 @@
+.my-skills {
+  text-align: center;
+}
+.my-skills .flex {
+  width: 670px;
+  margin: auto;
+  padding: 50px 0;
+}
+.my-skills h2 {
+  font-size: 30px;
+}
+.my-skills img {
+  width: 40px;
+  height: 40px;
+}
+.my-skills img:hover {
+  cursor: pointer;
+}
+.lg {
+  transition: transform 0.2s ease-in;
+}
+.lg:hover {
+  transform: translateY(-11px);
+  cursor: pointer;
+}
+.r img {
+  width: 60px;
+}

@@ -1,0 +1,97 @@
+.projects h2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.projects h3 {
+  font-size: 25px;
+}
+.projects h4 {
+  display: flex;
+  justify-items: flex-end;
+}
+.projects small {
+  display: block;
+}
+.projects .img-flex {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  margin: auto;
+  position: relative;
+}
+.img-info .flex {
+  gap: 10px;
+  padding: 8px 0;
+}
+.img-info-2 .flex {
+  gap: 10px;
+  padding: 8px 0;
+}
+.img-info small {
+  display: block;
+  font-size: 13px;
+}
+.img-flex img {
+  transition: transform 0.2s ease-in;
+}
+.img-flex img:hover {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transform: translateY(-9px);
+}
+.projects .img-desc {
+  width: 450px;
+  height: auto;
+  background-color: #202a3c;
+  box-shadow: 0 0px 5px 1px hsl(217deg 27% 15%);
+  padding: 15px;
+  margin: 15px 0;
+}
+.img-desc a {
+  font-size: 10px;
+  font-variant: normal;
+  color: unset;
+  font-size: unset;
+  font-weight: unset;
+  font-variant: unset;
+  letter-spacing: unset;
+  padding-bottom: unset;
+  font-style: italic;
+  color: #fd0037;
+  border-bottom: 0.1px solid #fd0037;
+  padding-bottom: 1px;
+}
+.projects p {
+  opacity: 1;
+}
+.projects .img-info {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  position: relative;
+  right: 180px;
+  padding: 50px 0;
+  height: 200px;
+}
+.img-info-2 .opt {
+  margin-left: 14px;
+}
+.opt a {
+  margin-left: -14px;
+  font-size: 18px;
+}
+.opt a:hover {
+  cursor: pointer;
+  color: #fd0037;
+}
+
+.projects .img-info-2 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  left: 180px;
+  padding: 50px 0;
+  height: 200px;
+}
