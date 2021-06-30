@@ -1,11 +1,14 @@
 .me {
   height: calc(100vh - 120px);
-  margin-top: 120px;
-  background-color: #0e1625;
-  color: #dddddd;
+  /* margin-top: 120px; */
 }
 .me .container {
-  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e1625;
+  color: #dddddd;
 }
 .me .flex {
   justify-content: center;
@@ -77,7 +80,7 @@ button {
 
 @media (max-width: 768px) {
   .me {
-    margin-top: 70px;
+    margin-top: 140px;
   }
   .me .flex {
     text-align: center;
