@@ -1,12 +1,12 @@
 #services {
   /* height: 600px; */
-  margin: 90px 0;
+  margin-bottom: 90px;
 }
 .offer .flex {
   flex-wrap: wrap;
 }
 .offer-tag {
-  padding: 30px;
+  padding-bottom: 30px;
   text-align: center;
 }
 .offer-cards {
