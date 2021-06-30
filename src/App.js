@@ -36,7 +36,7 @@ function scrollFunction() {
     document.querySelector("header").style.cssText =
       "box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);";
   } else {
-    document.querySelector(".nav-h").style.cssText = "height:120px;";
+    document.querySelector(".nav-h").style.cssText = "height: 108px;";
     document.querySelector("header").style.cssText = "box-shadow: unset;";
   }
 }

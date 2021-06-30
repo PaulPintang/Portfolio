@@ -13,7 +13,7 @@ header {
   transition: background-color 0.1s;
 }
 header .nav-h {
-  height: 120px;
+  height: 108px;
 }
 header .name a {
   font-size: 11px;
@@ -32,12 +32,16 @@ header a {
 }
 .toggle-menu i {
   font-size: 23px;
+  opacity: 0.8;
+}
+.toggle-menu {
+  display: none;
 }
 @media (max-width: 768px) {
   .menu {
     display: none;
   }
-  header .nav-h {
-    height: 10px;
+  .toggle-menu {
+    display: block;
   }
 }
