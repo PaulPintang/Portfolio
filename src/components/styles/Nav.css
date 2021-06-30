@@ -3,11 +3,10 @@ header {
   background-color: #0e1625;
   color: #dddddd;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
-  z-index: 99;
-
+  z-index: 1;
   -webkit-transition: background-color 0.1s;
   -ms-transition: background-color 0.1s;
   transition: background-color 0.1s;
