@@ -77,10 +77,11 @@ button {
 
 @media (max-width: 768px) {
   .me {
-    margin-top: 55px;
+    margin-top: 70px;
   }
   .me .flex {
     text-align: center;
+    margin-bottom: 10px;
   }
   .me h1 {
     font-size: 3rem;
