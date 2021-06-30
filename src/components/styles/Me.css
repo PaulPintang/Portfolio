@@ -76,13 +76,16 @@ button {
 }
 
 @media (max-width: 768px) {
+  .me {
+    margin-top: 55px;
+  }
   .me .flex {
     text-align: center;
   }
   .me h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .me .front-end {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }

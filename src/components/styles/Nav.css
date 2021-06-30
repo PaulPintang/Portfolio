@@ -37,4 +37,7 @@ header a {
   .menu {
     display: none;
   }
+  header .nav-h {
+    height: 10px;
+  }
 }

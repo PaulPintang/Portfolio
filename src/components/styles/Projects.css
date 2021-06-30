@@ -115,7 +115,7 @@
     position: relative;
     right: 0;
     padding: 0;
-    margin-bottom: 8rem;
+    margin-bottom: 11rem;
   }
 
   .projects .img-info-2 {
@@ -126,9 +126,17 @@
     position: relative;
     left: 0;
     padding: 0;
-    margin-bottom: 10rem;
+    margin-bottom: 13rem;
+  }
+  .projects p {
+    font-size: 0.97rem;
+    text-align: center;
   }
   .mt {
     margin-top: 5rem;
+  }
+  h3,
+  h4 {
+    text-align: center;
   }
 }
