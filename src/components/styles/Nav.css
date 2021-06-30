@@ -30,3 +30,11 @@ header a {
   letter-spacing: 3px;
   padding-bottom: 5px;
 }
+.toggle-menu i {
+  font-size: 23px;
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}

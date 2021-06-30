@@ -13,7 +13,10 @@ const Nav = () => {
                 </h1>
               </a>
             </div>
-            <div>
+            <div className="toggle-menu">
+              <i className="fas fa-bars"></i>
+            </div>
+            <div className="menu">
               <ul>
                 <li>
                   <a href="#services">

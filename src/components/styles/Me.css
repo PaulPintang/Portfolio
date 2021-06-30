@@ -74,3 +74,15 @@ button {
     text-shadow: 0 0 8px #fff;
   }
 }
+
+@media (max-width: 768px) {
+  .me .flex {
+    text-align: center;
+  }
+  .me h1 {
+    font-size: 3.5rem;
+  }
+  .me .front-end {
+    font-size: 1.2rem;
+  }
+}

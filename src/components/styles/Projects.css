@@ -95,3 +95,40 @@
   padding: 50px 0;
   height: 200px;
 }
+@media (max-width: 768px) {
+  .projects .img-flex {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .img-flex img {
+    width: 100%;
+  }
+  .projects .img-desc {
+    width: 100%;
+  }
+  .projects .img-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    right: 0;
+    padding: 0;
+    margin-bottom: 8rem;
+  }
+
+  .projects .img-info-2 {
+    display: flex;
+    order: 2;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    padding: 0;
+    margin-bottom: 10rem;
+  }
+  .mt {
+    margin-top: 5rem;
+  }
+}

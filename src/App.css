@@ -72,6 +72,7 @@ header a:hover {
   color: #ffffff;
   font-weight: 900;
 }
+
 .btn-control a:first-child button:hover {
   background: #fd0037;
   color: white;
@@ -368,7 +369,6 @@ button:hover {
     transform: scale(1, 0);
   }
 }
-
 #paschka {
   display: block;
   color: white;

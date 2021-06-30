@@ -1,11 +1,12 @@
 #services {
-  height: 600px;
+  /* height: 600px; */
+  margin: 90px 0;
 }
 .offer .flex {
   flex-wrap: wrap;
 }
 .offer-tag {
-  padding: 40px;
+  padding: 30px;
   text-align: center;
 }
 .offer-cards {
@@ -21,6 +22,16 @@
 .offer .o-info h3 {
   font-weight: 400;
   opacity: 0.9;
-  /* color: rgb(61, 60, 60); */
   font-size: 17px;
+}
+@media (max-width: 768px) {
+  .offer .flex {
+    justify-content: center;
+  }
+  .o-info {
+    margin: -10px 0;
+  }
+  .offer-tag {
+    padding: 0;
+  }
 }

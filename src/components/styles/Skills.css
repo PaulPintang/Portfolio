@@ -5,6 +5,7 @@
   width: 670px;
   margin: auto;
   padding: 50px 0;
+  flex-wrap: wrap;
 }
 .my-skills h2 {
   font-size: 30px;
@@ -18,6 +19,7 @@
 }
 .lg {
   transition: transform 0.2s ease-in;
+  margin-bottom: 12px;
 }
 .lg:hover {
   transform: translateY(-11px);
@@ -25,4 +27,13 @@
 }
 .r img {
   width: 60px;
+}
+@media (max-width: 768px) {
+  .my-skills .flex {
+    width: 100%;
+    justify-content: center;
+  }
+  .lg {
+    width: 110px;
+  }
 }

@@ -13,8 +13,8 @@ const Offer = () => {
           </h2>
           <p>I codes frontend of your website</p>
         </div>
-        <div className="flex reveal">
-          <div className="offer-cards">
+        <div className="flex">
+          <div className="offer-cards reveal">
             <img src={responsive} alt=""></img>
             <div className="o-info">
               <h3>Responsive Website</h3>
@@ -23,7 +23,7 @@ const Offer = () => {
               </p>
             </div>
           </div>
-          <div className="offer-cards">
+          <div className="offer-cards reveal">
             <img src={design} alt=""></img>
             <div className="o-info">
               <h3>Convert your design to real website</h3>
@@ -32,7 +32,7 @@ const Offer = () => {
               </p>
             </div>
           </div>
-          <div className="offer-cards">
+          <div className="offer-cards reveal">
             <img src={team} alt=""></img>
             <div className="o-info">
               <h3>Team Collaboration</h3>
