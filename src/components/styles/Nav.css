@@ -7,9 +7,12 @@ header {
   width: 100%;
   top: 0;
   z-index: 1;
-  -webkit-transition: background-color 0.1s;
-  -ms-transition: background-color 0.1s;
-  transition: background-color 0.1s;
+
+  animation: fadeIn linear 0.5s;
+  -webkit-animation: fadeIn linear 0.5s;
+  -moz-animation: fadeIn linear 0.5s;
+  -o-animation: fadeIn linear 0.5s;
+  -ms-animation: fadeIn linear 0.5s;
 }
 header .nav-h {
   height: 108px;
@@ -29,9 +32,14 @@ header a {
   letter-spacing: 3px;
   padding-bottom: 5px;
 }
-.toggle-menu i {
-  font-size: 23px;
-  opacity: 0.8;
+.toggle-menu .flex {
+  flex-direction: column;
+  gap: 5px;
+}
+.toggle-menu span {
+  width: 23px;
+  background-color: rgb(199, 194, 194);
+  height: 1px;
 }
 .toggle-menu {
   display: none;

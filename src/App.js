@@ -10,6 +10,7 @@ import Contacts from "./components/Contacts";
 function App() {
   return (
     <div className="bg">
+      <div className="loader"></div>
       <Nav />
       <Me />
       <Offer />

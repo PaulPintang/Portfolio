@@ -12,13 +12,6 @@ body {
   line-height: 1.5;
   background-color: #0e1625;
   color: #dddddd;
-
-  opacity: 1;
-  transition: 1.2s opacity;
-}
-body.fade-in {
-  opacity: 0;
-  transition: none;
 }
 .container {
   max-width: 1100px;
@@ -317,6 +310,50 @@ button:hover {
     -moz-transform: scale(1, 0);
     -o-transform: scale(1, 0);
     transform: scale(1, 0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes elasticus {

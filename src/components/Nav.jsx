@@ -14,7 +14,11 @@ const Nav = () => {
               </a>
             </div>
             <div className="toggle-menu">
-              <i className="fas fa-bars"></i>
+              <div className="flex">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
             <div className="menu">
               <ul>
