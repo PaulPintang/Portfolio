@@ -100,7 +100,7 @@ button:hover {
   display: table;
   width: 100%;
   height: 100%;
-  /* margin-top: -11rem; */
+  margin-top: 4rem;
 }
 
 #wrapper-inner {
@@ -113,14 +113,14 @@ button:hover {
 #scroll-down {
   display: block;
   position: relative;
-  padding-top: 79px;
+  padding-top: 70px;
   text-align: center;
 }
 .arrow-down {
   display: block;
   margin: 0 auto;
   width: 10px;
-  height: 38px;
+  height: 27px;
 }
 .arrow-down:after {
   content: "";
@@ -131,11 +131,6 @@ button:hover {
   height: 8px;
   border-top: 2px solid #b91a2f;
   border-right: 2px solid #b91a2f;
-  /* behavior: url(-ms-transform.htc);
-  -moz-transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  -ms-transform: rotate(135deg); */
   transform: rotate(135deg);
 }
 #scroll-title {
@@ -158,7 +153,7 @@ button:hover {
   left: 50%;
   margin-left: -1px;
   width: 2px;
-  height: 90px;
+  height: 80px;
   background: #b91a2f;
   content: " ";
 }
@@ -433,5 +428,3 @@ button:hover {
     color: #f0f0f0;
   } */
 }
-
-/* Loader */

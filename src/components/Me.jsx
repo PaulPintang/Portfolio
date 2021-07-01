@@ -15,15 +15,16 @@ const Me = () => {
             <a href="#projects">
               <button className="tp">Check out my projects</button>
             </a>
-          </div>
-        </div>
-        <div id="wrapper">
-          <div id="wrapper-inner">
-            <div id="scroll-down">
-              <span className="arrow-down"></span>
-              <a href="#services">
-                <span id="scroll-title">scroll down</span>
-              </a>
+
+            <div id="wrapper">
+              <div id="wrapper-inner">
+                <div id="scroll-down">
+                  <span className="arrow-down"></span>
+                  <a href="#services">
+                    <span id="scroll-title">scroll down</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

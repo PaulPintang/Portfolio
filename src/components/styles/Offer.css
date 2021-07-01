@@ -6,7 +6,7 @@
   flex-wrap: wrap;
 }
 .offer-tag {
-  padding-bottom: 30px;
+  padding: 3px 0px 25px 0;
   text-align: center;
 }
 .offer-cards {
@@ -32,6 +32,6 @@
     margin: -10px 0;
   }
   .offer-tag {
-    padding: 0;
+    padding-top: 20px;
   }
 }

@@ -9,8 +9,7 @@ import Contacts from "./components/Contacts";
 
 function App() {
   return (
-    <div className="bg">
-      <div className="loader"></div>
+    <div>
       <Nav />
       <Me />
       <Offer />
@@ -30,14 +29,14 @@ window.onscroll = function () {
 function scrollFunction() {
   if (
     document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 530
+    document.documentElement.scrollTop > 180
   ) {
     document.querySelector(".nav-h").style.cssText =
-      "height:66px; transition: all .3s ease; ";
+      "height:66px; transition: all .4s ease; ";
     document.querySelector("header").style.cssText =
       "box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);";
   } else {
-    document.querySelector(".nav-h").style.cssText = "height: 108px;";
+    document.querySelector(".nav-h").style.cssText = "height: 110px;";
     document.querySelector("header").style.cssText = "box-shadow: unset;";
   }
 }
