@@ -31,10 +31,10 @@ const Projects = () => {
 
             <div className="img-desc">
               <p>
-                This is my first project as a front-end developer. I create this
-                Covid-19 Tracker app when i learned on how to used API to a
-                website. Here's the link of public API that i used on this
-                project{" "}
+                This is my first project while learning javascript. I made this
+                Covid-19 Tracker app after learning how to use an API on a
+                website. Here's a link to the public API that I used for this
+                project:
                 <a href="https://disease.sh" target="_blank" rel="noreferrer">
                   Covid-19 API
                 </a>
@@ -84,10 +84,10 @@ const Projects = () => {
 
             <div className="img-desc">
               <p>
-                This is a landing page challenge from frontendmentor.io to
-                practice myself to create responsive website. This challenge
-                helps me to learn best practices in css. Here's the link of the
-                challenge from their website.
+                This is a frontendmentor.io landing page challenge to help me
+                practice creating responsive websites. This challenge really
+                helped me in learning best practices in CSS. Here's the link of
+                the challenge from their website:
                 <a
                   href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd"
                   target="_blank"
@@ -158,10 +158,10 @@ const Projects = () => {
 
             <div className="img-desc">
               <p>
-                The frontendmentor.io website is my practicing ground to improve
-                my skills and knowledge in development. This project help me and
-                challenge me to create the navigation bar from scratch. Here's
-                the link of the challenge from their website.
+                The frontendmentor.io website serves as a classroom setting for
+                me to increase my development abilities and skills. This project
+                assisted and challenged me to design the navigation bar from the
+                scratch. Here's the link of the challenge from their website.
                 <a
                   href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN"
                   target="_blank"
@@ -213,9 +213,9 @@ const Projects = () => {
 
             <div className="img-desc">
               <p>
-                This challenge from frontendmentor.io challenge me in
-                javascript. This simple project improve my understanding about
-                DOM Manipulation and implementing eventlisterner in javascript.
+                This frontendmentor.io challenge put me to a test in javascript.
+                This simple project improved my understanding of DOM
+                manipulation and javascript eventlisterner implementation.
                 Here's the link of the challenge from their website.
                 <a
                   href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"

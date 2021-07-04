@@ -60,7 +60,7 @@ p {
   opacity: 1;
 }
 /* HOVER STATE */
-header a:hover {
+header .menu a:hover {
   border-bottom: 2px solid #fd0037;
   color: #ffffff;
   font-weight: 900;
@@ -95,6 +95,9 @@ button:focus {
 }
 button:hover {
   cursor: pointer;
+}
+body.lock {
+  overflow-y: hidden;
 }
 #wrapper {
   display: table;

@@ -11,7 +11,7 @@ const Offer = () => {
           <h2>
             What i <span>offer?</span>
           </h2>
-          <p>I codes frontend of your website</p>
+          <p>Create functional user experience</p>
         </div>
         <div className="flex">
           <div className="offer-cards reveal">
@@ -19,16 +19,17 @@ const Offer = () => {
             <div className="o-info">
               <h3>Responsive Website</h3>
               <p>
-                Develop a responsive website layout and good user experience
+                Develop a responsive website layout for better user experience
               </p>
             </div>
           </div>
           <div className="offer-cards reveal">
             <img src={design} alt=""></img>
             <div className="o-info">
-              <h3>Convert your design to real website</h3>
+              <h3>Convert your design into a working website.</h3>
               <p>
-                Convert your mockups and ui prototype to a real working website
+                Make an ideal functional website with your mockups and ui
+                prototypes.
               </p>
             </div>
           </div>
@@ -36,7 +37,10 @@ const Offer = () => {
             <img src={team} alt=""></img>
             <div className="o-info">
               <h3>Team Collaboration</h3>
-              <p>Can work to a team and have good collaboration skill</p>
+              <p>
+                Can work as part of a team and has outstanding collaboration
+                skills.
+              </p>
             </div>
           </div>
         </div>
