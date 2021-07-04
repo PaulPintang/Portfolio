@@ -19,6 +19,9 @@
 .offer .o-info {
   text-align: center;
 }
+.o-info p {
+  font-size: 0.98rem;
+}
 .offer .o-info h3 {
   font-weight: 400;
   opacity: 0.9;
