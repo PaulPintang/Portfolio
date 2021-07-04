@@ -29,7 +29,7 @@ window.onscroll = function () {
 function scrollFunction() {
   if (
     document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 180
+    document.documentElement.scrollTop > 20
   ) {
     document.querySelector(".nav-h").style.cssText =
       "height:66px; transition: all .4s ease; ";

@@ -32,7 +32,7 @@ const Projects = () => {
             <div className="img-desc">
               <p>
                 This is my first project while learning javascript. I made this
-                Covid-19 Tracker app after learning how to use an API on a
+                Covid-19 Tracker app after learning on how to use an API on a
                 website. Here's a link to the public API that I used for this
                 project:
                 <a href="https://disease.sh" target="_blank" rel="noreferrer">
