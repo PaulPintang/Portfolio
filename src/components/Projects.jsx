@@ -52,7 +52,7 @@ const Projects = () => {
               <ul>
                 <li>
                   <a
-                    href="https://github.com/puldyastin/puldyastin.github.io"
+                    href="https://puldyastin.github.io/Covid-19-Tracker-App/"
                     target="_blank"
                     rel="noreferrer"
                   >
