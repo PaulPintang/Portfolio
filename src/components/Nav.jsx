@@ -46,6 +46,11 @@ const Nav = () => {
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
+                <li className="resume">
+                  <a href="https://drive.google.com/file/d/1Fb9hOcxr08BLLOZsiOf_oKLWa3PMmSZY/view?usp=sharing" target="_blank" rel="noreferrer">
+                    <button className="tp">RESUME</button>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

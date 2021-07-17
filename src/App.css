@@ -30,6 +30,7 @@ span {
 ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 23px;
 }
 ul li {

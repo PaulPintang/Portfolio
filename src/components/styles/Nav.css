@@ -44,6 +44,26 @@ header a {
 .toggle-menu {
   display: none;
 }
+header .menu .resume .tp {
+  background: transparent;
+  color: white;
+  border: 1px solid #ffffff;
+
+  padding: 4px 17px;
+  margin: 0;
+  width: auto;
+}
+header .menu .resume a:hover {
+  border-bottom: unset;
+}
+header .menu .resume .tp:hover {
+  background-color: white;
+  color: black;
+  /* font-weight: 500; */
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
 @media (max-width: 768px) {
   .menu {
     display: none;
