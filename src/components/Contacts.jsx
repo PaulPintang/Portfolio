@@ -22,11 +22,11 @@ const Contacts = () => {
             <div className="flex">
               <i className="fas fa-envelope"></i>
               <a
-                href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGLCJDLGMRxHtcLtCsvlQrGWGDVzNTCxPHKVWVxkkqNtQMZHqZwnwvxnhzxtbvZgrvpmxWP"
+                href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSBmlnSzdZvvqJFTGmvkLQrtwwqqkDRqdcstbDNQnqdtxvWpGStLHGsVbhGZcLlpLwHFMmXq"
                 target="_blank"
                 rel="noreferrer"
               >
-                <p>puldyastin@gmail.com</p>
+                <p>pauljpintang@gmail.com</p>
               </a>
             </div>
             <div className="flex">
