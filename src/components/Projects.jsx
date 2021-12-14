@@ -52,7 +52,7 @@ const Projects = () => {
               <ul>
                 <li>
                   <a
-                    href="https://github.com/PaulPintang/Covid-19-Tracker-App"
+                    href="https://github.com/PaulPintang"
                     target="_blank"
                     rel="noreferrer"
                   >
