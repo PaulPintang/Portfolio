@@ -1,7 +1,7 @@
 import "./styles/Skills.css";
 import html from "../images/skills/html.svg";
 import css from "../images/skills/css-3.svg";
-import bs from "../images/skills/bootstrap.svg";
+import twc from "../images/skills/tailwindcss.svg";
 import sass from "../images/skills/sass.svg";
 import js from "../images/skills/javascript.svg";
 import git from "../images/skills/git.svg";
@@ -25,8 +25,8 @@ const Skills = () => {
             <p>CSS</p>
           </div>
           <div className="lg">
-            <img src={bs} alt=""></img>
-            <p>Bootstrap</p>
+            <img src={twc} alt="" style={{ width: 50 }}></img>
+            <p>Tailwind CSS</p>
           </div>
           <div className="lg">
             <img src={sass} alt=""></img>

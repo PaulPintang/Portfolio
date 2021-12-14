@@ -28,6 +28,9 @@
 .r img {
   width: 60px;
 }
+.twc {
+  width: 165px;
+}
 @media (max-width: 768px) {
   .my-skills .flex {
     width: 100%;
