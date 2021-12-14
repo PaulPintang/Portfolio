@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="flex">
             <small>Designed by Paul Justine &copy; 2021</small>
             <a
-              href="https://github.com/puldyastin/Portfolio"
+              href="https://github.com/PaulPintang/Portfolio"
               target="_blank"
               rel="noreferrer"
             >

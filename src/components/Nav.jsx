@@ -39,7 +39,7 @@ const Nav = () => {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/puldyastin"
+                    href="https://github.com/PaulPintang"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -47,7 +47,11 @@ const Nav = () => {
                   </a>
                 </li>
                 <li className="resume">
-                  <a href="https://drive.google.com/file/d/1Fb9hOcxr08BLLOZsiOf_oKLWa3PMmSZY/view?usp=sharing" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://drive.google.com/file/d/1Fb9hOcxr08BLLOZsiOf_oKLWa3PMmSZY/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <button className="tp">RESUME</button>
                   </a>
                 </li>
