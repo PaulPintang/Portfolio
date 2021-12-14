@@ -108,7 +108,7 @@ const Projects = () => {
               <ul>
                 <li>
                   <a
-                    href="https://github.com/puldyastin/Fylo-Landing-page"
+                    href="https://github.com/PaulPintang/Fylo-Landing-page"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -182,7 +182,7 @@ const Projects = () => {
               <ul>
                 <li>
                   <a
-                    href="https://github.com/puldyastin/easybank-landing-page"
+                    href="https://github.com/PaulPintang/easybank-landing-page"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -237,7 +237,7 @@ const Projects = () => {
               <ul>
                 <li>
                   <a
-                    href="https://github.com/puldyastin/Social-media-dashboard"
+                    href="https://github.com/PaulPintang/Social-media-dashboard"
                     target="_blank"
                     rel="noreferrer"
                   >
