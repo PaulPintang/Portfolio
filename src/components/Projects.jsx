@@ -14,7 +14,7 @@ const Projects = () => {
         <div className="img-flex reveal">
           <div>
             <a
-              href="https://puldyastin.github.io/Covid-19-Tracker-App/"
+              href="https://github.com/PaulPintang/Covid-19-Tracker-App"
               target="_blank"
               rel="noreferrer"
             >
@@ -52,7 +52,7 @@ const Projects = () => {
               <ul>
                 <li>
                   <a
-                    href="https://github.com/puldyastin/Covid-19-Tracker-App"
+                    href="https://github.com/PaulPintang/Covid-19-Tracker-App"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -61,7 +61,7 @@ const Projects = () => {
                 </li>
                 <li>
                   <a
-                    href="https://puldyastin.github.io/Covid-19-Tracker-App/"
+                    href="https://github.com/PaulPintang/Covid-19-Tracker-App"
                     target="_blank"
                     rel="noreferrer"
                   >
