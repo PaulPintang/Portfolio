@@ -48,7 +48,7 @@ const Nav = () => {
                 </li>
                 <li className="resume">
                   <a
-                    href="https://drive.google.com/file/d/1Fb9hOcxr08BLLOZsiOf_oKLWa3PMmSZY/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1g6palLjOPwLrxL2AjSK3oEPE_HwBdD-x/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                   >
