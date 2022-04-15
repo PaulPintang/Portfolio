@@ -11,7 +11,7 @@ const Offer = () => {
           <h2>
             What i <span>offer?</span>
           </h2>
-          <p>Create functional user experience</p>
+          <p>Create positive user experience</p>
         </div>
         <div className="flex">
           <div className="offer-cards reveal">

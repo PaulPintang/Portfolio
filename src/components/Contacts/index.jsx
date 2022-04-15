@@ -15,7 +15,7 @@ const Contacts = () => {
           <div className="message">
             <small>
               " Hello, my name is Paul, and i'm a front-end developer. If you
-              think i could help your business, just contact me. "
+              think i can help your business, just contact me. "
             </small>
           </div>
           <div className="contact-details">

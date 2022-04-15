@@ -1,10 +1,19 @@
+import React, { useState } from "react";
 import "./styles.css";
 
 const Nav = () => {
+  const [navHeight, setNavHeight] = useState(false);
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= 1) {
+      setNavHeight(true);
+    } else {
+      setNavHeight(false);
+    }
+  });
   return (
-    <header>
+    <header className={navHeight ? "os-header" : ""}>
       <div className="container">
-        <div className="nav-h">
+        <div className={navHeight ? "os-nav-h" : "nav-h"}>
           <div className="flex">
             <div className="name">
               <a href="https://impaul.netlify.app" rel="noreferrer">

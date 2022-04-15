@@ -85,9 +85,9 @@ const Projects = () => {
             <div className="img-desc">
               <p>
                 This is a frontendmentor.io landing page challenge to help me
-                practice creating responsive websites. This challenge really
-                helped me in learning best practices in CSS. Here's the link of
-                the challenge from their website:
+                practice creating responsive websites. This task was quite
+                beneficial in terms of learning CSS best practices. Here's the
+                link of the challenge from their website:
                 <a
                   href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd"
                   target="_blank"
@@ -159,9 +159,9 @@ const Projects = () => {
             <div className="img-desc">
               <p>
                 The frontendmentor.io website serves as a classroom setting for
-                me to increase my development abilities and skills. This project
-                assisted and challenged me to design the navigation bar from the
-                scratch. Here's the link of the challenge from their website.
+                me to improved my development skills. This project challenged me
+                to design the navigation bar from scratch. Here's the link of
+                the challenge from their website.
                 <a
                   href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN"
                   target="_blank"

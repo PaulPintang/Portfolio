@@ -14,6 +14,15 @@ header {
   -o-animation: fadeIn linear 0.5s;
   -ms-animation: fadeIn linear 0.5s;
 }
+/* onscroll header style */
+.os-header{
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+}
+header .os-nav-h{
+  height:66px;
+  transition: all .4s ease;
+}
+/* end */
 header .nav-h {
   height: 108px;
 }
