@@ -161,6 +161,7 @@ body.lock {
   background: #b91a2f;
   content: " ";
 }
+/* for arrow down animation */
 @-webkit-keyframes elasticus {
   0% {
     -webkit-transform-origin: 0% 0%;

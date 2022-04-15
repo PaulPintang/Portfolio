@@ -1,5 +1,5 @@
-import "./styles/Contacts.css";
-import qoute from "../images/left-qoute.svg";
+import "./styles.css";
+import qoute from "../../images/left-qoute.svg";
 const Contacts = () => {
   return (
     <div className="touch" id="contacts">

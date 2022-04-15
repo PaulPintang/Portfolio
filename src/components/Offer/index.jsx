@@ -1,7 +1,7 @@
-import "./styles/Offer.css";
-import responsive from "../images/responsive.svg";
-import design from "../images/design.svg";
-import team from "../images/team.svg";
+import "./styles.css";
+import responsive from "../../images/responsive.svg";
+import design from "../../images/design.svg";
+import team from "../../images/team.svg";
 
 const Offer = () => {
   return (

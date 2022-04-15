@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/Footer.css";
+import "./styles.css";
 // import Wave from '../images/wave1.svg'
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-details">
           <div className="flex">
-            <small>Designed by Paul Justine &copy; 2021</small>
+            <small>Designed by Paul Justine &copy; 2022</small>
             <a
               href="https://github.com/PaulPintang/Portfolio"
               target="_blank"

@@ -1,4 +1,4 @@
-import "./styles/Me.css";
+import "./styles.css";
 const Me = () => {
   return (
     <section className="me">

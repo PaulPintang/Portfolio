@@ -1,12 +1,12 @@
-import "./styles/Skills.css";
-import html from "../images/skills/html.svg";
-import css from "../images/skills/css-3.svg";
-import twc from "../images/skills/tailwindcss.svg";
-import sass from "../images/skills/sass.svg";
-import js from "../images/skills/javascript.svg";
-import git from "../images/skills/git.svg";
-import netlify from "../images/skills/netlify.svg";
-import react from "../images/skills/react.png";
+import "./styles.css";
+import html from "../../images/skills/html.svg";
+import css from "../../images/skills/css-3.svg";
+import twc from "../../images/skills/tailwindcss.svg";
+import sass from "../../images/skills/sass.svg";
+import js from "../../images/skills/javascript.svg";
+import git from "../../images/skills/git.svg";
+import netlify from "../../images/skills/netlify.svg";
+import react from "../../images/skills/react.png";
 
 const Skills = () => {
   return (
