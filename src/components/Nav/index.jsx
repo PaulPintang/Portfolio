@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./styles.css";
-
 const Nav = () => {
   const [navHeight, setNavHeight] = useState(false);
   const [showNav, setShowNav] = useState(false);
