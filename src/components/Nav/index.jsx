@@ -57,8 +57,7 @@ const Nav = () => {
                 </div>
               )}
             </div>
-
-            {showNav ? (
+            <div className={!showNav ? "show" : ""}>
               <div className="menu-container">
                 <div className="menu">
                   <ul>
@@ -103,9 +102,7 @@ const Nav = () => {
                   </ul>
                 </div>
               </div>
-            ) : (
-              ""
-            )}
+            </div>
           </div>
         </div>
       </div>

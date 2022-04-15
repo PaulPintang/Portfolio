@@ -73,6 +73,9 @@ header .menu .resume .tp:hover {
   -ms-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
 }
+.show{
+  display: block;
+}
 @media (max-width: 768px) {
 header .show-nav-h {
     height: 100vh;
@@ -118,5 +121,9 @@ flex-direction: column;
   position: fixed;
   top: 30px;
   right: 30px;
+}
+
+.show{
+  display: none;
 }
 }
