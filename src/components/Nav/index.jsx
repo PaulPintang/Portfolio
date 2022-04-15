@@ -3,6 +3,7 @@ import "./styles.css";
 
 const Nav = () => {
   const [navHeight, setNavHeight] = useState(false);
+  const [showNav, setShowNav] = useState(false);
   window.addEventListener("scroll", () => {
     if (window.scrollY >= 2) {
       setNavHeight(true);
@@ -10,6 +11,10 @@ const Nav = () => {
       setNavHeight(false);
     }
   });
+
+  const handleShow = () => {
+    setShowNav(!showNav);
+  };
   return (
     <header className={navHeight ? "os-header" : ""}>
       <div className="container">
@@ -22,50 +27,68 @@ const Nav = () => {
                 </h1>
               </a>
             </div>
-            <div className="toggle-menu">
-              <div className="flex">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div onClick={handleShow}>
+              {showNav ? (
+                <i class="fa-solid fa-xmark" style={{ fontSize: 20 }}></i>
+              ) : (
+                <div className="toggle-menu">
+                  <div className="flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* {showNav ? (
+              <div className="menu-container">
+                <div className="menu">
+                  <ul>
+                    <li>
+                      <a href="#services">
+                        <span>S</span>ervices
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#projects">
+                        <span>P</span>rojects
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#contacts">
+                        <span>C</span>ontacts
+                      </a>
+                    </li>
+                    <li className="github-icon">
+                      <a
+                        href="https://github.com/PaulPintang"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#contacts">
+                        <span>G</span>ithub
+                      </a>
+                    </li>
+                    <li className="resume">
+                      <a
+                        href="https://drive.google.com/file/d/1g6palLjOPwLrxL2AjSK3oEPE_HwBdD-x/view?usp=sharing"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <button className="tp">RESUME</button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div className="menu">
-              <ul>
-                <li>
-                  <a href="#services">
-                    <span>S</span>ervices
-                  </a>
-                </li>
-                <li>
-                  <a href="#projects">
-                    <span>P</span>rojects
-                  </a>
-                </li>
-                <li>
-                  <a href="#contacts">
-                    <span>C</span>ontacts
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/PaulPintang"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
-                </li>
-                <li className="resume">
-                  <a
-                    href="https://drive.google.com/file/d/1g6palLjOPwLrxL2AjSK3oEPE_HwBdD-x/view?usp=sharing"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="tp">RESUME</button>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            ) : (
+              ""
+            )} */}
           </div>
         </div>
       </div>

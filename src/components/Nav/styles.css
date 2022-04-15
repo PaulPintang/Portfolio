@@ -74,10 +74,36 @@ header .menu .resume .tp:hover {
   transition: background-color 200ms linear;
 }
 @media (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-  .toggle-menu {
-    display: block;
-  }
+/* header .nav-h {
+    height: 100vh;
+}
+header .name{
+  display: block;
+}
+header a {
+  font-size: 35px;
+}
+header .menu .resume .tp {
+  padding: 8px 30px;
+  font-size: 16px;
+
+}
+.flex{
+  justify-content: center;
+}
+.menu{
+  text-align: center;
+}
+.menu ul{
+flex-direction: column;
+}
+
+
+
+.github-icon{
+  display: none;
+} */
+.toggle-menu {
+  display: flex;
+}
 }
