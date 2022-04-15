@@ -15,21 +15,39 @@ const Nav = () => {
   const handleShow = () => {
     setShowNav(!showNav);
   };
+  if (showNav) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "unset";
+  }
   return (
     <header className={navHeight ? "os-header" : ""}>
       <div className="container">
-        <div className={navHeight ? "os-nav-h" : "nav-h"}>
-          <div className="flex">
-            <div className="name">
-              <a href="https://paulpintang.netlify.app/" rel="noreferrer">
-                <h1>
-                  <span>P</span>IN<span>.</span>
-                </h1>
-              </a>
-            </div>
+        <div
+          className={
+            navHeight && !showNav
+              ? "os-nav-h"
+              : showNav
+              ? "show-nav-h "
+              : "nav-h"
+          }
+        >
+          <div className={showNav ? "show-flex" : "flex"}>
+            {!showNav ? (
+              <div className="name">
+                <a href="https://paulpintang.netlify.app/" rel="noreferrer">
+                  <h1>
+                    <span>P</span>IN<span>.</span>
+                  </h1>
+                </a>
+              </div>
+            ) : (
+              ""
+            )}
+
             <div onClick={handleShow}>
               {showNav ? (
-                <i class="fa-solid fa-xmark" style={{ fontSize: 20 }}></i>
+                <i class="fa-solid fa-xmark close"></i>
               ) : (
                 <div className="toggle-menu">
                   <div className="flex">
@@ -41,21 +59,21 @@ const Nav = () => {
               )}
             </div>
 
-            {/* {showNav ? (
+            {showNav ? (
               <div className="menu-container">
                 <div className="menu">
                   <ul>
-                    <li>
+                    <li onClick={handleShow}>
                       <a href="#services">
                         <span>S</span>ervices
                       </a>
                     </li>
-                    <li>
+                    <li onClick={handleShow}>
                       <a href="#projects">
                         <span>P</span>rojects
                       </a>
                     </li>
-                    <li>
+                    <li onClick={handleShow}>
                       <a href="#contacts">
                         <span>C</span>ontacts
                       </a>
@@ -69,12 +87,12 @@ const Nav = () => {
                         <i className="fab fa-github"></i>
                       </a>
                     </li>
-                    <li>
-                      <a href="#contacts">
+                    <li onClick={handleShow}>
+                      <a href="https://github.com/PaulPintang">
                         <span>G</span>ithub
                       </a>
                     </li>
-                    <li className="resume">
+                    <li onClick={handleShow} className="resume">
                       <a
                         href="https://drive.google.com/file/d/1g6palLjOPwLrxL2AjSK3oEPE_HwBdD-x/view?usp=sharing"
                         target="_blank"
@@ -88,7 +106,7 @@ const Nav = () => {
               </div>
             ) : (
               ""
-            )} */}
+            )}
           </div>
         </div>
       </div>

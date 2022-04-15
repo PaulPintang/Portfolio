@@ -74,36 +74,49 @@ header .menu .resume .tp:hover {
   transition: background-color 200ms linear;
 }
 @media (max-width: 768px) {
-/* header .nav-h {
+header .show-nav-h {
     height: 100vh;
 }
-header .name{
+header .show-os-nav-h {
+  height: 100vh;
+}
+ .name{
   display: block;
 }
 header a {
   font-size: 35px;
 }
-header .menu .resume .tp {
+ .menu .resume .tp {
   padding: 8px 30px;
   font-size: 16px;
 
 }
-.flex{
+.show-flex{
+  display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100%;
 }
-.menu{
-  text-align: center;
+.menu-container{
+    animation: fadeIn linear .5s;
+    -webkit-animation: fadeIn linear .5s;
+    -moz-animation: fadeIn linear .5s;
+    -o-animation: fadeIn linear .5s;
+    -ms-animation: fadeIn linear .5s;
 }
 .menu ul{
 flex-direction: column;
 }
-
-
-
 .github-icon{
   display: none;
-} */
+}
 .toggle-menu {
   display: flex;
+}
+.close{
+  font-size: 25px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
 }
 }
