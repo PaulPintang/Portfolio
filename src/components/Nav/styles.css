@@ -76,6 +76,9 @@ header .menu .resume .tp:hover {
 .show{
   display: block;
 }
+.hide-link{
+  display: none;
+}
 @media (max-width: 768px) {
 header .show-nav-h {
     height: 100vh;
@@ -122,8 +125,10 @@ flex-direction: column;
   top: 30px;
   right: 30px;
 }
-
 .show{
   display: none;
+}
+.hide-link {
+  display: block;
 }
 }

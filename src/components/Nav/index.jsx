@@ -85,7 +85,7 @@ const Nav = () => {
                         <i className="fab fa-github"></i>
                       </a>
                     </li>
-                    <li onClick={handleShow}>
+                    <li onClick={handleShow} className="hide-link">
                       <a href="https://github.com/PaulPintang">
                         <span>G</span>ithub
                       </a>
