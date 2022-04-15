@@ -21,4 +21,24 @@ function App() {
   );
 }
 
+// Navigation shrink oncroll / mobile
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    document.querySelector(".nav-h").style.cssText =
+      "height:66px; transition: all .4s ease; ";
+    document.querySelector("header").style.cssText =
+      "box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);";
+  } else {
+    document.querySelector(".nav-h").style.cssText = "height: 108px";
+    document.querySelector("header").style.cssText = "box-shadow: unset;";
+  }
+}
+
 export default App;
