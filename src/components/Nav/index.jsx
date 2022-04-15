@@ -4,7 +4,7 @@ import "./styles.css";
 const Nav = () => {
   const [navHeight, setNavHeight] = useState(false);
   window.addEventListener("scroll", () => {
-    if (window.scrollY >= 1) {
+    if (window.scrollY >= 2) {
       setNavHeight(true);
     } else {
       setNavHeight(false);
@@ -16,7 +16,7 @@ const Nav = () => {
         <div className={navHeight ? "os-nav-h" : "nav-h"}>
           <div className="flex">
             <div className="name">
-              <a href="https://impaul.netlify.app" rel="noreferrer">
+              <a href="https://paulpintang.netlify.app/" rel="noreferrer">
                 <h1>
                   <span>P</span>IN<span>.</span>
                 </h1>
