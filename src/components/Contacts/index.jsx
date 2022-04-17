@@ -14,8 +14,8 @@ const Contacts = () => {
           </h3>
           <div className="message">
             <small>
-              " Hello, my name is Paul, and i'm a front-end developer. If you
-              think i can help your business, just contact me. "
+              " Hello, my name is Paul, and I'm a front-end developer. If you
+              think I can help your business, just contact me. "
             </small>
           </div>
           <div className="contact-details">

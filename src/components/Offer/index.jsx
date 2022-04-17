@@ -19,7 +19,7 @@ const Offer = () => {
             <div className="o-info">
               <h3>Responsive Website</h3>
               <p>
-                Develop a responsive website layout for better user experience
+                Develop a responsive website layout for a better user experience
               </p>
             </div>
           </div>
@@ -28,7 +28,7 @@ const Offer = () => {
             <div className="o-info">
               <h3>Convert your design into a working website.</h3>
               <p>
-                Make an ideal functional website with your mockups and ui
+                Make an ideal functional website with your mockups and UI
                 prototypes.
               </p>
             </div>

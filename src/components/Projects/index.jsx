@@ -32,8 +32,8 @@ const Projects = () => {
             <div className="img-desc">
               <p>
                 This is my first project while learning javascript. I made this
-                Covid-19 Tracker app after learning on how to use an API on a
-                website. Here's a link to the public API that I used for this
+                Covid-19 Tracker app after learning how to use an API on a
+                website. Here's a link to the covid API that I used for this
                 project:
                 <a href="https://disease.sh" target="_blank" rel="noreferrer">
                   Covid-19 API
@@ -87,7 +87,7 @@ const Projects = () => {
                 This is a frontendmentor.io landing page challenge to help me
                 practice creating responsive websites. This task was quite
                 beneficial in terms of learning CSS best practices. Here's the
-                link of the challenge from their website:
+                link to the challenge from their website:
                 <a
                   href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd"
                   target="_blank"
@@ -159,8 +159,8 @@ const Projects = () => {
             <div className="img-desc">
               <p>
                 The frontendmentor.io website serves as a classroom setting for
-                me to improved my development skills. This project challenged me
-                to design the navigation bar from scratch. Here's the link of
+                me to improve my development skills. This project challenged me
+                to design the navigation bar from scratch. Here's the link to
                 the challenge from their website.
                 <a
                   href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN"
@@ -215,8 +215,8 @@ const Projects = () => {
               <p>
                 This frontendmentor.io challenge put me to a test in javascript.
                 This simple project improved my understanding of DOM
-                manipulation and javascript eventlisterner implementation.
-                Here's the link of the challenge from their website.
+                manipulation and javascript event listerner implementation.
+                Here's the link to the challenge from their website.
                 <a
                   href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
                   target="_blank"
