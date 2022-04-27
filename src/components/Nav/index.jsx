@@ -62,17 +62,17 @@ const Nav = () => {
                 <div className="menu">
                   <ul>
                     <li>
-                      <a href="#services">
+                      <a onClick={() => setShowNav(false)} href="#services">
                         <span>S</span>ervices
                       </a>
                     </li>
                     <li>
-                      <a href="#projects">
+                      <a onClick={() => setShowNav(false)} href="#projects">
                         <span>P</span>rojects
                       </a>
                     </li>
                     <li>
-                      <a href="#contacts">
+                      <a onClick={() => setShowNav(false)} href="#contacts">
                         <span>C</span>ontacts
                       </a>
                     </li>
