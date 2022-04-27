@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Logo } from "./Nav.styled";
+import { Logo, Header } from "./Nav.styled";
 import "./styles.css";
 const Nav = () => {
   const [navHeight, setNavHeight] = useState(false);
@@ -21,7 +21,7 @@ const Nav = () => {
     document.body.style.overflow = "unset";
   }
   return (
-    <header className={navHeight ? "os-header" : ""}>
+    <Header className={navHeight ? "os-header" : ""}>
       <div className="container">
         <div
           className={
@@ -106,7 +106,7 @@ const Nav = () => {
           </div>
         </div>
       </div>
-    </header>
+    </Header>
   );
 };
 

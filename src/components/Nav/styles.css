@@ -1,5 +1,4 @@
-header {
-  /* background-color: #141422; */
+/* header {
   background-color: #0e1625;
   color: #dddddd;
   overflow: hidden;
@@ -13,7 +12,7 @@ header {
   -moz-animation: fadeIn linear 0.5s;
   -o-animation: fadeIn linear 0.5s;
   -ms-animation: fadeIn linear 0.5s;
-}
+} */
 /* onscroll header style */
 .os-header{
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
@@ -26,21 +25,21 @@ header .os-nav-h{
 header .nav-h {
   height: 108px;
 }
-header .name a {
+/* header .name a {
   font-size: 11px;
   letter-spacing: 3px;
   color: white;
-}
-header i {
+} */
+/* header i {
   font-size: 16px;
-}
-header a {
+} */
+/* header a {
   font-size: 13.5px;
   font-weight: bolder;
   font-variant: small-caps;
   letter-spacing: 3px;
   padding-bottom: 5px;
-}
+} */
 .toggle-menu .flex {
   flex-direction: column;
   gap: 5px;
@@ -53,7 +52,7 @@ header a {
 .toggle-menu {
   display: none;
 }
-header .menu .resume .tp {
+/* header .menu .resume .tp {
   background: transparent;
   color: white;
   border: 1px solid #ffffff;
@@ -61,18 +60,17 @@ header .menu .resume .tp {
   padding: 4px 17px;
   margin: 0;
   width: auto;
-}
-header .menu .resume a:hover {
+} */
+/* header .menu .resume a:hover {
   border-bottom: unset;
-}
-header .menu .resume .tp:hover {
+} */
+/* header .menu .resume .tp:hover {
   background-color: white;
   color: black;
-  /* font-weight: 500; */
   -webkit-transition: background-color 200ms linear;
   -ms-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
-}
+} */
 .show{
   display: block;
 }
