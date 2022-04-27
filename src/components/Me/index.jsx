@@ -1,13 +1,14 @@
 import "./styles.css";
+import { Section, Container, TextAnimated } from "./Me.styled";
 const Me = () => {
   return (
-    <section className="me">
-      <div className="container">
+    <Section>
+      <Container>
         <div className="flex">
           <h1>
             Hey, I'm <span className="my-name">Paul Justine.</span>
           </h1>
-          <p className="front-end">I'm a Front-End Developer</p>
+          <TextAnimated>I'm a Front-End Developer</TextAnimated>
           <div className="btn-control">
             <a href="#contacts">
               <button>Let's work together</button>
@@ -28,8 +29,8 @@ const Me = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };
 
