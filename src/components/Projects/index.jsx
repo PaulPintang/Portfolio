@@ -1,4 +1,5 @@
-import "./styles.css";
+// import "./styles.css";
+import { ProjectStyled } from "./Projects.styled";
 import img1 from "../../images/projects/11.png";
 import img2 from "../../images/projects/22.png";
 import img3 from "../../images/projects/33.png";
@@ -6,7 +7,7 @@ import img4 from "../../images/projects/44.png";
 
 const Projects = () => {
   return (
-    <div className="projects" id="projects">
+    <ProjectStyled className="projects" id="projects">
       <div className="container">
         <h2>
           My <span>Projects</span>
@@ -267,7 +268,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </div>
+    </ProjectStyled>
   );
 };
 

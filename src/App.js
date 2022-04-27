@@ -1,4 +1,4 @@
-// import "./App.css";
+import "./App.css";
 import Nav from "./components/Nav";
 import Me from "./components/Me";
 import Offer from "./components/Offer";
@@ -13,12 +13,12 @@ function App() {
     <div>
       <GlobalStyles />
       <Nav />
-      <Me />
+      {/* <Me />
       <Offer />
       <Skills />
       <Projects />
       <Contacts />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

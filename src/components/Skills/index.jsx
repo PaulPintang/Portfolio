@@ -1,5 +1,5 @@
-import "./styles.css";
-import { Section } from "../Offer/Offer.styled";
+// import "./styles.css";
+import { Section } from "./Skills.styled";
 import html from "../../images/skills/html.svg";
 import css from "../../images/skills/css-3.svg";
 import twc from "../../images/skills/tailwindcss.svg";

@@ -10,5 +10,20 @@ export const Section = styled.section`
     margin: auto;
     padding: 45px 0;
     flex-wrap: wrap;
+    .lg {
+      transition: transform 0.2s ease-in;
+      margin-bottom: 12px;
+      &:hover {
+        transform: translateY(-11px);
+        cursor: pointer;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
   }
 `;
