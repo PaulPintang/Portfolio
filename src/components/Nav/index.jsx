@@ -61,17 +61,17 @@ const Nav = () => {
               <div className="menu-container">
                 <div className="menu">
                   <ul>
-                    <li onClick={handleShow}>
+                    <li>
                       <a href="#services">
                         <span>S</span>ervices
                       </a>
                     </li>
-                    <li onClick={handleShow}>
+                    <li>
                       <a href="#projects">
                         <span>P</span>rojects
                       </a>
                     </li>
-                    <li onClick={handleShow}>
+                    <li>
                       <a href="#contacts">
                         <span>C</span>ontacts
                       </a>
@@ -85,12 +85,12 @@ const Nav = () => {
                         <i className="fab fa-github"></i>
                       </a>
                     </li>
-                    <li onClick={handleShow} className="hide-link">
+                    <li className="hide-link">
                       <a href="https://github.com/PaulPintang">
                         <span>G</span>ithub
                       </a>
                     </li>
-                    <li onClick={handleShow} className="resume">
+                    <li className="resume">
                       <a
                         href="https://drive.google.com/file/d/1g6palLjOPwLrxL2AjSK3oEPE_HwBdD-x/view?usp=sharing"
                         target="_blank"
