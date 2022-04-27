@@ -20,7 +20,9 @@ const Me = () => {
               <StyledButton>Let's work together</StyledButton>
             </a>
             <a href="#projects">
-              <StyledButton className="tp">Check out my projects</StyledButton>
+              <StyledButton className="check-btn">
+                Check out my projects
+              </StyledButton>
             </a>
 
             <div id="wrapper">

@@ -47,6 +47,14 @@ export const TextAnimated = styled.p`
 
 export const BtnControl = styled.div`
   padding: 10px;
+  .check-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #ffffff;
+    a:hover {
+      color: black;
+    }
+  }
 `;
 
 export const StyledButton = styled.button`
@@ -58,10 +66,4 @@ export const StyledButton = styled.button`
   font-size: 10px;
   width: 151px;
   font-weight: 200;
-
-  .tp {
-    background: transparent;
-    color: white;
-    border: 1px solid #ffffff;
-  }
 `;
