@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Logo } from "./Nav.styled";
 import "./styles.css";
 const Nav = () => {
   const [navHeight, setNavHeight] = useState(false);
@@ -33,13 +34,13 @@ const Nav = () => {
         >
           <div className={showNav ? "show-flex" : "flex"}>
             {!showNav ? (
-              <div className="name">
+              <Logo>
                 <a href="https://paulpintang.netlify.app/" rel="noreferrer">
                   <h1>
                     <span>P</span>IN<span>.</span>
                   </h1>
                 </a>
-              </div>
+              </Logo>
             ) : (
               ""
             )}
