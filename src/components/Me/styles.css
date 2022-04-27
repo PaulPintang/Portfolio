@@ -22,7 +22,7 @@
 .me .my-name {
   font-weight: 700;
 } */
-
+/* 
 .me .front-end {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -39,11 +39,11 @@
 .front-end {
   opacity: 1;
   font-weight: 500;
-}
+} */
 .btn-control {
   padding: 10px;
 }
-button {
+/* button {
   font-family: "Poppins", sans-serif;
   padding: 7px 18px;
   margin: 8px;
@@ -52,12 +52,12 @@ button {
   font-size: 10px;
   width: 151px;
   font-weight: 200;
-}
-.btn-control .tp {
+} */
+/* .btn-control .tp {
   background: transparent;
   color: white;
   border: 1px solid #ffffff;
-}
+} */
 .tp a:hover {
   color: black;
 }

@@ -1,5 +1,11 @@
 import "./styles.css";
-import { Section, Container, TextAnimated } from "./Me.styled";
+import {
+  Section,
+  Container,
+  TextAnimated,
+  BtnControl,
+  StyledButton,
+} from "./Me.styled";
 const Me = () => {
   return (
     <Section>
@@ -9,12 +15,12 @@ const Me = () => {
             Hey, I'm <span className="my-name">Paul Justine.</span>
           </h1>
           <TextAnimated>I'm a Front-End Developer</TextAnimated>
-          <div className="btn-control">
+          <BtnControl>
             <a href="#contacts">
-              <button>Let's work together</button>
+              <StyledButton>Let's work together</StyledButton>
             </a>
             <a href="#projects">
-              <button className="tp">Check out my projects</button>
+              <StyledButton className="tp">Check out my projects</StyledButton>
             </a>
 
             <div id="wrapper">
@@ -27,7 +33,7 @@ const Me = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </BtnControl>
         </div>
       </Container>
     </Section>
