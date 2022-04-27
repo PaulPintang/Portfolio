@@ -43,7 +43,6 @@ const Nav = () => {
             ) : (
               ""
             )}
-
             <div onClick={handleShow}>
               {showNav ? (
                 <i class="fa-solid fa-xmark close"></i>
