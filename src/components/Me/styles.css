@@ -58,23 +58,7 @@
   color: white;
   border: 1px solid #ffffff;
 } */
-.tp a:hover {
-  color: black;
-}
-/* Animations */
-@keyframes reveal {
-  80% {
-    letter-spacing: 8px;
-  }
-  100% {
-    background-size: 300% 300%;
-  }
-}
-@keyframes glow {
-  40% {
-    text-shadow: 0 0 8px #fff;
-  }
-}
+
 
 @media (max-width: 768px) {
   .me .flex {

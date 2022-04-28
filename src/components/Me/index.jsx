@@ -1,18 +1,30 @@
 import "./styles.css";
-import {
-  Section,
-  Container,
-  TextAnimated,
-  BtnControl,
-  StyledButton,
-} from "./Me.styled";
+import styled from "styled-components";
+import { Container, Flex, Span } from "../styles/Reusable.styled";
+import { Section, TextAnimated, BtnControl, StyledButton } from "./Me.styled";
+
+const Column = styled(Flex)`
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    font-size: 4.2rem;
+    font-variant: small-caps;
+    font-weight: 200;
+    letter-spacing: 4px;
+  }
+`;
+
+const Bolder = styled(Span)`
+  font-weight: 700;
+`;
+
 const Me = () => {
   return (
-    <Section>
-      <Container>
-        <div className="flex">
+    <Container>
+      <Section>
+        <Column>
           <h1>
-            Hey, I'm <span className="my-name">Paul Justine.</span>
+            Hey, I'm <Bolder>Paul Justine.</Bolder>
           </h1>
           <TextAnimated>I'm a Front-End Developer</TextAnimated>
           <BtnControl>
@@ -24,21 +36,10 @@ const Me = () => {
                 Check out my projects
               </StyledButton>
             </a>
-
-            <div id="wrapper">
-              <div id="wrapper-inner">
-                <div id="scroll-down">
-                  <span className="arrow-down"></span>
-                  <a href="#services">
-                    <span id="scroll-title">scroll down</span>
-                  </a>
-                </div>
-              </div>
-            </div>
           </BtnControl>
-        </div>
-      </Container>
-    </Section>
+        </Column>
+      </Section>
+    </Container>
   );
 };
 

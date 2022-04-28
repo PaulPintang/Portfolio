@@ -13,8 +13,8 @@ function App() {
     <div>
       <GlobalStyles />
       <Nav />
-      {/* <Me />
-      <Offer />
+      <Me />
+      {/* <Offer />
       <Skills />
       <Projects />
       <Contacts />
