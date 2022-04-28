@@ -58,3 +58,73 @@ export const Links = styled.ul`
 export const Span = styled.span`
   color: #fd0037;
 `;
+
+// scroll down animation
+export const ScrollContainer = styled.div`
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin-top: 4rem;
+`;
+
+export const ScrollInner = styled.div`
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+`;
+
+export const ScrollDown = styled.div`
+  display: block;
+  position: relative;
+  padding-top: 70px;
+  text-align: center;
+
+  &:before {
+    -webkit-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    -moz-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    -o-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 80px;
+    background: #b91a2f;
+    content: " ";
+  }
+
+  a {
+    text-decoration: none;
+  }
+`;
+
+export const ArrowDown = styled.span`
+  display: block;
+  margin: 0 auto;
+  width: 10px;
+  height: 27px;
+  &:after {
+    content: "";
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #b91a2f;
+    border-right: 2px solid #b91a2f;
+    transform: rotate(135deg);
+  }
+`;
+
+export const ScrollTitle = styled.span`
+  display: block;
+  text-transform: uppercase;
+  color: #b91a2f;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+`;

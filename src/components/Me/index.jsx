@@ -1,6 +1,15 @@
-import "./styles.css";
+// import "./styles.css";
 import styled from "styled-components";
-import { Container, Flex, Span } from "../styles/Reusable.styled";
+import {
+  Container,
+  Flex,
+  Span,
+  ScrollContainer,
+  ScrollInner,
+  ScrollDown,
+  ScrollTitle,
+  ArrowDown,
+} from "../styles/Reusable.styled";
 import {
   Section,
   TextAnimated,
@@ -40,6 +49,16 @@ const Me = () => {
             <a href="#projects">
               <StyledButton>Check out my projects</StyledButton>
             </a>
+            <ScrollContainer>
+              <ScrollInner>
+                <ScrollDown>
+                  <ArrowDown></ArrowDown>
+                  <a href="#services">
+                    <ScrollTitle>scroll down</ScrollTitle>
+                  </a>
+                </ScrollDown>
+              </ScrollInner>
+            </ScrollContainer>
           </BtnControl>
         </Column>
       </Section>
