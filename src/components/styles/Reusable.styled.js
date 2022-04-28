@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width: 1055px;
+  max-width: 1100px;
   margin: auto;
   padding: 0 25px;
 `;
@@ -11,6 +11,16 @@ export const Flex = styled.div`
   height: 100%;
   justify-content: space-between;
   align-items: center;
+`;
+export const Column = styled(Flex)`
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    font-size: 4.2rem;
+    font-variant: small-caps;
+    font-weight: 200;
+    letter-spacing: 4px;
+  }
 `;
 
 export const Button = styled.button`
@@ -57,6 +67,9 @@ export const Links = styled.ul`
 
 export const Span = styled.span`
   color: #fd0037;
+`;
+export const Bolder = styled(Span)`
+  font-weight: 700;
 `;
 
 // scroll down animation

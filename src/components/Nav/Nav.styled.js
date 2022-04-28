@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  height: 90px;
+  height: 110px;
   a {
     text-decoration: none;
     h1 {
