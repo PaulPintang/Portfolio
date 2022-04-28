@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  height: 80px;
-  h1 {
-    font-size: 24px;
+  height: 90px;
+  a {
+    text-decoration: none;
+    h1 {
+      font-size: 22px;
+    }
   }
 `;
 

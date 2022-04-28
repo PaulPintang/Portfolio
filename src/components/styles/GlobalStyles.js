@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -52,7 +52,7 @@ a.color {
 }
 p {
   opacity: 0.5;
-}
+} */
 .reveal {
   position: relative;
   transform: translateY(50px);
@@ -78,14 +78,14 @@ header .menu a:hover {
   -ms-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
 }
-button:hover {
+/* button:hover {
   background: #fd0037;
   color: white;
 
   -webkit-transition: background-color 200ms linear;
   -ms-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
-}
+} */
 .btn-control a:nth-child(2) button:hover {
   background: #dddddd;
   color: rgb(0, 0, 0);
@@ -94,12 +94,12 @@ button:hover {
   -ms-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
 }
-button:focus {
+/* button:focus {
   outline: none;
 }
 button:hover {
   cursor: pointer;
-}
+} */
 body.lock {
   overflow-y: hidden;
 }
