@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Button } from "../styles/Reusable.styled";
 export const Section = styled.section`
   animation: fadeIn linear 1.1s;
   -webkit-animation: fadeIn linear 1.1s;
@@ -52,13 +52,21 @@ export const BtnControl = styled.div`
   }
 `;
 
-export const StyledButton = styled.button`
+export const StyledButton = styled(Button)`
   font-family: "Poppins", sans-serif;
-  padding: 7px 18px;
+  padding: 8px 18px;
   margin: 8px;
-  border: none;
-  background: rgb(208, 204, 204);
+  background-color:  ${({ red }) => (red ? "#f3f3f3" : "transparent")}};
+  color: ${({ red }) => (red ? "gray" : "white")}};
   font-size: 10px;
   width: 151px;
-  font-weight: 200;
+  &:hover {
+    background-color: ${({ red }) => (red ? "#fd0037" : "white")}};
+  }
+  &:hover {
+    color: ${({ red }) => (red ? "white" : "gray")}};
+  }
+  &:hover {
+    border:  ${({ red }) => (red ? "1px solid #fd0037" : "")}};
+  }
 `;

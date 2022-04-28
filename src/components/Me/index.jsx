@@ -1,7 +1,13 @@
 import "./styles.css";
 import styled from "styled-components";
 import { Container, Flex, Span } from "../styles/Reusable.styled";
-import { Section, TextAnimated, BtnControl, StyledButton } from "./Me.styled";
+import {
+  Section,
+  TextAnimated,
+  BtnControl,
+  StyledButton,
+  StyledBtnRed,
+} from "./Me.styled";
 
 const Column = styled(Flex)`
   flex-direction: column;
@@ -29,12 +35,10 @@ const Me = () => {
           <TextAnimated>I'm a Front-End Developer</TextAnimated>
           <BtnControl>
             <a href="#contacts">
-              <StyledButton>Let's work together</StyledButton>
+              <StyledButton red>Let's work together</StyledButton>
             </a>
             <a href="#projects">
-              <StyledButton className="check-btn">
-                Check out my projects
-              </StyledButton>
+              <StyledButton>Check out my projects</StyledButton>
             </a>
           </BtnControl>
         </Column>
