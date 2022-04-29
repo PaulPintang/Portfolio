@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Flex, Links } from "../styles/Reusable.styled";
 
 export const Section = styled.section`
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   h2 {
     padding-bottom: 40px;
   }
