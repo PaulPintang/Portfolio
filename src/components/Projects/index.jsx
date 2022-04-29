@@ -1,4 +1,6 @@
-// import "./styles.css";
+import React from "react";
+import { BsGithub } from "react-icons/bs";
+import { FiExternalLink } from "react-icons/fi";
 import { Flex, Container, Span, Right } from "../styles/Reusable.styled.js";
 import {
   Section,
@@ -66,7 +68,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fab fa-github"></i>
+                  <BsGithub />
                 </a>
               </li>
               <li>
@@ -75,7 +77,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fas fa-external-link-alt"></i>
+                  <FiExternalLink size={21} />
                 </a>
               </li>
             </LinkToProject>
@@ -120,7 +122,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fab fa-github"></i>
+                  <BsGithub />
                 </a>
               </li>
               <li>
@@ -129,7 +131,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fas fa-external-link-alt"></i>
+                  <FiExternalLink size={21} />
                 </a>
               </li>
             </LinkToProject>
@@ -195,7 +197,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fab fa-github"></i>
+                  <BsGithub />
                 </a>
               </li>
               <li>
@@ -204,7 +206,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fas fa-external-link-alt"></i>
+                  <FiExternalLink size={21} />
                 </a>
               </li>
             </LinkToProject>
@@ -249,7 +251,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fab fa-github"></i>
+                  <BsGithub />
                 </a>
               </li>
               <li>
@@ -258,7 +260,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fas fa-external-link-alt"></i>
+                  <FiExternalLink size={21} />
                 </a>
               </li>
             </LinkToProject>

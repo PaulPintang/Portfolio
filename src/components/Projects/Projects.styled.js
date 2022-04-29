@@ -31,7 +31,6 @@ export const ProjectInfo = styled.div`
     right ? "flex-end" : left ? "flex-start" : ""};
   flex-direction: column;
   position: relative;
-  /* right: 180px; */
   right: ${({ right, left }) => (right ? "180px" : left ? "-180px" : "")};
   padding: 50px 0;
   h3 {
@@ -52,14 +51,17 @@ export const Description = styled.div`
   a {
     padding-left: 2px;
     font-style: italic;
-    text-decoration: none;
   }
 `;
 export const LinkToProject = styled(Links)`
   padding-top: 10px;
   justify-content: flex-end;
   gap: 10px;
-  i {
-    font-size: 17px;
+  svg {
+    font-size: 19px;
+    &:hover {
+      transition: color 0.12s ease-in;
+      color: #fd0037;
+    }
   }
 `;
