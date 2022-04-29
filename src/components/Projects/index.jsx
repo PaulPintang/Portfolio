@@ -210,6 +210,69 @@ const Projects = () => {
             </LinkToProject>
           </ProjectInfo>
         </ProjectContainer>
+
+        <ProjectContainer className="reveal">
+          <ProjectInfo left>
+            <div>
+              <h4>
+                No.<Span>04</Span>
+              </h4>
+              <h3>Social Media Dashboard</h3>
+            </div>
+
+            <Description>
+              <p>
+                This frontendmentor.io challenge put me to a test in javascript.
+                This simple project improved my understanding of DOM
+                manipulation and javascript event listerner implementation.
+                Here's the link to the challenge from their website:
+                <a
+                  href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Span>social-media-dashboard-challenge</Span>
+                </a>
+              </p>
+            </Description>
+
+            <Flex>
+              <small>HTML</small>
+              <small>CSS</small>
+              <small>JAVASCRIPT</small>
+            </Flex>
+
+            <LinkToProject>
+              <li>
+                <a
+                  href="https://github.com/PaulPintang/Social-media-dashboard"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://socialllll-media-dashboard.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fas fa-external-link-alt"></i>
+                </a>
+              </li>
+            </LinkToProject>
+          </ProjectInfo>
+          <div>
+            <a
+              href="https://socialllll-media-dashboard.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={img2} alt="" />
+            </a>
+          </div>
+        </ProjectContainer>
       </Container>
     </Section>
   );
