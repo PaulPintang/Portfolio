@@ -10,49 +10,47 @@ import {
 import { Logo, Header } from "./Nav.styled";
 const Nav = () => {
   return (
-    <Container>
-      <Header>
-        <Flex>
-          <Logo>
-            <a href="https://paulpintang.netlify.app/" rel="noreferrer">
-              <h1>
-                <Span>P</Span>IN<Span>.</Span>
-              </h1>
+    <Header>
+      <Flex>
+        <Logo>
+          <a href="https://paulpintang.netlify.app/" rel="noreferrer">
+            <h1>
+              <Span>P</Span>IN<Span>.</Span>
+            </h1>
+          </a>
+        </Logo>
+        <Links>
+          <li>
+            <a href="#services">
+              <Span>S</Span>
+              ervices
             </a>
-          </Logo>
-          <Links>
-            <li>
-              <a href="#services">
-                <Span>S</Span>
-                ervices
-              </a>
-            </li>
-            <li>
-              <a href="#projects">
-                <Span>P</Span>
-                rojects
-              </a>
-            </li>
-            <li>
-              <a href="#contacts">
-                <Span>C</Span>
-                ontacts
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/PaulPintang" rel="noreferrer">
-                <BsGithub size={16} />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <Button>RESUME</Button>
-              </a>
-            </li>
-          </Links>
-        </Flex>
-      </Header>
-    </Container>
+          </li>
+          <li>
+            <a href="#projects">
+              <Span>P</Span>
+              rojects
+            </a>
+          </li>
+          <li>
+            <a href="#contacts">
+              <Span>C</Span>
+              ontacts
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/PaulPintang" rel="noreferrer">
+              <BsGithub size={16} />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <Button>RESUME</Button>
+            </a>
+          </li>
+        </Links>
+      </Flex>
+    </Header>
   );
 };
 
