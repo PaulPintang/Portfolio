@@ -29,7 +29,7 @@ const Projects = () => {
               <img src={img1} alt="" />
             </a>
           </div>
-          <ProjectInfo>
+          <ProjectInfo right>
             <div class="title">
               <h4>
                 No.<Span>01</Span>
@@ -77,6 +77,66 @@ const Projects = () => {
               </li>
             </LinkToProject>
           </ProjectInfo>
+        </ProjectContainer>
+
+        <ProjectContainer className="rev eal">
+          <ProjectInfo left>
+            <div class="title">
+              <h4>
+                No.<Span>01</Span>
+              </h4>
+              <h3>Covid-19 Tracker</h3>
+            </div>
+
+            <Description>
+              <p>
+                This is my first project while learning javascript. I made this
+                Covid-19 Tracker app after learning how to use an API on a
+                website. Here's a link to the covid API that I used for this
+                project:
+                <a href="https://disease.sh" target="_blank" rel="noreferrer">
+                  <Span>Covid-19 API</Span>
+                </a>
+              </p>
+            </Description>
+
+            <Flex left>
+              <small>HTML</small>
+              <small>CSS</small>
+              <small>JAVASCRIPT</small>
+              <small>Covid-19 API</small>
+            </Flex>
+
+            <LinkToProject>
+              <li>
+                <a
+                  href="https://github.com/PaulPintang/Covid-19-Tracker-App"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://paulpintang.github.io/Covid-19-Tracker-App/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fas fa-external-link-alt"></i>
+                </a>
+              </li>
+            </LinkToProject>
+          </ProjectInfo>
+          <div>
+            <a
+              href="https://paulpintang.github.io/Covid-19-Tracker-App/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={img2} alt="" />
+            </a>
+          </div>
         </ProjectContainer>
       </Container>
     </Section>

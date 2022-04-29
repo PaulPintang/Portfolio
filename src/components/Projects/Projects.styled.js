@@ -9,6 +9,7 @@ export const Section = styled.section`
 `;
 
 export const ProjectContainer = styled(Flex)`
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
   width: 500px;
@@ -29,7 +30,8 @@ export const ProjectInfo = styled.div`
   align-items: flex-end;
   flex-direction: column;
   position: relative;
-  right: 180px;
+  /* right: 180px; */
+  right:  ${({ right, left }) => (right ? "180px" : left ? "-180px" : "")}};
   padding: 50px 0;
   div.title {
     text-align: right;
