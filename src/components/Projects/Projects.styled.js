@@ -27,16 +27,17 @@ export const ProjectContainer = styled(Flex)`
 `;
 export const ProjectInfo = styled.div`
   display: flex;
-  align-items: flex-end;
+  align-items: ${({ right, left }) =>
+    right ? "flex-end" : left ? "flex-start" : ""};
   flex-direction: column;
   position: relative;
   /* right: 180px; */
-  right:  ${({ right, left }) => (right ? "180px" : left ? "-180px" : "")}};
+  right: ${({ right, left }) => (right ? "180px" : left ? "-180px" : "")};
   padding: 50px 0;
-    h3 {
-      font-size: 25px;
-      font-weight: bold;
-    }
+  h3 {
+    font-size: 25px;
+    font-weight: bold;
+  }
 `;
 export const Description = styled.div`
   width: 450px;

@@ -19,8 +19,9 @@ export const Left = styled.div`
 export const Flex = styled.div`
   display: flex;
   height: 100%;
-  justify-content: ${({ right, left }) =>
-    right ? "flex-end" : left ? "flex-start" : "space-between"}};
+  /* justify-content: ${({ right }) => (right ? "flex-end" : "space-between")}};
+  justify-content: ${({ left }) => (left ? "flex-start" : "space-between")}}; */
+  justify-content: center;
   align-items: center;
   gap: 15px;
 `;

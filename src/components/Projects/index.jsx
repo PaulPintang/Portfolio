@@ -36,12 +36,12 @@ const Projects = () => {
             </a>
           </div>
           <ProjectInfo right>
-            <Right>
+            <div>
               <h4>
                 No.<Span>01</Span>
               </h4>
               <h3>Covid-19 Tracker</h3>
-            </Right>
+            </div>
 
             <Description>
               <p>
@@ -87,12 +87,12 @@ const Projects = () => {
 
         <ProjectContainer className="rev eal">
           <ProjectInfo left>
-            <Left>
+            <div>
               <h4>
                 No.<Span>02</Span>
               </h4>
               <h3>Fylo Landing Page</h3>
-            </Left>
+            </div>
 
             <Description>
               <p>
