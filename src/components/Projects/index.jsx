@@ -30,7 +30,7 @@ const Projects = () => {
             </a>
           </div>
           <ProjectInfo>
-            <div>
+            <div class="title">
               <h4>
                 No.<Span>01</Span>
               </h4>
@@ -49,7 +49,7 @@ const Projects = () => {
               </p>
             </Description>
 
-            <Flex>
+            <Flex right>
               <small>HTML</small>
               <small>CSS</small>
               <small>JAVASCRIPT</small>
