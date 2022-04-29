@@ -12,8 +12,8 @@ import react from "../../images/skills/react.png";
 
 const Skills = () => {
   return (
-    <Container>
-      <Section>
+    <Section>
+      <Container>
         <h2>
           My <Span>Skills</Span>
         </h2>
@@ -67,8 +67,8 @@ const Skills = () => {
             </Center>
           </ImgContainer>
         </FlexContainer>
-      </Section>
-    </Container>
+      </Container>
+    </Section>
   );
 };
 
