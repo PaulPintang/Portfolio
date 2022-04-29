@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Flex } from "../styles/Reusable.styled";
+import { Flex, Links } from "../styles/Reusable.styled";
 
 export const Section = styled.section`
   padding-bottom: 70px;
@@ -26,4 +26,10 @@ export const Description = styled.div`
   padding: 15px;
   margin: 15px 0;
 `;
-export const LinkToProject = styled.div``;
+export const LinkToProject = styled(Links)`
+  justify-content: flex-end;
+  gap: 10px;
+  i {
+    font-size: 17px;
+  }
+`;

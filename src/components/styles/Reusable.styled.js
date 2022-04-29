@@ -13,7 +13,8 @@ export const Center = styled.div`
 export const Flex = styled.div`
   display: flex;
   height: 100%;
-  justify-content: ${({ right }) => (right ? "flex-end" : "space-between")}};
+  justify-content: ${({ right, left }) =>
+    right ? "flex-end" : "space-between"}};
   align-items: center;
   gap: 15px;
 `;

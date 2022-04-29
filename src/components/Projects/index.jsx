@@ -1,5 +1,5 @@
 // import "./styles.css";
-import { Flex, Container, Span, Links } from "../styles/Reusable.styled.js";
+import { Flex, Container, Span } from "../styles/Reusable.styled.js";
 import {
   Section,
   ProjectContainer,
@@ -57,26 +57,24 @@ const Projects = () => {
             </Flex>
 
             <LinkToProject>
-              <Links>
-                <li>
-                  <a
-                    href="https://github.com/PaulPintang/Covid-19-Tracker-App"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://paulpintang.github.io/Covid-19-Tracker-App/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fas fa-external-link-alt"></i>
-                  </a>
-                </li>
-              </Links>
+              <li>
+                <a
+                  href="https://github.com/PaulPintang/Covid-19-Tracker-App"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://paulpintang.github.io/Covid-19-Tracker-App/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fas fa-external-link-alt"></i>
+                </a>
+              </li>
             </LinkToProject>
           </ProjectInfo>
         </ProjectContainer>
