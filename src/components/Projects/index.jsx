@@ -269,7 +269,7 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={img2} alt="" />
+              <img src={img4} alt="" />
             </a>
           </div>
         </ProjectContainer>
