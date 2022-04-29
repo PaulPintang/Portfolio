@@ -10,6 +10,13 @@ export const Section = styled.section`
     left: -10px;
     z-index: -1;
   }
+  h1 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+  }
   a {
     color: white;
     text-decoration: none;
@@ -44,4 +51,5 @@ export const ContactDetails = styled.div`
 
 export const FlexCenter = styled(Flex)`
   justify-content: center;
+  padding-top: 5px;
 `;

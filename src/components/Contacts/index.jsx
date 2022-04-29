@@ -1,4 +1,8 @@
 // import "./styles.css";
+import React from "react";
+import { GrMail } from "react-icons/gr";
+import { MdLocalPhone } from "react-icons/md";
+import { RiMessengerFill } from "react-icons/ri";
 import { Container, Span, Center } from "../styles/Reusable.styled";
 import {
   Section,
@@ -29,7 +33,7 @@ const Contacts = () => {
             </Msg>
             <ContactDetails>
               <FlexCenter>
-                <i className="fas fa-envelope"></i>
+                <GrMail />
                 <a
                   href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSBmlnSzdZvvqJFTGmvkLQrtwwqqkDRqdcstbDNQnqdtxvWpGStLHGsVbhGZcLlpLwHFMmXq"
                   target="_blank"
@@ -39,11 +43,11 @@ const Contacts = () => {
                 </a>
               </FlexCenter>
               <FlexCenter>
-                <i className="fas fa-phone"></i>
+                <MdLocalPhone />
                 <p>+639553054546</p>
               </FlexCenter>
               <FlexCenter>
-                <i className="fab fa-facebook-messenger"></i>
+                <RiMessengerFill />
                 <a
                   href="https://m.me/pauljustin.pintang"
                   target="_blank"
