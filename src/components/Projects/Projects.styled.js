@@ -25,8 +25,12 @@ export const Description = styled.div`
   box-shadow: 0 0px 5px 1px hsl(217deg 27% 15%);
   padding: 15px;
   margin: 15px 0;
+  p {
+    opacity: 1;
+  }
 `;
 export const LinkToProject = styled(Links)`
+  padding-top: 10px;
   justify-content: flex-end;
   gap: 10px;
   i {
