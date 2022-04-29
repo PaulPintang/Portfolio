@@ -1,5 +1,11 @@
 // import "./styles.css";
-import { Flex, Container, Span } from "../styles/Reusable.styled.js";
+import {
+  Flex,
+  Container,
+  Span,
+  Right,
+  Left,
+} from "../styles/Reusable.styled.js";
 import {
   Section,
   ProjectContainer,
@@ -30,12 +36,12 @@ const Projects = () => {
             </a>
           </div>
           <ProjectInfo right>
-            <div class="title">
+            <Right>
               <h4>
                 No.<Span>01</Span>
               </h4>
               <h3>Covid-19 Tracker</h3>
-            </div>
+            </Right>
 
             <Description>
               <p>
@@ -81,21 +87,25 @@ const Projects = () => {
 
         <ProjectContainer className="rev eal">
           <ProjectInfo left>
-            <div class="title">
+            <Left>
               <h4>
-                No.<Span>01</Span>
+                No.<Span>02</Span>
               </h4>
-              <h3>Covid-19 Tracker</h3>
-            </div>
+              <h3>Fylo Landing Page</h3>
+            </Left>
 
             <Description>
               <p>
-                This is my first project while learning javascript. I made this
-                Covid-19 Tracker app after learning how to use an API on a
-                website. Here's a link to the covid API that I used for this
-                project:
-                <a href="https://disease.sh" target="_blank" rel="noreferrer">
-                  <Span>Covid-19 API</Span>
+                This is a frontendmentor.io landing page challenge to help me
+                practice creating responsive websites. This task was quite
+                beneficial in terms of learning CSS best practices. Here's the
+                link to the challenge from their website:
+                <a
+                  href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Span>fylo-landing-page-challenge</Span>
                 </a>
               </p>
             </Description>
@@ -104,13 +114,12 @@ const Projects = () => {
               <small>HTML</small>
               <small>CSS</small>
               <small>JAVASCRIPT</small>
-              <small>Covid-19 API</small>
             </Flex>
 
             <LinkToProject>
               <li>
                 <a
-                  href="https://github.com/PaulPintang/Covid-19-Tracker-App"
+                  href="https://github.com/PaulPintang/Fylo-Landing-page"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -119,7 +128,7 @@ const Projects = () => {
               </li>
               <li>
                 <a
-                  href="https://paulpintang.github.io/Covid-19-Tracker-App/"
+                  href="https://festive-goldberg-678aaa.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >

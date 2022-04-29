@@ -33,13 +33,10 @@ export const ProjectInfo = styled.div`
   /* right: 180px; */
   right:  ${({ right, left }) => (right ? "180px" : left ? "-180px" : "")}};
   padding: 50px 0;
-  div.title {
-    text-align: right;
     h3 {
       font-size: 25px;
       font-weight: bold;
     }
-  }
 `;
 export const Description = styled.div`
   width: 450px;

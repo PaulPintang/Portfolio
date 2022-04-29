@@ -9,12 +9,18 @@ export const Container = styled.div`
 export const Center = styled.div`
   text-align: center;
 `;
+export const Right = styled.div`
+  text-align: right;
+`;
+export const Left = styled.div`
+  text-align: left;
+`;
 
 export const Flex = styled.div`
   display: flex;
   height: 100%;
   justify-content: ${({ right, left }) =>
-    right ? "flex-end" : left ? "" : "space-between"}};
+    right ? "flex-end" : left ? "flex-start" : "space-between"}};
   align-items: center;
   gap: 15px;
 `;
