@@ -1,4 +1,4 @@
-import "./styles.css";
+import React from "react";
 import { Container, Flex, Span, Center } from "../styles/Reusable.styled";
 import { Section, OfferCards } from "./Offer.styled";
 import responsive from "../../images/responsive.svg";
@@ -7,7 +7,7 @@ import team from "../../images/team.svg";
 
 const Offer = () => {
   return (
-    <Container>
+    <Container id="services">
       <Section>
         <Center>
           <h2>

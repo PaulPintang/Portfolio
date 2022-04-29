@@ -14,7 +14,7 @@ import {
 import qoute from "../../images/left-qoute.svg";
 const Contacts = () => {
   return (
-    <Section>
+    <Section id="contacts">
       <Container>
         <Wrapper>
           <Center>

@@ -19,7 +19,10 @@ export const Section = styled.section`
   }
   a {
     color: white;
-    text-decoration: none;
+    &:hover {
+      transition: color 0.12s ease-in;
+      color: #fd0037;
+    }
   }
 `;
 

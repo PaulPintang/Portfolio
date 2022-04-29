@@ -1,4 +1,4 @@
-// import "./styles.css";
+import React from "react";
 import { Center, Container, Span } from "../styles/Reusable.styled";
 import { Section, FlexContainer, ImgContainer } from "./Skills.styled";
 import html from "../../images/skills/html.svg";

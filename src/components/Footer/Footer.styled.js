@@ -12,7 +12,4 @@ export const FooterDiv = styled.div`
     border-top: 1px solid #1d283c;
     margin-bottom: 50px;
   }
-  a {
-    color: #b1b3b8;
-  }
 `;

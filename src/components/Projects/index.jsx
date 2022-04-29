@@ -16,7 +16,7 @@ import img4 from "../../images/projects/44.png";
 
 const Projects = () => {
   return (
-    <Section>
+    <Section id="projects">
       <Container>
         <h2>
           My <Span>Projects</Span>
