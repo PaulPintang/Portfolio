@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsGithub } from "react-icons/bs";
-import {
-  Container,
-  Flex,
-  Links,
-  Span,
-  Button,
-} from "../styles/Reusable.styled";
-import { Logo, Header } from "./Nav.styled";
+import { Flex, Links, Span, Button } from "../styles/Reusable.styled";
+import { Logo, Header, Headers } from "./Nav.styled";
 const Nav = () => {
+  const [navHeight, setNavHeight] = useState(false);
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= 2) {
+      setNavHeight(true);
+    } else {
+      setNavHeight(false);
+    }
+  });
+
   return (
-    <Header>
+    <Header className={navHeight ? "shrink" : ""}>
       <Flex>
         <Logo>
           <a href="https://paulpintang.netlify.app/" rel="noreferrer">
@@ -44,7 +47,7 @@ const Nav = () => {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#sda">
               <Button>RESUME</Button>
             </a>
           </li>

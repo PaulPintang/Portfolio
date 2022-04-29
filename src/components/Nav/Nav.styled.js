@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Header = styled.header`
   background-color: #0e1625;
   height: 110px;
+  /* height: ${({ shrink }) => (shrink ? "68px" : "110px")}; */
   position: -webkit-sticky;
   position: sticky;
   top: 0;
