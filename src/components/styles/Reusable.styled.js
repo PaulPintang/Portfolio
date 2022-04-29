@@ -18,7 +18,7 @@ export const Flex = styled.div`
   height: 100%;
   justify-content: ${({ center }) => (center ? "center" : "space-between")};
   align-items: center;
-  gap: 15px;
+  gap: ${({ center }) => (center ? "8px" : "15px")};
 `;
 export const Column = styled(Flex)`
   flex-direction: column;
