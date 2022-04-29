@@ -1,13 +1,15 @@
 import React from "react";
+import { Container, Flex, Center } from "../styles/Reusable.styled";
+import { FooterDiv } from "./Footer.styled";
 import "./styles.css";
 // import Wave from '../images/wave1.svg'
 const Footer = () => {
   return (
-    <div className="footer">
+    <FooterDiv>
       <hr></hr>
-      <div className="container">
-        <div className="footer-details">
-          <div className="flex">
+      <Container>
+        <Center>
+          <Flex center>
             <small>Designed by Paul Justine &copy; 2022</small>
             <a
               href="https://github.com/PaulPintang/Portfolio"
@@ -16,15 +18,15 @@ const Footer = () => {
             >
               <i className="fab fa-github"></i>
             </a>
-          </div>
+          </Flex>
           <small>Built using React.Js</small>
-          <div className="flex">
+          <Flex center>
             <i className="fas fa-map-marker-alt"></i>
             <small>Philippines</small>
-          </div>
-        </div>
-      </div>
-    </div>
+          </Flex>
+        </Center>
+      </Container>
+    </FooterDiv>
   );
 };
 

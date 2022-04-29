@@ -16,6 +16,9 @@ h3 {
 p {
   opacity: 0.5;
 }
+a{
+  text-decoration: none;
+}
 .reveal {
   position: relative;
   transform: translateY(50px);
