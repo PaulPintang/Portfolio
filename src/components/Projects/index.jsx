@@ -1,11 +1,5 @@
 // import "./styles.css";
-import {
-  Flex,
-  Container,
-  Span,
-  Right,
-  Left,
-} from "../styles/Reusable.styled.js";
+import { Flex, Container, Span, Right } from "../styles/Reusable.styled.js";
 import {
   Section,
   ProjectContainer,
@@ -25,7 +19,7 @@ const Projects = () => {
         <h2>
           My <Span>Projects</Span>
         </h2>
-        <ProjectContainer className="rev eal">
+        <ProjectContainer className="reveal">
           <div>
             <a
               href="https://paulpintang.github.io/Covid-19-Tracker-App/"
@@ -37,9 +31,12 @@ const Projects = () => {
           </div>
           <ProjectInfo right>
             <div>
-              <h4>
-                No.<Span>01</Span>
-              </h4>
+              <Right>
+                <h4>
+                  No.<Span>01</Span>
+                </h4>
+              </Right>
+
               <h3>Covid-19 Tracker</h3>
             </div>
 
@@ -55,7 +52,7 @@ const Projects = () => {
               </p>
             </Description>
 
-            <Flex right>
+            <Flex>
               <small>HTML</small>
               <small>CSS</small>
               <small>JAVASCRIPT</small>
@@ -85,7 +82,7 @@ const Projects = () => {
           </ProjectInfo>
         </ProjectContainer>
 
-        <ProjectContainer className="rev eal">
+        <ProjectContainer className="reveal">
           <ProjectInfo left>
             <div>
               <h4>
@@ -110,7 +107,7 @@ const Projects = () => {
               </p>
             </Description>
 
-            <Flex left>
+            <Flex>
               <small>HTML</small>
               <small>CSS</small>
               <small>JAVASCRIPT</small>
@@ -146,6 +143,72 @@ const Projects = () => {
               <img src={img2} alt="" />
             </a>
           </div>
+        </ProjectContainer>
+
+        <ProjectContainer className="reveal">
+          <div>
+            <a
+              href="https://sharp-heyrovsky-44e00e.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={img3} alt="" />
+            </a>
+          </div>
+          <ProjectInfo right>
+            <div>
+              <Right>
+                <h4>
+                  No.<Span>03</Span>
+                </h4>
+              </Right>
+
+              <h3>EasyBank Landing Page</h3>
+            </div>
+
+            <Description>
+              <p>
+                The frontendmentor.io website serves as a classroom setting for
+                me to improve my development skills. This project challenged me
+                to design the navigation bar from scratch. Here's the link to
+                the challenge from their website:
+                <a
+                  href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Span>easybank-landing-page-challenge</Span>
+                </a>
+              </p>
+            </Description>
+
+            <Flex>
+              <small>HTML</small>
+              <small>CSS</small>
+              <small>JAVASCRIPT</small>
+            </Flex>
+
+            <LinkToProject>
+              <li>
+                <a
+                  href="https://github.com/PaulPintang/easybank-landing-page"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://sharp-heyrovsky-44e00e.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fas fa-external-link-alt"></i>
+                </a>
+              </li>
+            </LinkToProject>
+          </ProjectInfo>
         </ProjectContainer>
       </Container>
     </Section>
