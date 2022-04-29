@@ -14,11 +14,11 @@ function App() {
       <GlobalStyles />
       <Nav />
       <Me />
-      {/* <Offer />
-      <Skills />
-      <Projects />
-      <Contacts />
-      <Footer /> */}
+      <Offer />
+      {/* <Skills /> */}
+      {/* <Projects /> */}
+      {/* <Contacts /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

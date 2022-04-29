@@ -6,6 +6,10 @@ export const Container = styled.div`
   padding: 0 25px;
 `;
 
+export const Center = styled.div`
+  text-align: center;
+`;
+
 export const Flex = styled.div`
   display: flex;
   height: 100%;

@@ -2,57 +2,15 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
-/* * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.5;
-  background-color: #0e1625;
-  color: #dddddd;
-}
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 25px;
-}
-.flex {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-span {
-  color: #fd0037;
-}
-ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 23px;
-}
-ul li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: #a8acb9;
-}
-h2 {
-  font-size: 30px;
-  font-weight: 400;
-}
-a.color {
-  color: black;
-}
-p {
-  opacity: 0.5;
-} */
+
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    p {
+      opacity: 0.5;
+    }
 .reveal {
   position: relative;
   transform: translateY(50px);

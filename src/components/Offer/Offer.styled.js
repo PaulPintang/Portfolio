@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  #services {
-    margin-bottom: 90px;
-  }
-  .offer-tag {
-    padding: 3px 0px 20px 0;
+  height: calc(100vh - 130px);
+  div {
     text-align: center;
-  }
-  .flex {
-    flex-wrap: wrap;
+    padding: 12px 0;
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    p {
+      opacity: 0.5;
+    }
   }
 `;
 

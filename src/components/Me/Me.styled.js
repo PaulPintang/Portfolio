@@ -6,7 +6,7 @@ export const Section = styled.section`
   -moz-animation: fadeIn linear 1.1s;
   -o-animation: fadeIn linear 1.1s;
   -ms-animation: fadeIn linear 1.1s;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 130px);
 `;
 
 export const TextAnimated = styled.p`
