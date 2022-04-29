@@ -56,17 +56,19 @@ export const StyledButton = styled(Button)`
   font-family: "Poppins", sans-serif;
   padding: 8px 18px;
   margin: 8px;
-  background-color:  ${({ red }) => (red ? "#f3f3f3" : "transparent")}};
-  color: ${({ red }) => (red ? "gray" : "white")}};
+  background-color: ${({ red }) => (red ? "#f3f3f3" : "transparent")};
+  color: ${({ red }) => (red ? "gray" : "white")};
   font-size: 10px;
   width: 151px;
   &:hover {
-    background-color: ${({ red }) => (red ? "#fd0037" : "white")}};
+    background-color: ${({ red }) => (red ? "#fd0037" : "white")};
   }
+
   &:hover {
-    color: ${({ red }) => (red ? "white" : "gray")}};
+    color: ${({ red }) => (red ? "white" : "gray")};
   }
+
   &:hover {
-    border:  ${({ red }) => (red ? "1px solid #fd0037" : "")}};
+    border: ${({ red }) => (red ? "1px solid #fd0037" : "")};
   }
 `;
