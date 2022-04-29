@@ -49,6 +49,11 @@ export const Description = styled.div`
   p {
     opacity: 1;
   }
+  a {
+    padding-left: 2px;
+    font-style: italic;
+    text-decoration: none;
+  }
 `;
 export const LinkToProject = styled(Links)`
   padding-top: 10px;
