@@ -5,14 +5,6 @@ export const Section = styled.section`
   div {
     text-align: center;
     padding: 12px 0;
-    h2 {
-      text-align: center;
-      font-size: 30px;
-      font-weight: 400;
-    }
-    p {
-      opacity: 0.5;
-    }
   }
 `;
 
