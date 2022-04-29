@@ -104,3 +104,7 @@ export const ProjectStyled = styled.div`
       opacity: 1;
     }
 `;
+
+export const Section = styled.section`
+  padding-bottom: 70px;
+`;

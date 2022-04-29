@@ -1,5 +1,6 @@
 // import "./styles.css";
-import { ProjectStyled } from "./Projects.styled";
+import { Container, Span } from "../styles/Reusable.styled.js";
+import { Section } from "./Projects.styled";
 import img1 from "../../images/projects/11.png";
 import img2 from "../../images/projects/22.png";
 import img3 from "../../images/projects/33.png";
@@ -7,10 +8,10 @@ import img4 from "../../images/projects/44.png";
 
 const Projects = () => {
   return (
-    <ProjectStyled className="projects" id="projects">
-      <div className="container">
+    <Section>
+      <Container>
         <h2>
-          My <span>Projects</span>
+          My <Span>Projects</Span>
         </h2>
         <div className="img-flex reveal">
           <div>
@@ -267,8 +268,8 @@ const Projects = () => {
             </a>
           </div>
         </div>
-      </div>
-    </ProjectStyled>
+      </Container>
+    </Section>
   );
 };
 
