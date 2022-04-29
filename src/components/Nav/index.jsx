@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BsGithub } from "react-icons/bs";
 import { Flex, Links, Span, Button } from "../styles/Reusable.styled";
-import { Logo, Header, Headers } from "./Nav.styled";
+import { Logo, Header, NavContainer } from "./Nav.styled";
 const Nav = () => {
   const [navHeight, setNavHeight] = useState(false);
   window.addEventListener("scroll", () => {

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Container } from "../styles/Reusable.styled";
 
 export const Header = styled.header`
   background-color: #0e1625;
@@ -9,10 +10,6 @@ export const Header = styled.header`
   top: 0;
   width: 100%;
   z-index: 1;
-
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 25px;
 
   animation: fadeIn linear 0.5s;
   -webkit-animation: fadeIn linear 0.5s;

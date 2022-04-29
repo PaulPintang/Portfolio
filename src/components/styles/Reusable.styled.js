@@ -19,6 +19,10 @@ export const Flex = styled.div`
   justify-content: ${({ center }) => (center ? "center" : "space-between")};
   align-items: center;
   gap: ${({ center }) => (center ? "8px" : "15px")};
+
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 25px;
 `;
 export const Column = styled(Flex)`
   flex-direction: column;
