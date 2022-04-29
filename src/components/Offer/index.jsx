@@ -15,7 +15,6 @@ const Offer = () => {
           </h2>
           <p>Create positive user experience</p>
         </Center>
-
         <Flex>
           <OfferCards className="reveal">
             <Center>

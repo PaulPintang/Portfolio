@@ -3,14 +3,19 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
 
-    h2 {
-      text-align: center;
-      font-size: 30px;
-      font-weight: 400;
-    }
-    p {
-      opacity: 0.5;
-    }
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+h3 {
+    font-weight: 400;
+    opacity: 0.9;
+    font-size: 1.2rem;
+}
+p {
+  opacity: 0.5;
+}
 .reveal {
   position: relative;
   transform: translateY(50px);

@@ -1,5 +1,6 @@
 // import "./styles.css";
-import { Section } from "./Skills.styled";
+import { Center, Container, Span } from "../styles/Reusable.styled";
+import { Section, FlexContainer, ImgContainer } from "./Skills.styled";
 import html from "../../images/skills/html.svg";
 import css from "../../images/skills/css-3.svg";
 import twc from "../../images/skills/tailwindcss.svg";
@@ -11,47 +12,63 @@ import react from "../../images/skills/react.png";
 
 const Skills = () => {
   return (
-    <Section className="my-skills">
-      <div className="container">
+    <Container>
+      <Section>
         <h2>
-          My <span>Skills</span>
+          My <Span>Skills</Span>
         </h2>
-        <div className="flex">
-          <div className="lg">
-            <img src={html} alt=""></img>
-            <p>HTML5</p>
-          </div>
-          <div className="lg">
-            <img src={css} alt=""></img>
-            <p>CSS</p>
-          </div>
-          <div className="lg">
-            <img src={twc} alt="" style={{ width: 50 }}></img>
-            <p>Tailwind CSS</p>
-          </div>
-          <div className="lg">
-            <img src={sass} alt=""></img>
-            <p>Sass</p>
-          </div>
-          <div className="lg">
-            <img src={js} alt=""></img>
-            <p>Javascript</p>
-          </div>
-          <div className="lg">
-            <img src={react} alt=""></img>
-            <p>React</p>
-          </div>
-          <div className="lg">
-            <img src={git} alt=""></img>
-            <p>Git</p>
-          </div>
-          <div className="lg">
-            <img src={netlify} alt=""></img>
-            <p>Netlify</p>
-          </div>
-        </div>
-      </div>
-    </Section>
+        <FlexContainer>
+          <ImgContainer>
+            <Center>
+              <img src={html} alt=""></img>
+              <p>HTML5</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={css} alt=""></img>
+              <p>CSS</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={twc} alt="" style={{ width: 50 }}></img>
+              <p>Tailwind CSS</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={sass} alt=""></img>
+              <p>Sass</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={js} alt=""></img>
+              <p>Javascript</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={react} alt=""></img>
+              <p>React</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={git} alt=""></img>
+              <p>Git</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={netlify} alt=""></img>
+              <p>Netlify</p>
+            </Center>
+          </ImgContainer>
+        </FlexContainer>
+      </Section>
+    </Container>
   );
 };
 

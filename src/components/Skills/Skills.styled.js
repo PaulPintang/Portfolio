@@ -1,29 +1,31 @@
 import styled from "styled-components";
+import { Flex } from "../styles/Reusable.styled";
 
 export const Section = styled.section`
-  text-align: center;
+  padding: 70px 0;
   h2 {
-    font-size: 30px;
+    padding-bottom: 45px;
   }
-  .flex {
-    width: 670px;
-    margin: auto;
-    padding: 45px 0;
-    flex-wrap: wrap;
-    .lg {
-      transition: transform 0.2s ease-in;
-      margin-bottom: 12px;
-      &:hover {
-        transform: translateY(-11px);
-        cursor: pointer;
-      }
-      img {
-        width: 40px;
-        height: 40px;
-        &:hover {
-          cursor: pointer;
-        }
-      }
+`;
+
+export const FlexContainer = styled(Flex)`
+  width: 670px;
+  margin: auto;
+  flex-wrap: wrap;
+`;
+
+export const ImgContainer = styled.div`
+  transition: transform 0.2s ease-in;
+  margin-bottom: 12px;
+  &:hover {
+    transform: translateY(-11px);
+    cursor: pointer;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+    &:hover {
+      cursor: pointer;
     }
   }
 `;
