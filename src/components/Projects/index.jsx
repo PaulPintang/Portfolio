@@ -44,7 +44,7 @@ const Projects = () => {
                 website. Here's a link to the covid API that I used for this
                 project:
                 <a href="https://disease.sh" target="_blank" rel="noreferrer">
-                  Covid-19 API
+                  <Span>Covid-19 API</Span>
                 </a>
               </p>
             </Description>

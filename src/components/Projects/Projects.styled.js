@@ -8,8 +8,29 @@ export const Section = styled.section`
   }
 `;
 
-export const ProjectContainer = styled(Flex)``;
+export const ProjectContainer = styled(Flex)`
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin: auto;
+  position: relative;
+  img {
+    transition: transform 0.2s ease-in;
+    &:hover {
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      transform: translateY(-9px);
+    }
+  }
+`;
 export const ProjectInfo = styled.div`
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  position: relative;
+  right: 180px;
+  padding: 50px 0;
   div.title {
     text-align: right;
     h3 {
