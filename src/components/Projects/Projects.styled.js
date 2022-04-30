@@ -70,6 +70,10 @@ export const Description = styled.div`
   }
   @media (max-width: 768px) {
     width: 100%;
+    p {
+      font-size: 0.97rem;
+      text-align: center;
+    }
   }
 `;
 export const LinkToProject = styled(Links)`
