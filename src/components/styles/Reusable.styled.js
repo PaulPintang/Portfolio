@@ -20,9 +20,9 @@ export const Flex = styled.div`
   align-items: center;
   gap: ${({ center }) => (center ? "8px" : "15px")};
 
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 25px;
+  max-width: ${({ contain }) => (contain ? "1100px" : "")};
+  margin: ${({ contain }) => (contain ? "auto" : "0")};
+  padding: ${({ contain }) => (contain ? "0 25px" : "0")};
 `;
 export const Column = styled(Flex)`
   flex-direction: column;

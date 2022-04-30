@@ -54,7 +54,7 @@ const Projects = () => {
               </p>
             </Description>
 
-            <Flex>
+            <Flex right>
               <small>HTML</small>
               <small>CSS</small>
               <small>JAVASCRIPT</small>
@@ -109,7 +109,7 @@ const Projects = () => {
               </p>
             </Description>
 
-            <Flex>
+            <Flex left>
               <small>HTML</small>
               <small>CSS</small>
               <small>JAVASCRIPT</small>
@@ -184,7 +184,7 @@ const Projects = () => {
               </p>
             </Description>
 
-            <Flex>
+            <Flex right>
               <small>HTML</small>
               <small>CSS</small>
               <small>JAVASCRIPT</small>
@@ -238,7 +238,7 @@ const Projects = () => {
               </p>
             </Description>
 
-            <Flex>
+            <Flex left>
               <small>HTML</small>
               <small>CSS</small>
               <small>JAVASCRIPT</small>

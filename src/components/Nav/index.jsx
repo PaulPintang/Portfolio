@@ -14,7 +14,7 @@ const Nav = () => {
 
   return (
     <Header className={navHeight ? "shrink" : ""}>
-      <Flex>
+      <Flex contain>
         <Logo>
           <a href="https://paulpintang.netlify.app/" rel="noreferrer">
             <h1>
