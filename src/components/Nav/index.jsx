@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import { BsGithub } from "react-icons/bs";
-import {
-  Flex,
-  Links,
-  Span,
-  Button,
-  ToggleNav,
-} from "../styles/Reusable.styled";
-import { Logo, Header } from "./Nav.styled";
+import { Flex, Span, Button, ToggleNav } from "../styles/Reusable.styled";
+import { Logo, Header, NavLinks, NavBar } from "./Nav.styled";
 const Nav = () => {
   const [navHeight, setNavHeight] = useState(false);
   window.addEventListener("scroll", () => {
@@ -20,7 +14,7 @@ const Nav = () => {
 
   return (
     <Header className={navHeight ? "shrink" : ""}>
-      <Flex contain>
+      <NavBar contain>
         <Logo>
           <a href="https://paulpintang.netlify.app/" rel="noreferrer">
             <h1>
@@ -28,7 +22,7 @@ const Nav = () => {
             </h1>
           </a>
         </Logo>
-        <Links nav>
+        <NavLinks>
           <li>
             <a href="#services">
               <Span>S</Span>
@@ -47,17 +41,23 @@ const Nav = () => {
               ontacts
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="https://github.com/PaulPintang" rel="noreferrer">
               <BsGithub size={16} />
+            </a>
+          </li> */}
+          <li>
+            <a href="#services">
+              <Span>G</Span>
+              ithub
             </a>
           </li>
           <li>
             <a href="#sda">
-              <Button>RESUME</Button>
+              <Button nav>RESUME</Button>
             </a>
           </li>
-        </Links>
+        </NavLinks>
         <ToggleNav>
           <div>
             <span></span>
@@ -65,7 +65,7 @@ const Nav = () => {
             <span></span>
           </div>
         </ToggleNav>
-      </Flex>
+      </NavBar>
     </Header>
   );
 };

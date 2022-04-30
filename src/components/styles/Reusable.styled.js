@@ -32,7 +32,7 @@ export const Flex = styled.div`
 
 export const Button = styled.button`
   background: transparent;
-  color: #fff;
+  color: #a8acb9;
   border: 1px solid #fff;
   font-size: 10px;
   padding: 6px 17px;
@@ -46,6 +46,10 @@ export const Button = styled.button`
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
+  }
+  @media (max-width: 768px) {
+    padding: ${({ nav }) => (nav ? "8px 15px" : "")};
+    font-size: ${({ nav }) => (nav ? "15px" : "")};
   }
 `;
 
@@ -69,10 +73,6 @@ export const Links = styled.ul`
         margin-top: 6px;
       }
     }
-  }
-
-  @media (max-width: 768px) {
-    display: ${({ nav }) => nav && "none"};
   }
 `;
 
@@ -154,6 +154,7 @@ export const ScrollTitle = styled.span`
 `;
 
 export const ToggleNav = styled.div`
+  display: none;
   div {
     display: flex;
     flex-direction: column;
@@ -163,5 +164,8 @@ export const ToggleNav = styled.div`
       background-color: rgb(199, 194, 194);
       height: 1px;
     }
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
