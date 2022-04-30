@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { BsGithub } from "react-icons/bs";
+import { MdOutlineClose } from "react-icons/md";
 import { Flex, Span, Button, ToggleNav } from "../styles/Reusable.styled";
-import { Logo, Header, NavLinks, NavBar } from "./Nav.styled";
+import { Logo, Header, NavLinks, NavBar, Close } from "./Nav.styled";
 const Nav = () => {
   const [navHeight, setNavHeight] = useState(false);
   window.addEventListener("scroll", () => {
@@ -23,6 +24,9 @@ const Nav = () => {
           </a>
         </Logo>
         <NavLinks>
+          <Close>
+            <MdOutlineClose />
+          </Close>
           <li>
             <a href="#services">
               <Span>S</Span>

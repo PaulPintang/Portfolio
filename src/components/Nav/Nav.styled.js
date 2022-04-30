@@ -9,6 +9,7 @@ export const Header = styled.header`
   width: 100%;
   z-index: 1;
   transition: height 0.4s ease;
+  height: 100vh;
 
   /* animation: fadeIn linear 0.5s;
   -webkit-animation: fadeIn linear 0.5s;
@@ -52,5 +53,19 @@ export const Logo = styled.div`
   }
   @media (max-width: 768px) {
     display: none;
+  }
+`;
+
+export const Close = styled.div`
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  svg {
+    font-size: 28px;
+    color: white;
+  }
+  @media (max-width: 768px) {
+    display: unset;
   }
 `;
