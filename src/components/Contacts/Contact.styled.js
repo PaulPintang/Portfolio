@@ -24,6 +24,11 @@ export const Section = styled.section`
       color: #fd0037;
     }
   }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
 `;
 
 export const Wrapper = styled.div`

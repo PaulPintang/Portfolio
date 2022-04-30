@@ -12,4 +12,9 @@ export const FooterDiv = styled.div`
     border-top: 1px solid #1d283c;
     margin-bottom: 50px;
   }
+  @media (max-width: 768px) {
+    small {
+      font-size: 12px;
+    }
+  }
 `;
