@@ -23,6 +23,10 @@ export const Flex = styled.div`
   max-width: ${({ contain }) => (contain ? "1100px" : "")};
   margin: ${({ contain }) => (contain ? "auto" : "0")};
   padding: ${({ contain }) => (contain ? "0 25px" : "0")};
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Button = styled.button`

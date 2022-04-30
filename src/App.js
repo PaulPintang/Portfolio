@@ -14,7 +14,7 @@ function App() {
       <GlobalStyles />
       {/* <Nav /> */}
       <Me />
-      {/* <Offer /> */}
+      <Offer />
       {/* <Skills /> */}
       {/* <Projects /> */}
       {/* <Contacts /> */}
