@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { BsGithub } from "react-icons/bs";
 import { MdOutlineClose } from "react-icons/md";
-import { Flex, Span, Button, ToggleNav } from "../styles/Reusable.styled";
+import { Span, Button, ToggleNav } from "../styles/Reusable.styled";
 import { Logo, Header, NavLinks, NavBar, Close } from "./Nav.styled";
 const Nav = () => {
   const [navHeight, setNavHeight] = useState(false);
+  const [showNav, setShowNav] = useState(false);
   window.addEventListener("scroll", () => {
     if (window.scrollY >= 2) {
       setNavHeight(true);
@@ -13,8 +14,17 @@ const Nav = () => {
     }
   });
 
+  const handleShow = () => {
+    setShowNav(!showNav);
+  };
+  if (showNav) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "unset";
+  }
+
   return (
-    <Header className={navHeight ? "shrink" : ""}>
+    <Header className={navHeight ? "shrink" : ""} showNav={showNav}>
       <NavBar contain>
         <Logo>
           <a href="https://paulpintang.netlify.app/" rel="noreferrer">
@@ -23,45 +33,48 @@ const Nav = () => {
             </h1>
           </a>
         </Logo>
-        <NavLinks>
-          <Close>
-            <MdOutlineClose />
-          </Close>
-          <li>
-            <a href="#services">
-              <Span>S</Span>
-              ervices
-            </a>
-          </li>
-          <li>
-            <a href="#projects">
-              <Span>P</Span>
-              rojects
-            </a>
-          </li>
-          <li>
-            <a href="#contacts">
-              <Span>C</Span>
-              ontacts
-            </a>
-          </li>
-          {/* <li>
+        <Close onClick={handleShow}>
+          <MdOutlineClose />
+        </Close>
+        {showNav && (
+          <NavLinks showNav={showNav}>
+            <li>
+              <a href="#services">
+                <Span>S</Span>
+                ervices
+              </a>
+            </li>
+            <li>
+              <a href="#projects">
+                <Span>P</Span>
+                rojects
+              </a>
+            </li>
+            <li>
+              <a href="#contacts">
+                <Span>C</Span>
+                ontacts
+              </a>
+            </li>
+            {/* <li>
             <a href="https://github.com/PaulPintang" rel="noreferrer">
               <BsGithub size={16} />
             </a>
           </li> */}
-          <li>
-            <a href="#services">
-              <Span>G</Span>
-              ithub
-            </a>
-          </li>
-          <li>
-            <a href="#sda">
-              <Button nav>RESUME</Button>
-            </a>
-          </li>
-        </NavLinks>
+            <li>
+              <a href="#services">
+                <Span>G</Span>
+                ithub
+              </a>
+            </li>
+            <li>
+              <a href="#sda">
+                <Button nav>RESUME</Button>
+              </a>
+            </li>
+          </NavLinks>
+        )}
+
         <ToggleNav>
           <div>
             <span></span>

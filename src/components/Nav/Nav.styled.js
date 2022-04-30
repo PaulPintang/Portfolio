@@ -9,7 +9,7 @@ export const Header = styled.header`
   width: 100%;
   z-index: 1;
   transition: height 0.4s ease;
-  height: 100vh;
+  height: ${({ showNav }) => (showNav ? "100vh" : "")};
 
   /* animation: fadeIn linear 0.5s;
   -webkit-animation: fadeIn linear 0.5s;
@@ -28,7 +28,7 @@ export const Header = styled.header`
 export const NavLinks = styled(Links)`
   @media (max-width: 768px) {
     /* display: ; */
-    flex-direction: column;
+    flex-direction: ${({ showNav }) => (showNav ? "column" : "")};
     li {
       a {
         font-size: 35px;
@@ -39,7 +39,7 @@ export const NavLinks = styled(Links)`
 
 export const NavBar = styled(Flex)`
   @media (max-width: 768px) {
-    height: 100vh;
+    height: ${({ showNav }) => (showNav ? "100vh" : "")};
     align-items: center;
     justify-content: center;
   }
