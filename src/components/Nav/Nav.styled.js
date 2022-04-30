@@ -4,10 +4,10 @@ import { Container } from "../styles/Reusable.styled";
 export const Header = styled.header`
   background-color: #0e1625;
   height: 110px;
-  /* height: ${({ shrink }) => (shrink ? "68px" : "110px")}; */
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   z-index: 1;
 
