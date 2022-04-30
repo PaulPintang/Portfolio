@@ -12,6 +12,13 @@ export const FlexContainer = styled(Flex)`
   width: 670px;
   margin: auto;
   flex-wrap: wrap;
+  @media (max-width: 768px) {
+    justify-content: center;
+    flex-direction: unset;
+    width: 100%;
+    gap: 0;
+    row-gap: 5px;
+  }
 `;
 
 export const ImgContainer = styled.div`
@@ -27,5 +34,8 @@ export const ImgContainer = styled.div`
     &:hover {
       cursor: pointer;
     }
+  }
+  @media (max-width: 768px) {
+    width: 110px;
   }
 `;
