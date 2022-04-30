@@ -5,6 +5,9 @@ export const Section = styled.section`
   div {
     padding-bottom: 12px;
   }
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 `;
 
 export const OfferCards = styled.div`

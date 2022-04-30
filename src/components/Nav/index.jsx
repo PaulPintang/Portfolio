@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { BsGithub } from "react-icons/bs";
-import { Flex, Links, Span, Button } from "../styles/Reusable.styled";
+import {
+  Flex,
+  Links,
+  Span,
+  Button,
+  ToggleNav,
+} from "../styles/Reusable.styled";
 import { Logo, Header } from "./Nav.styled";
 const Nav = () => {
   const [navHeight, setNavHeight] = useState(false);
@@ -22,7 +28,7 @@ const Nav = () => {
             </h1>
           </a>
         </Logo>
-        <Links>
+        {/* <Links>
           <li>
             <a href="#services">
               <Span>S</Span>
@@ -51,7 +57,14 @@ const Nav = () => {
               <Button>RESUME</Button>
             </a>
           </li>
-        </Links>
+        </Links> */}
+        <ToggleNav>
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </ToggleNav>
       </Flex>
     </Header>
   );

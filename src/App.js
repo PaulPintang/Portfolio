@@ -12,9 +12,9 @@ function App() {
   return (
     <div>
       <GlobalStyles />
-      {/* <Nav /> */}
-      {/* <Me />
-      <Offer /> */}
+      <Nav />
+      <Me />
+      <Offer />
       <Skills />
       <Projects />
       <Contacts />

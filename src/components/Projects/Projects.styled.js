@@ -49,6 +49,7 @@ export const ProjectInfo = styled.div`
     align-items: center;
     right: 0;
     padding: 0;
+    padding-bottom: 20px;
     order: 2;
     display: flex;
   }

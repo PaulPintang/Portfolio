@@ -25,7 +25,8 @@ export const Flex = styled.div`
   padding: ${({ contain }) => (contain ? "0 25px" : "0")};
 
   @media (max-width: 768px) {
-    flex-direction: ${({ right, left }) => (right && left ? "column" : "")};
+    flex-direction: ${({ right, left, center }) =>
+      right || left ? "auto" : center ? "row" : "column"};
   }
 `;
 
@@ -148,4 +149,15 @@ export const ScrollTitle = styled.span`
   letter-spacing: 0.1em;
 `;
 
-export const ToggleNav = styled.div``;
+export const ToggleNav = styled.div`
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    span {
+      width: 23px;
+      background-color: rgb(199, 194, 194);
+      height: 1px;
+    }
+  }
+`;
