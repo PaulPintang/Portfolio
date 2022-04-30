@@ -2,7 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
-
+ #scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+#scrollbar::-webkit-scrollbar-thumb {
+  background-color: #2a3448;
+  border-radius: 10px;
+}
 h2 {
   text-align: center;
   font-size: 30px;

@@ -25,8 +25,8 @@ export const Flex = styled.div`
   padding: ${({ contain }) => (contain ? "0 25px" : "0")};
 
   @media (max-width: 768px) {
-    flex-direction: ${({ right, left, center }) =>
-      right || left ? "auto" : center ? "row" : "column"};
+    flex-direction: ${({ right, left, center, contain }) =>
+      right || left ? "auto" : center || contain ? "row" : "column"};
   }
 `;
 
@@ -69,6 +69,10 @@ export const Links = styled.ul`
         margin-top: 6px;
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    display: ${({ nav }) => nav && "none"};
   }
 `;
 

@@ -28,7 +28,7 @@ const Nav = () => {
             </h1>
           </a>
         </Logo>
-        {/* <Links>
+        <Links nav>
           <li>
             <a href="#services">
               <Span>S</Span>
@@ -57,7 +57,7 @@ const Nav = () => {
               <Button>RESUME</Button>
             </a>
           </li>
-        </Links> */}
+        </Links>
         <ToggleNav>
           <div>
             <span></span>
