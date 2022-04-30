@@ -25,7 +25,7 @@ export const Flex = styled.div`
   padding: ${({ contain }) => (contain ? "0 25px" : "0")};
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: ${({ right, left }) => (right && left ? "column" : "")};
   }
 `;
 

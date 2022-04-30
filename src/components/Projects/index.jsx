@@ -21,7 +21,7 @@ const Projects = () => {
         <h2>
           My <Span>Projects</Span>
         </h2>
-        <ProjectContainer className="reveal">
+        <ProjectContainer className="">
           <div>
             <a
               href="https://paulpintang.github.io/Covid-19-Tracker-App/"
@@ -84,7 +84,7 @@ const Projects = () => {
           </ProjectInfo>
         </ProjectContainer>
 
-        <ProjectContainer className="reveal">
+        <ProjectContainer className="">
           <ProjectInfo left>
             <div>
               <h4>
@@ -147,7 +147,7 @@ const Projects = () => {
           </div>
         </ProjectContainer>
 
-        <ProjectContainer className="reveal">
+        <ProjectContainer className="">
           <div>
             <a
               href="https://sharp-heyrovsky-44e00e.netlify.app/"
@@ -213,7 +213,7 @@ const Projects = () => {
           </ProjectInfo>
         </ProjectContainer>
 
-        <ProjectContainer className="reveal">
+        <ProjectContainer className="">
           <ProjectInfo left>
             <div>
               <h4>

@@ -24,6 +24,13 @@ export const ProjectContainer = styled(Flex)`
       transform: translateY(-9px);
     }
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
 `;
 export const ProjectInfo = styled.div`
   display: flex;
@@ -36,6 +43,11 @@ export const ProjectInfo = styled.div`
   h3 {
     font-size: 25px;
     font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    align-items: center;
+    right: 0;
+    padding: 0;
   }
 `;
 export const Description = styled.div`
@@ -51,6 +63,9 @@ export const Description = styled.div`
   a {
     padding-left: 2px;
     font-style: italic;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 export const LinkToProject = styled(Links)`
