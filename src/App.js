@@ -12,13 +12,13 @@ function App() {
   return (
     <div>
       <GlobalStyles />
-      <Nav />
+      {/* <Nav /> */}
       <Me />
-      <Offer />
-      <Skills />
-      <Projects />
-      <Contacts />
-      <Footer />
+      {/* <Offer /> */}
+      {/* <Skills /> */}
+      {/* <Projects /> */}
+      {/* <Contacts /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -1,13 +1,10 @@
 import styled from "styled-components";
-import { Container } from "../styles/Reusable.styled";
 
 export const Header = styled.header`
   background-color: #0e1625;
   height: 110px;
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   z-index: 1;
 

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Button } from "../styles/Reusable.styled";
+import { Button, Flex } from "../styles/Reusable.styled";
+
 export const Section = styled.section`
   animation: fadeIn linear 1.1s;
   -webkit-animation: fadeIn linear 1.1s;
@@ -8,6 +9,25 @@ export const Section = styled.section`
   -ms-animation: fadeIn linear 1.1s;
   height: calc(100vh - 80px);
   margin-top: 80px;
+  text-align: center;
+`;
+
+export const Column = styled(Flex)`
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  h1 {
+    font-size: 4.2rem;
+    font-variant: small-caps;
+    font-weight: 200;
+    letter-spacing: 4px;
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1.1;
+    }
+  }
 `;
 
 export const TextAnimated = styled.p`
@@ -38,6 +58,10 @@ export const TextAnimated = styled.p`
     40% {
       text-shadow: 0 0 8px #fff;
     }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
   }
 `;
 

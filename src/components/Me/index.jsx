@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Container,
-  Column,
   Bolder,
   ScrollContainer,
   ScrollInner,
@@ -9,7 +8,13 @@ import {
   ScrollTitle,
   ArrowDown,
 } from "../styles/Reusable.styled";
-import { Section, TextAnimated, BtnControl, StyledButton } from "./Me.styled";
+import {
+  Section,
+  Column,
+  TextAnimated,
+  BtnControl,
+  StyledButton,
+} from "./Me.styled";
 
 const Me = () => {
   return (

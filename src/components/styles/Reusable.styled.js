@@ -24,16 +24,6 @@ export const Flex = styled.div`
   margin: ${({ contain }) => (contain ? "auto" : "0")};
   padding: ${({ contain }) => (contain ? "0 25px" : "0")};
 `;
-export const Column = styled(Flex)`
-  flex-direction: column;
-  justify-content: center;
-  h1 {
-    font-size: 4.2rem;
-    font-variant: small-caps;
-    font-weight: 200;
-    letter-spacing: 4px;
-  }
-`;
 
 export const Button = styled.button`
   background: transparent;
@@ -153,3 +143,5 @@ export const ScrollTitle = styled.span`
   font-weight: bold;
   letter-spacing: 0.1em;
 `;
+
+export const ToggleNav = styled.div``;
