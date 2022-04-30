@@ -26,6 +26,7 @@ export const ProjectContainer = styled(Flex)`
   }
 
   @media (max-width: 768px) {
+    flex-direction: column;
     width: 100%;
     img {
       width: 100%;
@@ -48,6 +49,8 @@ export const ProjectInfo = styled.div`
     align-items: center;
     right: 0;
     padding: 0;
+    order: 2;
+    display: flex;
   }
 `;
 export const Description = styled.div`
@@ -57,6 +60,7 @@ export const Description = styled.div`
   box-shadow: 0 0px 5px 1px hsl(217deg 27% 15%);
   padding: 15px;
   margin: 15px 0;
+
   p {
     opacity: 1;
   }
