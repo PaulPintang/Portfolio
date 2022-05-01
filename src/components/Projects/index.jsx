@@ -228,7 +228,7 @@ const Projects = () => {
                 <h4>
                   No.<Span>04</Span>
                 </h4>
-                <h3>Social Media Dashboard</h3>
+                <h3>Loopstudios Landing Page</h3>
               </div>
 
               <Description>
@@ -239,11 +239,11 @@ const Projects = () => {
                   implementation. Here's the link to the challenge on their
                   website:
                   <a
-                    href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
+                    href="https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Span>social-media-dashboard-challenge</Span>
+                    <Span>loopstudios-landing-page-challenge</Span>
                   </a>
                 </p>
               </Description>
@@ -257,7 +257,7 @@ const Projects = () => {
               <LinkToProject>
                 <li>
                   <a
-                    href="https://github.com/PaulPintang/Social-media-dashboard"
+                    href="https://github.com/PaulPintang/loopstudios"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -266,7 +266,7 @@ const Projects = () => {
                 </li>
                 <li>
                   <a
-                    href="https://socialllll-media-dashboard.netlify.app/"
+                    href="https://friendly-joliot-d759bc.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -277,7 +277,7 @@ const Projects = () => {
             </ProjectInfo>
             <div>
               <a
-                href="https://socialllll-media-dashboard.netlify.app/"
+                href="https://friendly-joliot-d759bc.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
