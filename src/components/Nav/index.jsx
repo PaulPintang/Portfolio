@@ -32,11 +32,11 @@ const Nav = () => {
   // const handleShow = () => {
   //   setShowNav(!showNav);
   // };
-  // if (showNav) {
-  //   document.body.style.overflow = "hidden";
-  // } else {
-  //   document.body.style.overflow = "unset";
-  // }
+  if (showMenu) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "unset";
+  }
 
   return (
     <Header navHeight={navHeight} showMenu={showMenu}>
@@ -50,10 +50,6 @@ const Nav = () => {
             </a>
           </Logo>
         )}
-
-        {/* <Close>
-          <MdOutlineClose />
-        </Close> */}
         {!showMenu ? (
           <>
             <ToggleNav onClick={() => setShowMenu(true)}>
