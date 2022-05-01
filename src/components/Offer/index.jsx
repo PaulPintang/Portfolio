@@ -1,4 +1,7 @@
 import React from "react";
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
+
 import { Container, Flex, Span, Center } from "../styles/Reusable.styled";
 import { Section, OfferCards } from "./Offer.styled";
 import responsive from "../../images/responsive.svg";
@@ -6,6 +9,16 @@ import design from "../../images/design.svg";
 import team from "../../images/team.svg";
 
 const Offer = () => {
+  const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+`;
   return (
     <Container id="services">
       <Section>
@@ -16,15 +29,18 @@ const Offer = () => {
           <p>Create positive user experience</p>
         </Center>
         <Flex>
-          <OfferCards className="">
-            <Center>
-              <img src={responsive} alt="" />
-              <h3>Responsive Website</h3>
-              <p>
-                Develop a responsive website layout for a better user experience
-              </p>
-            </Center>
-          </OfferCards>
+          <Reveal keyframes={customAnimation}>
+            <OfferCards className="">
+              <Center>
+                <img src={responsive} alt="" />
+                <h3>Responsive Website</h3>
+                <p>
+                  Develop a responsive website layout for a better user
+                  experience
+                </p>
+              </Center>
+            </OfferCards>
+          </Reveal>
           <OfferCards className="">
             <Center>
               <img src={design} alt="" />
@@ -35,16 +51,18 @@ const Offer = () => {
               </p>
             </Center>
           </OfferCards>
-          <OfferCards className="">
-            <Center>
-              <img src={team} alt="" />
-              <h3>Team Collaboration</h3>
-              <p>
-                Can work as part of a team and has outstanding collaboration
-                skills.
-              </p>
-            </Center>
-          </OfferCards>
+          <Reveal keyframes={customAnimation}>
+            <OfferCards className="">
+              <Center>
+                <img src={team} alt="" />
+                <h3>Team Collaboration</h3>
+                <p>
+                  Can work as part of a team and has outstanding collaboration
+                  skills.
+                </p>
+              </Center>
+            </OfferCards>
+          </Reveal>
         </Flex>
       </Section>
     </Container>
