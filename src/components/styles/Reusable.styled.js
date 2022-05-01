@@ -140,15 +140,19 @@ export const ScrollTitle = styled.span`
 `;
 
 export const ToggleNav = styled.div`
-  display: ${({ showMenu }) => showMenu && "none"};
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    span {
-      width: 23px;
-      background-color: rgb(199, 194, 194);
-      height: 1px;
+  display: none;
+  @media (max-width: 768px) {
+    /* display: ${({ click }) => (click ? "none" : "")}; */
+    display: unset;
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      span {
+        width: 23px;
+        background-color: rgb(199, 194, 194);
+        height: 1px;
+      }
     }
   }
 `;

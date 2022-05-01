@@ -5,7 +5,7 @@ import { Span, Button, ToggleNav } from "../styles/Reusable.styled";
 import { Logo, Header, NavLinks, NavBar, Close } from "./Nav.styled";
 const Nav = () => {
   const [navHeight, setNavHeight] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
   const [click, setClick] = useState(false);
 
   useEffect(() => {
@@ -24,10 +24,9 @@ const Nav = () => {
   const handleShowMenu = () => {
     if (window.innerWidth <= 768) {
       setShowMenu(false);
-      setClick(false);
+      // setClick(false);
     } else {
       setShowMenu(true);
-      setClick(false);
     }
   };
 
@@ -55,48 +54,78 @@ const Nav = () => {
             </a>
           </Logo>
         )}
-        <ToggleNav onClick={handleClick} showMenu={showMenu}>
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </ToggleNav>
-        {click && (
+
+        {click ? (
           <Close onClick={handleClick}>
             <MdOutlineClose />
           </Close>
+        ) : (
+          <ToggleNav onClick={handleClick}>
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </ToggleNav>
         )}
 
-        <NavLinks showMenu={showMenu}>
+        <NavLinks click={click}>
           <li>
-            <a href="#services">
+            <a
+              href="#services"
+              onClick={() => {
+                setClick(false);
+                setShowMenu(true);
+              }}
+            >
               <Span>S</Span>
               ervices
             </a>
           </li>
           <li>
-            <a href="#projects">
+            <a
+              href="#projects"
+              onClick={() => {
+                setClick(false);
+                setShowMenu(true);
+              }}
+            >
               <Span>P</Span>
               rojects
             </a>
           </li>
           <li>
-            <a href="#contacts">
+            <a
+              href="#contacts"
+              onClick={() => {
+                setClick(false);
+                setShowMenu(true);
+              }}
+            >
               <Span>C</Span>
               ontacts
             </a>
           </li>
           {click ? (
             <li>
-              <a href="#services">
+              <a
+                href="#services"
+                onClick={() => {
+                  setClick(false);
+                  setShowMenu(true);
+                }}
+              >
                 <Span>G</Span>
                 ithub
               </a>
             </li>
           ) : (
             <li>
-              <a href="https://github.com/PaulPintang" rel="noreferrer">
+              <a
+                href="https://github.com/PaulPintang"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <BsGithub size={16} />
               </a>
             </li>

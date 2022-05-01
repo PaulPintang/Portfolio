@@ -38,7 +38,6 @@ p {
 a{
   text-decoration: none;
 }
-
 #wrapper {
   display: table;
   width: 100%;

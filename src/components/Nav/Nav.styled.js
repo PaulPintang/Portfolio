@@ -24,8 +24,8 @@ export const Header = styled.header`
 `;
 
 export const NavLinks = styled(Links)`
-  display: ${({ showMenu }) => !showMenu && "none"};
   @media (max-width: 768px) {
+    display: ${({ click }) => (!click ? "none" : "")};
     flex-direction: column;
     li {
       a {
