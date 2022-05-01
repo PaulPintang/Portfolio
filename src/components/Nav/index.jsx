@@ -132,7 +132,7 @@ const Nav = () => {
           )}
 
           <li>
-            <a href="#sda">
+            <a href="https://drive.google.com/file/d/1g6palLjOPwLrxL2AjSK3oEPE_HwBdD-x/view?usp=sharing">
               <Button nav>RESUME</Button>
             </a>
           </li>
