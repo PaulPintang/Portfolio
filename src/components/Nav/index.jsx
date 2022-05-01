@@ -24,7 +24,7 @@ const Nav = () => {
   }
 
   return (
-    <Header className={navHeight ? "shrink" : ""} showNav={showNav}>
+    <Header navHeight={navHeight} showNav={showNav}>
       <NavBar contain>
         <Logo>
           <a href="https://paulpintang.netlify.app/" rel="noreferrer">
