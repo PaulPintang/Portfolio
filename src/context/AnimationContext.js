@@ -8,12 +8,12 @@ export function AnimationProvider({ children }) {
   const revealAnimation = keyframes`
   from {
     opacity: 0;
-    transform: translate3d(-200px, -100px, 0);
+    transform: translateY(100px);
+    transition: all .8s ease;
   }
-
   to {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
+    transform: translateY(0px);
   }
 `;
   return (

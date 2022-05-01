@@ -38,56 +38,7 @@ p {
 a{
   text-decoration: none;
 }
-.reveal {
-  position: relative;
-  transform: translateY(50px);
-  opacity: 0;
-  transition: all 0.8s ease;
-}
-.reveal.active {
-  transform: translateY(0px);
-  opacity: 1;
-}
-/* HOVER STATE */
-header .menu a:hover {
-  border-bottom: 2px solid #fd0037;
-  color: #ffffff;
-  font-weight: 900;
-}
 
-.btn-control a:first-child button:hover {
-  background: #fd0037;
-  color: white;
-
-  -webkit-transition: background-color 200ms linear;
-  -ms-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-}
-/* button:hover {
-  background: #fd0037;
-  color: white;
-
-  -webkit-transition: background-color 200ms linear;
-  -ms-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-} */
-.btn-control a:nth-child(2) button:hover {
-  background: #dddddd;
-  color: rgb(0, 0, 0);
-
-  -webkit-transition: background-color 200ms linear;
-  -ms-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-}
-/* button:focus {
-  outline: none;
-}
-button:hover {
-  cursor: pointer;
-} */
-body.lock {
-  overflow-y: hidden;
-}
 #wrapper {
   display: table;
   width: 100%;
