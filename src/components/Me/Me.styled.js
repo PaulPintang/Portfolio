@@ -7,14 +7,15 @@ export const Section = styled.section`
   -moz-animation: fadeIn linear 1.1s;
   -o-animation: fadeIn linear 1.1s;
   -ms-animation: fadeIn linear 1.1s;
-  height: calc(100vh - 80px);
-  margin-top: 80px;
+  margin-top: 120px;
   text-align: center;
 `;
 
 export const Column = styled(Flex)`
+  height: calc(100vh - 120px);
+  gap: 0;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
   h1 {
     font-size: 4.2rem;
@@ -24,7 +25,7 @@ export const Column = styled(Flex)`
   }
   @media (max-width: 768px) {
     h1 {
-      font-size: 3.2rem;
+      font-size: 3.3rem;
       line-height: 1.1;
     }
   }
@@ -87,13 +88,11 @@ export const StyledButton = styled(Button)`
   width: 151px;
   &:hover {
     background-color: ${({ red }) => (red ? "#fd0037" : "white")};
-  }
-
-  &:hover {
     color: ${({ red }) => (red ? "white" : "gray")};
-  }
-
-  &:hover {
     border: ${({ red }) => (red ? "1px solid #fd0037" : "")};
+    /* transition */
+    -webkit-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
   }
 `;

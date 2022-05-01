@@ -43,9 +43,9 @@ export const Button = styled.button`
     color: gray;
 
     /* transition */
-    -webkit-transition: background-color 200ms linear;
-    -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
+    -webkit-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
   }
   @media (max-width: 768px) {
     padding: ${({ nav }) => (nav ? "8px 15px" : "")};
@@ -84,20 +84,6 @@ export const Bolder = styled(Span)`
 `;
 
 // scroll down animation
-export const ScrollContainer = styled.div`
-  display: table;
-  width: 100%;
-  height: 100%;
-  margin-top: 4rem;
-`;
-
-export const ScrollInner = styled.div`
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-`;
-
 export const ScrollDown = styled.div`
   display: block;
   position: relative;

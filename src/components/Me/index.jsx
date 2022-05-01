@@ -2,8 +2,6 @@ import React from "react";
 import {
   Container,
   Bolder,
-  ScrollContainer,
-  ScrollInner,
   ScrollDown,
   ScrollTitle,
   ArrowDown,
@@ -21,28 +19,26 @@ const Me = () => {
     <Container>
       <Section>
         <Column>
-          <h1>
-            Hey, I'm <Bolder>Paul Justine.</Bolder>
-          </h1>
-          <TextAnimated>I'm a Front-End Developer</TextAnimated>
-          <BtnControl>
-            <a href="#contacts">
-              <StyledButton red>Let's work together</StyledButton>
+          <div>
+            <h1>
+              Hey, I'm <Bolder>Paul Justine.</Bolder>
+            </h1>
+            <TextAnimated>I'm a Front-End Developer</TextAnimated>
+            <BtnControl>
+              <a href="#contacts">
+                <StyledButton red>Let's work together</StyledButton>
+              </a>
+              <a href="#projects">
+                <StyledButton>Check out my projects</StyledButton>
+              </a>
+            </BtnControl>
+          </div>
+          <ScrollDown>
+            <ArrowDown></ArrowDown>
+            <a href="#services">
+              <ScrollTitle>scroll down</ScrollTitle>
             </a>
-            <a href="#projects">
-              <StyledButton>Check out my projects</StyledButton>
-            </a>
-            <ScrollContainer>
-              <ScrollInner>
-                <ScrollDown>
-                  <ArrowDown></ArrowDown>
-                  <a href="#services">
-                    <ScrollTitle>scroll down</ScrollTitle>
-                  </a>
-                </ScrollDown>
-              </ScrollInner>
-            </ScrollContainer>
-          </BtnControl>
+          </ScrollDown>
         </Column>
       </Section>
     </Container>
