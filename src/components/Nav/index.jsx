@@ -34,7 +34,7 @@ const Nav = () => {
   window.addEventListener("resize", handleShowMenu);
   window.addEventListener("scroll", handleNavHeight);
 
-  showMenu
+  click
     ? (document.body.style.overflow = "hidden")
     : (document.body.style.overflow = "unset");
 

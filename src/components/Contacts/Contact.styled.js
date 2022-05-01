@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Flex } from "../styles/Reusable.styled";
 
 export const Section = styled.section`
   margin-bottom: 65px;
