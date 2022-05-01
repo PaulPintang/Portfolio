@@ -152,6 +152,10 @@ export const ToggleNav = styled.div`
         width: 23px;
         background-color: rgb(199, 194, 194);
         height: 1px;
+        &:hover {
+          transition: color 0.12s ease-in;
+          color: #fd0037;
+        }
       }
     }
   }

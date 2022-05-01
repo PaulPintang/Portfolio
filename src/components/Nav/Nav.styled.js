@@ -24,6 +24,13 @@ export const Header = styled.header`
 `;
 
 export const NavLinks = styled(Links)`
+  a {
+    &:hover {
+      font-weight: bolder;
+      color: white;
+      transition: color 0.12s ease-in;
+    }
+  }
   @media (max-width: 768px) {
     display: ${({ click }) => (!click ? "none" : "")};
     flex-direction: column;
@@ -58,5 +65,9 @@ export const Close = styled.div`
   svg {
     font-size: 25px;
     color: rgb(199, 194, 194);
+    &:hover {
+      transition: color 0.12s ease-in;
+      color: #fd0037;
+    }
   }
 `;
