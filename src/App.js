@@ -1,3 +1,4 @@
+import React from "react";
 import Nav from "./components/Nav";
 import Me from "./components/Me";
 import Offer from "./components/Offer";
