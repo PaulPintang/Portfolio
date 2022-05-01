@@ -1,30 +1,24 @@
 import React from "react";
-import "./styles.css";
-// import Wave from '../images/wave1.svg'
+import { HiLocationMarker } from "react-icons/hi";
+import { Container, Flex, Center } from "../styles/Reusable.styled";
+import { FooterDiv } from "./Footer.styled";
 const Footer = () => {
   return (
-    <div className="footer">
+    <FooterDiv>
       <hr></hr>
-      <div className="container">
-        <div className="footer-details">
-          <div className="flex">
+      <Container>
+        <Center>
+          <div>
             <small>Designed by Paul Justine &copy; 2022</small>
-            <a
-              href="https://github.com/PaulPintang/Portfolio"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-github"></i>
-            </a>
           </div>
           <small>Built using React.Js</small>
-          <div className="flex">
-            <i className="fas fa-map-marker-alt"></i>
+          <Flex center>
+            <HiLocationMarker />
             <small>Philippines</small>
-          </div>
-        </div>
-      </div>
-    </div>
+          </Flex>
+        </Center>
+      </Container>
+    </FooterDiv>
   );
 };
 

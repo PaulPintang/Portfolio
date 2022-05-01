@@ -1,112 +1,144 @@
-import React, { useState } from "react";
-import "./styles.css";
+import React, { useState, useEffect } from "react";
+import { BsGithub } from "react-icons/bs";
+import { MdOutlineClose } from "react-icons/md";
+import { Span, Button, ToggleNav } from "../styles/Reusable.styled";
+import { Logo, Header, NavLinks, NavBar, Close } from "./Nav.styled";
 const Nav = () => {
   const [navHeight, setNavHeight] = useState(false);
-  const [showNav, setShowNav] = useState(false);
-  window.addEventListener("scroll", () => {
+  const [showMenu, setShowMenu] = useState(true);
+  const [click, setClick] = useState(false);
+
+  useEffect(() => {
+    handleShowMenu();
+    handleNavHeight();
+  }, []);
+
+  const handleNavHeight = () => {
     if (window.scrollY >= 2) {
       setNavHeight(true);
     } else {
       setNavHeight(false);
     }
-  });
-
-  const handleShow = () => {
-    setShowNav(!showNav);
   };
-  if (showNav) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "unset";
-  }
-  return (
-    <header className={navHeight ? "os-header" : ""}>
-      <div className="container">
-        <div
-          className={
-            navHeight && !showNav
-              ? "os-nav-h"
-              : showNav
-              ? "show-nav-h "
-              : "nav-h"
-          }
-        >
-          <div className={showNav ? "show-flex" : "flex"}>
-            {!showNav ? (
-              <div className="name">
-                <a href="https://paulpintang.netlify.app/" rel="noreferrer">
-                  <h1>
-                    <span>P</span>IN<span>.</span>
-                  </h1>
-                </a>
-              </div>
-            ) : (
-              ""
-            )}
 
-            <div onClick={handleShow}>
-              {showNav ? (
-                <i class="fa-solid fa-xmark close"></i>
-              ) : (
-                <div className="toggle-menu">
-                  <div className="flex">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-              )}
+  const handleShowMenu = () => {
+    if (window.innerWidth <= 768) {
+      setShowMenu(false);
+      // setClick(false);
+    } else {
+      setShowMenu(true);
+    }
+  };
+
+  window.addEventListener("resize", handleShowMenu);
+  window.addEventListener("scroll", handleNavHeight);
+
+  click
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "unset");
+
+  const handleClick = () => {
+    setShowMenu(!showMenu);
+    setClick(!click);
+  };
+
+  return (
+    <Header navHeight={navHeight} click={click}>
+      <NavBar click={click} contain>
+        {!click && (
+          <Logo>
+            <a href="https://paulpintang.netlify.app/" rel="noreferrer">
+              <h1>
+                <Span>P</Span>IN<Span>.</Span>
+              </h1>
+            </a>
+          </Logo>
+        )}
+
+        {click ? (
+          <Close onClick={handleClick}>
+            <MdOutlineClose />
+          </Close>
+        ) : (
+          <ToggleNav onClick={handleClick}>
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div className={!showNav ? "show" : ""}>
-              <div className="menu-container">
-                <div className="menu">
-                  <ul>
-                    <li>
-                      <a onClick={() => setShowNav(false)} href="#services">
-                        <span>S</span>ervices
-                      </a>
-                    </li>
-                    <li>
-                      <a onClick={() => setShowNav(false)} href="#projects">
-                        <span>P</span>rojects
-                      </a>
-                    </li>
-                    <li>
-                      <a onClick={() => setShowNav(false)} href="#contacts">
-                        <span>C</span>ontacts
-                      </a>
-                    </li>
-                    <li className="github-icon">
-                      <a
-                        href="https://github.com/PaulPintang"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="fab fa-github"></i>
-                      </a>
-                    </li>
-                    <li className="hide-link">
-                      <a href="https://github.com/PaulPintang">
-                        <span>G</span>ithub
-                      </a>
-                    </li>
-                    <li className="resume">
-                      <a
-                        href="https://drive.google.com/file/d/1g6palLjOPwLrxL2AjSK3oEPE_HwBdD-x/view?usp=sharing"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <button className="tp">RESUME</button>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+          </ToggleNav>
+        )}
+
+        <NavLinks click={click}>
+          <li>
+            <a
+              href="#services"
+              onClick={() => {
+                setClick(false);
+                setShowMenu(true);
+              }}
+            >
+              <Span>S</Span>
+              ervices
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              onClick={() => {
+                setClick(false);
+                setShowMenu(true);
+              }}
+            >
+              <Span>P</Span>
+              rojects
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contacts"
+              onClick={() => {
+                setClick(false);
+                setShowMenu(true);
+              }}
+            >
+              <Span>C</Span>
+              ontacts
+            </a>
+          </li>
+          {click ? (
+            <li>
+              <a
+                href="#services"
+                onClick={() => {
+                  setClick(false);
+                  setShowMenu(true);
+                }}
+              >
+                <Span>G</Span>
+                ithub
+              </a>
+            </li>
+          ) : (
+            <li>
+              <a
+                href="https://github.com/PaulPintang"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsGithub size={16} />
+              </a>
+            </li>
+          )}
+
+          <li>
+            <a href="https://drive.google.com/file/d/1g6palLjOPwLrxL2AjSK3oEPE_HwBdD-x/view?usp=sharing">
+              <Button nav>RESUME</Button>
+            </a>
+          </li>
+        </NavLinks>
+      </NavBar>
+    </Header>
   );
 };
 

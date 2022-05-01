@@ -1,35 +1,47 @@
-import "./styles.css";
+import React from "react";
+import {
+  Container,
+  Bolder,
+  ScrollDown,
+  ScrollTitle,
+  ArrowDown,
+} from "../styles/Reusable.styled";
+import {
+  Section,
+  Column,
+  TextAnimated,
+  BtnControl,
+  StyledButton,
+} from "./Me.styled";
+
 const Me = () => {
   return (
-    <section className="me">
-      <div className="container">
-        <div className="flex">
-          <h1>
-            Hey, I'm <span className="my-name">Paul Justine.</span>
-          </h1>
-          <p className="front-end">I'm a Front-End Developer</p>
-          <div className="btn-control">
-            <a href="#contacts">
-              <button>Let's work together</button>
-            </a>
-            <a href="#projects">
-              <button className="tp">Check out my projects</button>
-            </a>
-
-            <div id="wrapper">
-              <div id="wrapper-inner">
-                <div id="scroll-down">
-                  <span className="arrow-down"></span>
-                  <a href="#services">
-                    <span id="scroll-title">scroll down</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+    <Container>
+      <Section>
+        <Column>
+          <div>
+            <h1>
+              Hey, I'm <Bolder>Paul Justine.</Bolder>
+            </h1>
+            <TextAnimated>I'm a Front-End Developer</TextAnimated>
+            <BtnControl>
+              <a href="#contacts">
+                <StyledButton red>Let's work together</StyledButton>
+              </a>
+              <a href="#projects">
+                <StyledButton>Check out my projects</StyledButton>
+              </a>
+            </BtnControl>
           </div>
-        </div>
-      </div>
-    </section>
+          <ScrollDown>
+            <ArrowDown></ArrowDown>
+            <a href="#services">
+              <ScrollTitle>scroll down</ScrollTitle>
+            </a>
+          </ScrollDown>
+        </Column>
+      </Section>
+    </Container>
   );
 };
 

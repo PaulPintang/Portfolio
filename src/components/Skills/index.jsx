@@ -1,56 +1,74 @@
-import "./styles.css";
-import html from "../../images/skills/html.svg";
-import css from "../../images/skills/css-3.svg";
-import twc from "../../images/skills/tailwindcss.svg";
-import sass from "../../images/skills/sass.svg";
-import js from "../../images/skills/javascript.svg";
-import git from "../../images/skills/git.svg";
-import netlify from "../../images/skills/netlify.svg";
-import react from "../../images/skills/react.png";
+import React from "react";
+import { Center, Container, Span } from "../styles/Reusable.styled";
+import { Section, FlexContainer, ImgContainer } from "./Skills.styled";
+import html from "../../assets/img/skills/html.svg";
+import css from "../../assets/img/skills/css-3.svg";
+import twc from "../../assets/img/skills/tailwindcss.svg";
+import sass from "../../assets/img/skills/sass.svg";
+import js from "../../assets/img/skills/javascript.svg";
+import git from "../../assets/img/skills/git.svg";
+import netlify from "../../assets/img/skills/netlify.svg";
+import react from "../../assets/img/skills/react.png";
 
 const Skills = () => {
   return (
-    <section className="my-skills">
-      <div className="container">
+    <Section>
+      <Container>
         <h2>
-          My <span>Skills</span>
+          My <Span>Skills</Span>
         </h2>
-        <div className="flex">
-          <div className="lg">
-            <img src={html} alt=""></img>
-            <p>HTML5</p>
-          </div>
-          <div className="lg">
-            <img src={css} alt=""></img>
-            <p>CSS</p>
-          </div>
-          <div className="lg">
-            <img src={twc} alt="" style={{ width: 50 }}></img>
-            <p>Tailwind CSS</p>
-          </div>
-          <div className="lg">
-            <img src={sass} alt=""></img>
-            <p>Sass</p>
-          </div>
-          <div className="lg">
-            <img src={js} alt=""></img>
-            <p>Javascript</p>
-          </div>
-          <div className="lg">
-            <img src={react} alt=""></img>
-            <p>React</p>
-          </div>
-          <div className="lg">
-            <img src={git} alt=""></img>
-            <p>Git</p>
-          </div>
-          <div className="lg">
-            <img src={netlify} alt=""></img>
-            <p>Netlify</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <FlexContainer>
+          <ImgContainer>
+            <Center>
+              <img src={html} alt=""></img>
+              <p>HTML5</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={css} alt=""></img>
+              <p>CSS</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={twc} alt="" style={{ width: 50 }}></img>
+              <p>Tailwind CSS</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={sass} alt=""></img>
+              <p>Sass</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={js} alt=""></img>
+              <p>Javascript</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={react} alt=""></img>
+              <p>React</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={git} alt=""></img>
+              <p>Git</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={netlify} alt=""></img>
+              <p>Netlify</p>
+            </Center>
+          </ImgContainer>
+        </FlexContainer>
+      </Container>
+    </Section>
   );
 };
 

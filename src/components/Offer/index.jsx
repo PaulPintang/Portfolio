@@ -1,51 +1,62 @@
-import "./styles.css";
-import responsive from "../../images/responsive.svg";
-import design from "../../images/design.svg";
-import team from "../../images/team.svg";
+import React, { useContext } from "react";
+import AnimationContext from "../../context/AnimationContext";
+import { Container, Flex, Span, Center } from "../styles/Reusable.styled";
+import { Section, OfferCards } from "./Offer.styled";
+import responsive from "../../assets/svg/responsive.svg";
+import design from "../../assets/svg/design.svg";
+import team from "../../assets/svg/team.svg";
 
 const Offer = () => {
+  const { Reveal, revealAnimation } = useContext(AnimationContext);
   return (
-    <section id="services" className="offer">
-      <div className="container">
-        <div className="offer-tag">
+    <Container id="services">
+      <Section>
+        <Center>
           <h2>
-            What i <span>offer?</span>
+            What i <Span>offer?</Span>
           </h2>
           <p>Create positive user experience</p>
-        </div>
-        <div className="flex">
-          <div className="offer-cards reveal">
-            <img src={responsive} alt=""></img>
-            <div className="o-info">
-              <h3>Responsive Website</h3>
-              <p>
-                Develop a responsive website layout for a better user experience
-              </p>
-            </div>
-          </div>
-          <div className="offer-cards reveal">
-            <img src={design} alt=""></img>
-            <div className="o-info">
-              <h3>Convert your design into a working website.</h3>
-              <p>
-                Make an ideal functional website with your mockups and UI
-                prototypes.
-              </p>
-            </div>
-          </div>
-          <div className="offer-cards reveal">
-            <img src={team} alt=""></img>
-            <div className="o-info">
-              <h3>Team Collaboration</h3>
-              <p>
-                Can work as part of a team and has outstanding collaboration
-                skills.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </Center>
+        <Flex>
+          <Reveal keyframes={revealAnimation}>
+            <OfferCards>
+              <Center>
+                <img src={responsive} alt="" />
+                <h3>Responsive Website</h3>
+                <p>
+                  Develop a responsive website layout for a better user
+                  experience
+                </p>
+              </Center>
+            </OfferCards>
+          </Reveal>
+          <Reveal keyframes={revealAnimation}>
+            <OfferCards>
+              <Center>
+                <img src={design} alt="" />
+                <h3>Convert your design into a working website.</h3>
+                <p>
+                  Make an ideal functional website with your mockups and UI
+                  prototypes.
+                </p>
+              </Center>
+            </OfferCards>
+          </Reveal>
+          <Reveal keyframes={revealAnimation}>
+            <OfferCards>
+              <Center>
+                <img src={team} alt="" />
+                <h3>Team Collaboration</h3>
+                <p>
+                  Can work as part of a team and has outstanding collaboration
+                  skills.
+                </p>
+              </Center>
+            </OfferCards>
+          </Reveal>
+        </Flex>
+      </Section>
+    </Container>
   );
 };
 

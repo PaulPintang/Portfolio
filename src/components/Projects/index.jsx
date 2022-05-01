@@ -1,62 +1,77 @@
-import "./styles.css";
-import img1 from "../../images/projects/11.png";
-import img2 from "../../images/projects/22.png";
-import img3 from "../../images/projects/33.png";
-import img4 from "../../images/projects/44.png";
+import React, { useContext } from "react";
+import AnimationContext from "../../context/AnimationContext";
+import { BsGithub } from "react-icons/bs";
+import { FiExternalLink } from "react-icons/fi";
+import { Flex, Container, Span, Right } from "../styles/Reusable.styled.js";
+import {
+  Section,
+  ProjectContainer,
+  ProjectInfo,
+  Description,
+  LinkToProject,
+} from "./Projects.styled";
+import img1 from "../../assets/img/projects/1.png";
+import img2 from "../../assets/img/projects/2.png";
+import img3 from "../../assets/img/projects/3.png";
+import img4 from "../../assets/img/projects/4.png";
 
 const Projects = () => {
+  const { Reveal, revealAnimation } = useContext(AnimationContext);
   return (
-    <div className="projects" id="projects">
-      <div className="container">
+    <Section id="projects">
+      <Container>
         <h2>
-          My <span>Projects</span>
+          My <Span>Projects</Span>
         </h2>
-        <div className="img-flex reveal">
-          <div>
-            <a
-              href="https://paulpintang.github.io/Covid-19-Tracker-App/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={img1} alt="" />
-            </a>
-          </div>
-          <div className="img-info">
-            <div className="img-title">
-              <h4>
-                No.<span>01</span>
-              </h4>
-              <h3>Covid-19 Tracker</h3>
+        <Reveal keyframes={revealAnimation}>
+          <ProjectContainer>
+            <div>
+              <a
+                href="https://paulpintang.github.io/Covid-19-Tracker-App/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={img1} alt="" />
+              </a>
             </div>
+            <ProjectInfo right>
+              <div>
+                <Right>
+                  <h4>
+                    No.<Span>01</Span>
+                  </h4>
+                </Right>
 
-            <div className="img-desc">
-              <p>
-                This is my first project while learning javascript. I made this
-                Covid-19 Tracker app after learning how to use an API on a
-                website. Here's a link to the covid API that I used for this
-                project:
-                <a href="https://disease.sh" target="_blank" rel="noreferrer">
-                  Covid-19 API
-                </a>
-              </p>
-            </div>
+                <h3>Covid-19 Tracker</h3>
+              </div>
 
-            <div className="flex">
-              <small>HTML</small>
-              <small>CSS</small>
-              <small>JAVASCRIPT</small>
-              <small>Covid-19 API</small>
-            </div>
+              <Description>
+                <p>
+                  This is my first project while learning javascript. I made
+                  this Covid-19 Tracker app after learning how to use an API on
+                  a website. Here's a link to the covid API that I used for this
+                  project:
+                  <a href="https://disease.sh" target="_blank" rel="noreferrer">
+                    <Span>Covid-19 API</Span>
+                  </a>
+                </p>
+              </Description>
 
-            <div className="opt">
-              <ul>
+              <Flex right>
+                <small>HTML</small>
+                <small>CSS</small>
+                <small>JAVASCRIPT</small>
+                <small>Covid-19 API</small>
+              </Flex>
+
+              <LinkToProject>
                 <li>
                   <a
                     href="https://github.com/PaulPintang/Covid-19-Tracker-App"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="fab fa-github"></i>
+                    <BsGithub />
                   </a>
                 </li>
                 <li>
@@ -65,54 +80,54 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="fas fa-external-link-alt"></i>
+                    <FiExternalLink size={21} />
                   </a>
                 </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+              </LinkToProject>
+            </ProjectInfo>
+          </ProjectContainer>
+        </Reveal>
 
-        <div className="img-flex reveal">
-          <div className="img-info-2">
-            <div className="img-title">
-              <h4>
-                No.<span>02</span>
-              </h4>
-              <h3>Fylo Landing Page</h3>
-            </div>
+        <Reveal keyframes={revealAnimation}>
+          <ProjectContainer>
+            <ProjectInfo left>
+              <div>
+                <h4>
+                  No.<Span>02</Span>
+                </h4>
+                <h3>Fylo Landing Page</h3>
+              </div>
 
-            <div className="img-desc">
-              <p>
-                This is a frontendmentor.io landing page challenge to help me
-                practice creating responsive websites. This task was quite
-                beneficial in terms of learning CSS best practices. Here's the
-                link to the challenge from their website:
-                <a
-                  href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  fylo-landing-page-challenge
-                </a>
-              </p>
-            </div>
+              <Description>
+                <p>
+                  This is a frontendmentor.io landing page challenge to help me
+                  practice creating responsive websites. This task was quite
+                  beneficial in terms of learning CSS best practices. Here's the
+                  link to the challenge on their website:
+                  <a
+                    href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Span>fylo-landing-page-challenge</Span>
+                  </a>
+                </p>
+              </Description>
 
-            <div className="flex">
-              <small>HTML</small>
-              <small>CSS</small>
-              <small>JAVASCRIPT</small>
-            </div>
+              <Flex left>
+                <small>HTML</small>
+                <small>CSS</small>
+                <small>JAVASCRIPT</small>
+              </Flex>
 
-            <div className="opt">
-              <ul>
+              <LinkToProject>
                 <li>
                   <a
                     href="https://github.com/PaulPintang/Fylo-Landing-page"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="fab fa-github"></i>
+                    <BsGithub />
                   </a>
                 </li>
                 <li>
@@ -121,72 +136,75 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="fas fa-external-link-alt"></i>
+                    <FiExternalLink size={21} />
                   </a>
                 </li>
-              </ul>
+              </LinkToProject>
+            </ProjectInfo>
+            <div>
+              <a
+                href="https://paulpintang.github.io/Covid-19-Tracker-App/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={img2} alt="" />
+              </a>
             </div>
-          </div>
-          <div>
-            <a
-              href="https://festive-goldberg-678aaa.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={img2} alt="" />
-            </a>
-          </div>
-        </div>
+          </ProjectContainer>
+        </Reveal>
 
-        <div className="img-flex reveal">
-          <div>
-            <a
-              href="https://sharp-heyrovsky-44e00e.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={img3} alt="" />
-            </a>
-          </div>
-          <div className="img-info">
-            <div className="img-title">
-              <h4>
-                No.<span>03</span>
-              </h4>
-              <h3>EasyBank Landing Page</h3>
+        <Reveal keyframes={revealAnimation}>
+          <ProjectContainer>
+            <div>
+              <a
+                href="https://sharp-heyrovsky-44e00e.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={img3} alt="" />
+              </a>
             </div>
+            <ProjectInfo right>
+              <div>
+                <Right>
+                  <h4>
+                    No.<Span>03</Span>
+                  </h4>
+                </Right>
 
-            <div className="img-desc">
-              <p>
-                The frontendmentor.io website serves as a classroom setting for
-                me to improve my development skills. This project challenged me
-                to design the navigation bar from scratch. Here's the link to
-                the challenge from their website.
-                <a
-                  href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  easybank-landing-page-challenge
-                </a>
-              </p>
-            </div>
+                <h3>EasyBank Landing Page</h3>
+              </div>
 
-            <div className="flex">
-              <small>HTML</small>
-              <small>CSS</small>
-              <small>JAVASCRIPT</small>
-            </div>
+              <Description>
+                <p>
+                  The frontendmentor.io website serves as a classroom setting
+                  for me to improve my development skills. This project
+                  challenged me to design the navigation bar from scratch.
+                  Here's the link to the challenge on their website:
+                  <a
+                    href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Span>easybank-landing-page-challenge</Span>
+                  </a>
+                </p>
+              </Description>
 
-            <div className="opt">
-              <ul>
+              <Flex right>
+                <small>HTML</small>
+                <small>CSS</small>
+                <small>JAVASCRIPT</small>
+              </Flex>
+
+              <LinkToProject>
                 <li>
                   <a
                     href="https://github.com/PaulPintang/easybank-landing-page"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="fab fa-github"></i>
+                    <BsGithub />
                   </a>
                 </li>
                 <li>
@@ -195,79 +213,81 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="fas fa-external-link-alt"></i>
+                    <FiExternalLink size={21} />
                   </a>
                 </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="img-flex reveal">
-          <div className="img-info-2">
-            <div className="img-title">
-              <h4>
-                No.<span>04</span>
-              </h4>
-              <h3>Social Media Dashboard</h3>
-            </div>
+              </LinkToProject>
+            </ProjectInfo>
+          </ProjectContainer>
+        </Reveal>
 
-            <div className="img-desc">
-              <p>
-                This frontendmentor.io challenge put me to a test in javascript.
-                This simple project improved my understanding of DOM
-                manipulation and javascript event listerner implementation.
-                Here's the link to the challenge from their website.
-                <a
-                  href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  social-media-dashboard-challenge
-                </a>
-              </p>
-            </div>
+        <Reveal keyframes={revealAnimation}>
+          <ProjectContainer>
+            <ProjectInfo left>
+              <div>
+                <h4>
+                  No.<Span>04</Span>
+                </h4>
+                <h3>Loopstudios Landing Page</h3>
+              </div>
 
-            <div className="flex">
-              <small>HTML</small>
-              <small>CSS</small>
-              <small>JAVASCRIPT</small>
-            </div>
-
-            <div className="opt">
-              <ul>
-                <li>
+              <Description>
+                <p>
+                  This frontendmentor.io challenge put me to a test in
+                  javascript. This simple project improved my understanding of
+                  DOM manipulation and javascript event listerner
+                  implementation. Here's the link to the challenge on their
+                  website:
                   <a
-                    href="https://github.com/PaulPintang/Social-media-dashboard"
+                    href="https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="fab fa-github"></i>
+                    <Span>loopstudios-landing-page-challenge</Span>
+                  </a>
+                </p>
+              </Description>
+
+              <Flex left>
+                <small>HTML</small>
+                <small>CSS</small>
+                <small>JAVASCRIPT</small>
+              </Flex>
+
+              <LinkToProject>
+                <li>
+                  <a
+                    href="https://github.com/PaulPintang/loopstudios"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <BsGithub />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://socialllll-media-dashboard.netlify.app/"
+                    href="https://friendly-joliot-d759bc.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="fas fa-external-link-alt"></i>
+                    <FiExternalLink size={21} />
                   </a>
                 </li>
-              </ul>
+              </LinkToProject>
+            </ProjectInfo>
+            <div>
+              <a
+                href="https://friendly-joliot-d759bc.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={img4} alt="" />
+              </a>
             </div>
-          </div>
-          <div className="mt">
-            <a
-              href="https://socialllll-media-dashboard.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={img4} alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+          </ProjectContainer>
+        </Reveal>
+      </Container>
+    </Section>
   );
 };
 
