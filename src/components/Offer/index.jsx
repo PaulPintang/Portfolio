@@ -16,7 +16,7 @@ const Offer = () => {
           <p>Create positive user experience</p>
         </Center>
         <Flex>
-          <OfferCards className="reveal">
+          <OfferCards className="">
             <Center>
               <img src={responsive} alt="" />
               <h3>Responsive Website</h3>
@@ -25,7 +25,7 @@ const Offer = () => {
               </p>
             </Center>
           </OfferCards>
-          <OfferCards className="reveal">
+          <OfferCards className="">
             <Center>
               <img src={design} alt="" />
               <h3>Convert your design into a working website.</h3>
@@ -35,7 +35,7 @@ const Offer = () => {
               </p>
             </Center>
           </OfferCards>
-          <OfferCards className="reveal">
+          <OfferCards className="">
             <Center>
               <img src={team} alt="" />
               <h3>Team Collaboration</h3>
