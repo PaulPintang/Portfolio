@@ -10,10 +10,10 @@ import {
   Description,
   LinkToProject,
 } from "./Projects.styled";
-import img1 from "../../images/projects/11.png";
-import img2 from "../../images/projects/22.png";
-import img3 from "../../images/projects/33.png";
-import img4 from "../../images/projects/44.png";
+import img1 from "../../assets/img/projects/11.png";
+import img2 from "../../assets/img/projects/22.png";
+import img3 from "../../assets/img/projects/33.png";
+import img4 from "../../assets/img/projects/44.png";
 
 const Projects = () => {
   const { Reveal, revealAnimation } = useContext(AnimationContext);

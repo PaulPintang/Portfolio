@@ -1,14 +1,14 @@
 import React from "react";
 import { Center, Container, Span } from "../styles/Reusable.styled";
 import { Section, FlexContainer, ImgContainer } from "./Skills.styled";
-import html from "../../images/skills/html.svg";
-import css from "../../images/skills/css-3.svg";
-import twc from "../../images/skills/tailwindcss.svg";
-import sass from "../../images/skills/sass.svg";
-import js from "../../images/skills/javascript.svg";
-import git from "../../images/skills/git.svg";
-import netlify from "../../images/skills/netlify.svg";
-import react from "../../images/skills/react.png";
+import html from "../../assets/img/skills/html.svg";
+import css from "../../assets/img/skills/css-3.svg";
+import twc from "../../assets/img/skills/tailwindcss.svg";
+import sass from "../../assets/img/skills/sass.svg";
+import js from "../../assets/img/skills/javascript.svg";
+import git from "../../assets/img/skills/git.svg";
+import netlify from "../../assets/img/skills/netlify.svg";
+import react from "../../assets/img/skills/react.png";
 
 const Skills = () => {
   return (

@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import AnimationContext from "../../context/AnimationContext";
 import { Container, Flex, Span, Center } from "../styles/Reusable.styled";
 import { Section, OfferCards } from "./Offer.styled";
-import responsive from "../../images/responsive.svg";
-import design from "../../images/design.svg";
-import team from "../../images/team.svg";
+import responsive from "../../assets/svg/responsive.svg";
+import design from "../../assets/svg/design.svg";
+import team from "../../assets/svg/team.svg";
 
 const Offer = () => {
   const { Reveal, revealAnimation } = useContext(AnimationContext);

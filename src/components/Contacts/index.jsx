@@ -5,7 +5,7 @@ import { MdLocalPhone } from "react-icons/md";
 import { RiMessengerFill } from "react-icons/ri";
 import { Container, Span, Center, Flex } from "../styles/Reusable.styled";
 import { Section, Wrapper, ContactDetails, Msg } from "./Contact.styled";
-import qoute from "../../images/left-qoute.svg";
+import qoute from "../../assets/svg/left-qoute.svg";
 const Contacts = () => {
   return (
     <Section id="contacts">
