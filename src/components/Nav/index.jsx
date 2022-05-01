@@ -5,12 +5,12 @@ import { Span, Button, ToggleNav } from "../styles/Reusable.styled";
 import { Logo, Header, NavLinks, NavBar, Close } from "./Nav.styled";
 const Nav = () => {
   const [navHeight, setNavHeight] = useState(false);
-  // const [showNav, setShowNav] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [click, setClick] = useState(false);
 
-  // useEffect(() => {
-  //   showButton();
-  // }, []);
+  useEffect(() => {
+    handleShowMenu();
+  }, []);
 
   window.addEventListener("scroll", () => {
     if (window.scrollY >= 2) {
@@ -20,28 +20,32 @@ const Nav = () => {
     }
   });
 
-  const showMenuBar = () => {
+  const handleShowMenu = () => {
     if (window.innerWidth <= 768) {
       setShowMenu(false);
+      setClick(false);
     } else {
       setShowMenu(true);
+      setClick(false);
     }
   };
 
-  window.addEventListener("resize", showMenuBar);
-  // const handleShow = () => {
-  //   setShowNav(!showNav);
-  // };
-  if (showMenu) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "unset";
-  }
+  window.addEventListener("resize", handleShowMenu);
+  // if (showMenu) {
+  //   document.body.style.overflow = "hidden";
+  // } else {
+  //   document.body.style.overflow = "unset";
+  // }
+
+  const handleClick = () => {
+    setShowMenu(!showMenu);
+    setClick(!click);
+  };
 
   return (
-    <Header navHeight={navHeight} showMenu={showMenu}>
-      <NavBar showMenu={showMenu} contain>
-        {!showMenu && (
+    <Header navHeight={navHeight} click={click}>
+      <NavBar click={click} contain>
+        {!click && (
           <Logo>
             <a href="https://paulpintang.netlify.app/" rel="noreferrer">
               <h1>
@@ -50,61 +54,59 @@ const Nav = () => {
             </a>
           </Logo>
         )}
-        {!showMenu ? (
-          <>
-            <ToggleNav onClick={() => setShowMenu(true)}>
-              <div>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </ToggleNav>
-          </>
-        ) : (
-          <NavLinks>
-            <Close onClick={() => setShowMenu(false)}>
-              <MdOutlineClose />
-            </Close>
+        <ToggleNav onClick={handleClick} showMenu={showMenu}>
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </ToggleNav>
+        {click && (
+          <Close onClick={handleClick}>
+            <MdOutlineClose />
+          </Close>
+        )}
+
+        <NavLinks showMenu={showMenu}>
+          <li>
+            <a href="#services">
+              <Span>S</Span>
+              ervices
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              <Span>P</Span>
+              rojects
+            </a>
+          </li>
+          <li>
+            <a href="#contacts">
+              <Span>C</Span>
+              ontacts
+            </a>
+          </li>
+          {click ? (
             <li>
               <a href="#services">
-                <Span>S</Span>
-                ervices
+                <Span>G</Span>
+                ithub
               </a>
             </li>
+          ) : (
             <li>
-              <a href="#projects">
-                <Span>P</Span>
-                rojects
+              <a href="https://github.com/PaulPintang" rel="noreferrer">
+                <BsGithub size={16} />
               </a>
             </li>
-            <li>
-              <a href="#contacts">
-                <Span>C</Span>
-                ontacts
-              </a>
-            </li>
-            {showMenu ? (
-              <li>
-                <a href="#services">
-                  <Span>G</Span>
-                  ithub
-                </a>
-              </li>
-            ) : (
-              <li>
-                <a href="https://github.com/PaulPintang" rel="noreferrer">
-                  <BsGithub size={16} />
-                </a>
-              </li>
-            )}
+          )}
 
-            <li>
-              <a href="#sda">
-                <Button nav>RESUME</Button>
-              </a>
-            </li>
-          </NavLinks>
-        )}
+          <li>
+            <a href="#sda">
+              <Button nav>RESUME</Button>
+            </a>
+          </li>
+        </NavLinks>
       </NavBar>
     </Header>
   );

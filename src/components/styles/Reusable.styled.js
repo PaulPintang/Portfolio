@@ -154,7 +154,7 @@ export const ScrollTitle = styled.span`
 `;
 
 export const ToggleNav = styled.div`
-  /* display: none; */
+  display: ${({ showMenu }) => showMenu && "none"};
   div {
     display: flex;
     flex-direction: column;
@@ -164,8 +164,5 @@ export const ToggleNav = styled.div`
       background-color: rgb(199, 194, 194);
       height: 1px;
     }
-  }
-  @media (max-width: 768px) {
-    /* display: none; */
   }
 `;
