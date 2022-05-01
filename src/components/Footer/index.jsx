@@ -2,7 +2,6 @@ import React from "react";
 import { HiLocationMarker } from "react-icons/hi";
 import { Container, Flex, Center } from "../styles/Reusable.styled";
 import { FooterDiv } from "./Footer.styled";
-import "./styles.css";
 const Footer = () => {
   return (
     <FooterDiv>
