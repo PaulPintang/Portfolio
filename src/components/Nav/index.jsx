@@ -36,6 +36,9 @@ const Nav = () => {
   // } else {
   //   document.body.style.overflow = "unset";
   // }
+  showMenu
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "unset");
 
   const handleClick = () => {
     setShowMenu(!showMenu);
