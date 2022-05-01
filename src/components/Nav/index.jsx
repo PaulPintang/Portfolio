@@ -10,15 +10,16 @@ const Nav = () => {
 
   useEffect(() => {
     handleShowMenu();
+    handleNavHeight();
   }, []);
 
-  window.addEventListener("scroll", () => {
+  const handleNavHeight = () => {
     if (window.scrollY >= 2) {
       setNavHeight(true);
     } else {
       setNavHeight(false);
     }
-  });
+  };
 
   const handleShowMenu = () => {
     if (window.innerWidth <= 768) {
@@ -31,11 +32,8 @@ const Nav = () => {
   };
 
   window.addEventListener("resize", handleShowMenu);
-  // if (showMenu) {
-  //   document.body.style.overflow = "hidden";
-  // } else {
-  //   document.body.style.overflow = "unset";
-  // }
+  window.addEventListener("scroll", handleNavHeight);
+
   showMenu
     ? (document.body.style.overflow = "hidden")
     : (document.body.style.overflow = "unset");
