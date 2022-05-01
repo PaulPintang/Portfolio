@@ -57,7 +57,7 @@ export const ContactDetails = styled.div`
   }
 `;
 
-export const FlexCenter = styled(Flex)`
-  justify-content: center;
-  padding-top: 5px;
-`;
+// export const FlexCenter = styled(Flex)`
+//   justify-content: center;
+//   padding-top: 5px;
+// `;

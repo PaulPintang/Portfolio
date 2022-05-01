@@ -3,14 +3,8 @@ import React from "react";
 import { GrMail } from "react-icons/gr";
 import { MdLocalPhone } from "react-icons/md";
 import { RiMessengerFill } from "react-icons/ri";
-import { Container, Span, Center } from "../styles/Reusable.styled";
-import {
-  Section,
-  Wrapper,
-  FlexCenter,
-  ContactDetails,
-  Msg,
-} from "./Contact.styled";
+import { Container, Span, Center, Flex } from "../styles/Reusable.styled";
+import { Section, Wrapper, ContactDetails, Msg } from "./Contact.styled";
 import qoute from "../../images/left-qoute.svg";
 const Contacts = () => {
   return (
@@ -32,7 +26,7 @@ const Contacts = () => {
               </small>
             </Msg>
             <ContactDetails>
-              <FlexCenter>
+              <Flex center>
                 <GrMail />
                 <a
                   href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSBmlnSzdZvvqJFTGmvkLQrtwwqqkDRqdcstbDNQnqdtxvWpGStLHGsVbhGZcLlpLwHFMmXq"
@@ -41,12 +35,12 @@ const Contacts = () => {
                 >
                   <p>pauljpintang@gmail.com</p>
                 </a>
-              </FlexCenter>
-              <FlexCenter>
+              </Flex>
+              <Flex center>
                 <MdLocalPhone />
                 <p>+639553054546</p>
-              </FlexCenter>
-              <FlexCenter>
+              </Flex>
+              <Flex center>
                 <RiMessengerFill />
                 <a
                   href="https://m.me/pauljustin.pintang"
@@ -55,7 +49,7 @@ const Contacts = () => {
                 >
                   <p>Messenger</p>
                 </a>
-              </FlexCenter>
+              </Flex>
             </ContactDetails>
           </Center>
         </Wrapper>
