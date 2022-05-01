@@ -1,8 +1,21 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
- #scrollbar::-webkit-scrollbar {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  background-color: #0e1625;
+  color: #dddddd;
+}
+#scrollbar::-webkit-scrollbar {
   width: 6px;
 }
 #scrollbar::-webkit-scrollbar-thumb {

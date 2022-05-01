@@ -1,4 +1,3 @@
-import "./App.css";
 import Nav from "./components/Nav";
 import Me from "./components/Me";
 import Offer from "./components/Offer";
