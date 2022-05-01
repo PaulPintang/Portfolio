@@ -154,7 +154,7 @@ export const ScrollTitle = styled.span`
 `;
 
 export const ToggleNav = styled.div`
-  display: none;
+  /* display: none; */
   div {
     display: flex;
     flex-direction: column;
@@ -166,6 +166,6 @@ export const ToggleNav = styled.div`
     }
   }
   @media (max-width: 768px) {
-    display: none;
+    /* display: none; */
   }
 `;

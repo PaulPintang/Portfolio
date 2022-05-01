@@ -9,15 +9,9 @@ export const Header = styled.header`
   width: 100%;
   z-index: 1;
   transition: height 0.4s ease;
-  height: ${({ showNav }) => (showNav ? "100vh" : "")};
+  /* height: ${({ showNav }) => (showNav ? "100vh" : "66px")}; */
   box-shadow: ${({ navHeight }) =>
     navHeight ? "0 2px 4px -1px rgba(0, 0, 0, 0.25)" : ""};
-
-  animation: fadeIn linear 0.5s;
-  -webkit-animation: fadeIn linear 0.5s;
-  -moz-animation: fadeIn linear 0.5s;
-  -o-animation: fadeIn linear 0.5s;
-  -ms-animation: fadeIn linear 0.5s;
 
   a {
     text-decoration: none;
@@ -43,8 +37,9 @@ export const NavLinks = styled(Links)`
 export const NavBar = styled(Flex)`
   @media (max-width: 768px) {
     height: ${({ showNav }) => (showNav ? "100vh" : "")};
-    align-items: center;
-    justify-content: center;
+    /* justify-content: ${({ showNav }) =>
+      showNav ? "space-between" : "center"}; */
+    justify-content: space-between;
   }
 `;
 
@@ -55,15 +50,15 @@ export const Logo = styled.div`
     color: white;
   }
   @media (max-width: 768px) {
-    display: none;
+    /* display: none; */
   }
 `;
 
 export const Close = styled.div`
-  display: none;
+  /* display: none;
   position: fixed;
   top: 30px;
-  right: 30px;
+  right: 30px; */
   svg {
     font-size: 28px;
     color: white;

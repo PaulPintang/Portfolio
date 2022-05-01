@@ -25,11 +25,6 @@ p {
 a{
   text-decoration: none;
 }
-.shrink {
-  height: 66px;
-  transition: height 0.4s ease;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
-}
 .reveal {
   position: relative;
   transform: translateY(50px);
