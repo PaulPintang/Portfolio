@@ -2,11 +2,6 @@ import styled from "styled-components";
 import { Button, Flex } from "../styles/Reusable.styled";
 
 export const Section = styled.section`
-  animation: fadeIn linear 1.1s;
-  -webkit-animation: fadeIn linear 1.1s;
-  -moz-animation: fadeIn linear 1.1s;
-  -o-animation: fadeIn linear 1.1s;
-  -ms-animation: fadeIn linear 1.1s;
   margin-top: 120px;
   text-align: center;
 `;
