@@ -2,4 +2,4 @@
 
 Project Link: https://paulpintang.netlify.app/ <br>
 Screenshot:
-![This is an image](/src/assets/screenshot.png)
+![This is an image](/src/assets/img/screenshot.png)
