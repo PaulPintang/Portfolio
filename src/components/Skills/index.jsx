@@ -9,6 +9,7 @@ import js from "../../assets/img/skills/javascript.svg";
 import git from "../../assets/img/skills/git.svg";
 import netlify from "../../assets/img/skills/netlify.svg";
 import react from "../../assets/img/skills/react.png";
+import mantine from "../../assets/img/skills/mantine.svg";
 
 const Skills = () => {
   return (
@@ -33,7 +34,7 @@ const Skills = () => {
           <ImgContainer>
             <Center>
               <img src={twc} alt="" style={{ width: 50 }}></img>
-              <p>Tailwind CSS</p>
+              <p>Tailwind</p>
             </Center>
           </ImgContainer>
           <ImgContainer>
@@ -52,6 +53,12 @@ const Skills = () => {
             <Center>
               <img src={react} alt=""></img>
               <p>React</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={mantine} alt=""></img>
+              <p>Mantine</p>
             </Center>
           </ImgContainer>
           <ImgContainer>

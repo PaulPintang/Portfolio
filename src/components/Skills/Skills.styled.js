@@ -9,7 +9,7 @@ export const Section = styled.section`
 `;
 
 export const FlexContainer = styled(Flex)`
-  width: 670px;
+  width: 700px;
   margin: auto;
   flex-wrap: wrap;
   @media (max-width: 768px) {
