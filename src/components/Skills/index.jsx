@@ -10,6 +10,7 @@ import git from "../../assets/img/skills/git.svg";
 import netlify from "../../assets/img/skills/netlify.svg";
 import react from "../../assets/img/skills/react.png";
 import mantine from "../../assets/img/skills/mantine.svg";
+import styled from "../../assets/img/skills/sc.png";
 
 const Skills = () => {
   return (
@@ -53,6 +54,12 @@ const Skills = () => {
             <Center>
               <img src={react} alt=""></img>
               <p>React</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={styled} alt=""></img>
+              <p>Styled</p>
             </Center>
           </ImgContainer>
           <ImgContainer>
