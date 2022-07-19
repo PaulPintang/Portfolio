@@ -21,8 +21,9 @@ const Contacts = () => {
             </h3>
             <Msg>
               <small>
-                " If you have a good opportunity that matches my skills and
-                experience then don't hesitate to contact me."
+                " I'm open to job opportunities where I can contribute, learn
+                and grow. If you have a good opportunity that matches my skills
+                then don't hesitate to contact me."
               </small>
             </Msg>
             <ContactDetails>
