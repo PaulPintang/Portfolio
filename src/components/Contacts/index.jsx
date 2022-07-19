@@ -21,8 +21,8 @@ const Contacts = () => {
             </h3>
             <Msg>
               <small>
-                " Hello, my name is Paul, and I'm a front-end developer. If you
-                think I can help your business, just contact me. "
+                " If you have a good opportunity that matches my skills and
+                experience then don't hesitate to contact me."
               </small>
             </Msg>
             <ContactDetails>

@@ -55,8 +55,3 @@ export const ContactDetails = styled.div`
     font-size: 13px;
   }
 `;
-
-// export const FlexCenter = styled(Flex)`
-//   justify-content: center;
-//   padding-top: 5px;
-// `;
