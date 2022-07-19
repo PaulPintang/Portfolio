@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Span, Flex, Center, Left } from "../styles/Reusable.styled";
+import { Container, Span, Flex } from "../styles/Reusable.styled";
 const Experience = () => {
   return (
     <Container style={{ marginBottom: 130 }}>
@@ -77,13 +77,13 @@ const Experience = () => {
         </div>
         <div style={{ width: 600, margin: "auto" }}>
           <Flex>
-            <h4>Start-up Company</h4>
-            <h4>July 2022 - Aug 2022</h4>
+            <h4>Snack Software, LLC</h4>
+            <h4>July 2021 - Aug 2021</h4>
           </Flex>
           <div style={{ display: "flex", gap: 10, padding: 16 }}>
             <div style={{ height: 100, width: 2, background: "red" }}></div>
             <div>
-              <h5>FrontEnd Developer</h5>
+              <h5>Front-end Developer Intern</h5>
               <p style={{ fontSize: 12 }}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Eveniet ab perferendis dicta nihil veniam cupiditate possimus

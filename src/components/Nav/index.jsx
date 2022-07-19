@@ -96,6 +96,18 @@ const Nav = () => {
           </li>
           <li>
             <a
+              href="#experience"
+              onClick={() => {
+                setClick(false);
+                setShowMenu(true);
+              }}
+            >
+              <Span>E</Span>
+              xperience
+            </a>
+          </li>
+          <li>
+            <a
               href="#contacts"
               onClick={() => {
                 setClick(false);
