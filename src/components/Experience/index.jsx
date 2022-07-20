@@ -6,6 +6,7 @@ import {
   FlexContent,
   Line,
   Tools,
+  Badge,
 } from "./Experience.styled";
 const Experience = () => {
   return (
@@ -28,19 +29,19 @@ const Experience = () => {
               illum
             </p>
             <Tools style={{ display: "flex", gap: 10, paddingTop: 5 }}>
-              <span>
+              <Badge>
                 <small>Javascript</small>
-              </span>
-              <span>
+              </Badge>
+              <Badge>
                 <small>Vue</small>
-              </span>
+              </Badge>
 
-              <span>
+              <Badge>
                 <small>Quasar Framework</small>
-              </span>
-              <span>
+              </Badge>
+              <Badge>
                 <small>SCSS</small>
-              </span>
+              </Badge>
             </Tools>
           </section>
         </FlexContent>
@@ -60,19 +61,19 @@ const Experience = () => {
               illum
             </p>
             <Tools style={{ display: "flex", gap: 10, paddingTop: 5 }}>
-              <span>
+              <Badge>
                 <small>Javascript</small>
-              </span>
-              <span>
+              </Badge>
+              <Badge>
                 <small>React</small>
-              </span>
+              </Badge>
 
-              <span>
+              <Badge>
                 <small>Material UI</small>
-              </span>
-              <span>
+              </Badge>
+              <Badge>
                 <small>Tailwind CSS</small>
-              </span>
+              </Badge>
             </Tools>
           </section>
         </FlexContent>
