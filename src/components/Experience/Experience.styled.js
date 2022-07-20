@@ -6,6 +6,11 @@ export const WorkContainer = styled(Container)`
   h2 {
     padding-bottom: 40px;
   }
+  @media (max-width: 768px) {
+    h2 {
+      padding-bottom: 20px;
+    }
+  }
 `;
 
 export const WorkContent = styled.div`
