@@ -1,5 +1,5 @@
 import React from "react";
-import { Span, Flex } from "../styles/Reusable.styled";
+import { Span } from "../styles/Reusable.styled";
 import {
   WorkContainer,
   WorkContent,
@@ -15,11 +15,11 @@ const Experience = () => {
         Work <Span>Experience</Span>
       </h2>
       <WorkContent>
-        <Flex>
+        <FlexContent nogap>
           <h4>Pixel8 Web Solutions & Consultancy Inc.</h4>
           <h4>Feb 2022 - May 2022</h4>
-        </Flex>
-        <FlexContent>
+        </FlexContent>
+        <FlexContent contain>
           <Line></Line>
           <section>
             <h5>Web Developer Intern</h5>
@@ -28,7 +28,7 @@ const Experience = () => {
               ab perferendis dicta nihil veniam cupiditate possimus mollitia
               illum
             </p>
-            <Tools style={{ display: "flex", gap: 10, paddingTop: 5 }}>
+            <Tools>
               <Badge>
                 <small>Javascript</small>
               </Badge>
@@ -47,11 +47,11 @@ const Experience = () => {
         </FlexContent>
       </WorkContent>
       <WorkContent>
-        <Flex>
+        <FlexContent nogap>
           <h4>Snack Software, LLC</h4>
           <h4>July 2021 - Aug 2021</h4>
-        </Flex>
-        <FlexContent>
+        </FlexContent>
+        <FlexContent contain>
           <Line></Line>
           <section>
             <h5>Front-end Developer Intern</h5>
