@@ -24,9 +24,9 @@ const Experience = () => {
           <section>
             <h5>Web Developer Intern</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
-              ab perferendis dicta nihil veniam cupiditate possimus mollitia
-              illum
+              Developing front-end features, responsive designs, writing clean
+              code, and convert Adobe XD UI designs on Vue.Js and Quasar
+              Frameworks.
             </p>
             <Tools>
               <Badge>
@@ -56,9 +56,9 @@ const Experience = () => {
           <section>
             <h5>Front-end Developer Intern</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
-              ab perferendis dicta nihil veniam cupiditate possimus mollitia
-              illum
+              Responsible for coding the front-end designs, converting the given
+              UI mockups, and maintain a fast and easily maintainable code base
+              of the project.
             </p>
             <Tools style={{ display: "flex", gap: 10, paddingTop: 5 }}>
               <Badge>

@@ -39,7 +39,7 @@ const Contacts = () => {
               </Flex>
               <Flex center>
                 <MdLocalPhone />
-                <p>+639553054546</p>
+                <p>+63 955 305 4546</p>
               </Flex>
               <Flex center>
                 <RiMessengerFill />
