@@ -34,7 +34,7 @@ const Contacts = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <p>pauljpintang@gmail.com</p>
+                  <p>paulpintang.dev@gmail.com</p>
                 </a>
               </Flex>
               <Flex center>
@@ -44,7 +44,7 @@ const Contacts = () => {
               <Flex center>
                 <RiMessengerFill />
                 <a
-                  href="https://m.me/pauljustin.pintang"
+                  href="https://m.me/paulpintang.dev"
                   target="_blank"
                   rel="noreferrer"
                 >

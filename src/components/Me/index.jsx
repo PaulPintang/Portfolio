@@ -24,7 +24,7 @@ const Me = () => {
           <Column>
             <div>
               <h1>
-                Hey, I'm <Bolder>Paul Justine.</Bolder>
+                Hey, I'm <Bolder>Paul Pintang.</Bolder>
               </h1>
               <TextAnimated>I'm a Front-End Developer</TextAnimated>
               <BtnControl>
