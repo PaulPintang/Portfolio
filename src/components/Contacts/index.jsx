@@ -30,7 +30,7 @@ const Contacts = () => {
               <Flex center>
                 <GrMail />
                 <a
-                  href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSBmlnSzdZvvqJFTGmvkLQrtwwqqkDRqdcstbDNQnqdtxvWpGStLHGsVbhGZcLlpLwHFMmXq"
+                  href="mailto:paulpintang.dev@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -39,7 +39,9 @@ const Contacts = () => {
               </Flex>
               <Flex center>
                 <MdLocalPhone />
-                <p>+63 955 305 4546</p>
+                <a href="tel:09553054546" target="_blank" rel="noreferrer">
+                  <p>+63 955 305 4546</p>
+                </a>
               </Flex>
               <Flex center>
                 <RiMessengerFill />
