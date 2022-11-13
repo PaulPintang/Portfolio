@@ -6,6 +6,7 @@ import { RiMessengerFill } from "react-icons/ri";
 import { Container, Span, Center, Flex } from "../styles/Reusable.styled";
 import { Section, Wrapper, ContactDetails, Msg } from "./Contact.styled";
 import qoute from "../../assets/svg/left-qoute.svg";
+import Form from "./Form";
 const Contacts = () => {
   return (
     <Section id="contacts">
@@ -54,6 +55,7 @@ const Contacts = () => {
                 </a>
               </Flex>
             </ContactDetails>
+            <Form />
           </Center>
         </Wrapper>
       </Container>
