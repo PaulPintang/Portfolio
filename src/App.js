@@ -11,7 +11,6 @@ import GlobalStyles from "./components/styles/GlobalStyles";
 import Experience from "./components/Experience";
 
 function App() {
-require('dotenv').config()
   return (
     <div>
       <AnimationProvider>

@@ -29,8 +29,11 @@ const Form = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
+      <input type="hidden" name="to_name" value="Paul" />
       <label>Name</label>
       <input type="text" name="user_name" />
+      <label>Subject</label>
+      <input type="text" name="subject" value="Web Development Inquiry" />
       <label>Email</label>
       <input type="email" name="user_email" />
       <label>Message</label>
