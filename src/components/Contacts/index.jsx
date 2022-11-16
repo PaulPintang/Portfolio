@@ -1,6 +1,6 @@
-// import "./styles.css";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { MdLocalPhone } from "react-icons/md";
 import { RiMessengerFill } from "react-icons/ri";
@@ -56,7 +56,17 @@ const Contacts = () => {
                   </small>
                 </Msg>
               </div>
-              <Flex>
+              <Flex left>
+                <FaLinkedin />
+                <a
+                  href="https://www.linkedin.com/in/paulpintangdev/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <p>LinkedIn</p>
+                </a>
+              </Flex>
+              <Flex left>
                 <GrMail />
                 <a
                   href="mailto:paulpintang.dev@gmail.com"
@@ -66,13 +76,15 @@ const Contacts = () => {
                   <p>paulpintang.dev@gmail.com</p>
                 </a>
               </Flex>
-              <Flex>
+
+              <Flex left>
                 <MdLocalPhone />
                 <a href="tel:09553054546" target="_blank" rel="noreferrer">
                   <p>+63 955 305 4546</p>
                 </a>
               </Flex>
-              <Flex>
+
+              <Flex left>
                 <RiMessengerFill />
                 <a
                   href="https://m.me/paulpintang.dev"
@@ -84,24 +96,24 @@ const Contacts = () => {
               </Flex>
             </ContactDetails>
             <FormContainer>
-              <form ref={form} onSubmit={sendEmail}>
-                {/* <input type="hidden" name="to_name" value="Paul" />
-                  <label>Name</label>
-                  <input type="text" name="user_name" />
-                  <label>Subject</label>
-                  <input type="text" name="subject" value="Web Development Inquiry" />
-                  <label>Email</label>
-                  <input type="email" name="user_email" />
-                  <label>Message</label>
-                  <textarea name="message" />
-                  <button type="submit">Send</button> */}
+              <form ref={form} onSubmit={sendEmail} autocomplete="off">
                 <Flex column def>
                   <Flex justify>
-                    <Input placeholder="Your name" />
-                    <Input placeholder="Your email" />
+                    <Input
+                      type="text"
+                      placeholder="Your name"
+                      name="user_name"
+                    />
+                    <Input
+                      type="email"
+                      placeholder="Your email"
+                      name="user_email"
+                    />
                   </Flex>
                   <TextArea name="message" placeholder="Your message" />
-                  <SendBtn red>Send Message</SendBtn>
+                  <SendBtn red type="submit" disabled>
+                    Send
+                  </SendBtn>
                 </Flex>
               </form>
             </FormContainer>

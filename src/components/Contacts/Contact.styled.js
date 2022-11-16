@@ -31,42 +31,33 @@ export const Section = styled.section`
 `;
 
 export const Wrapper = styled.div`
-  // padding: 25px;
-  padding: 10px;
+  padding: 12px;
   background-color: #202a3c;
-  max-width: 800px;
+  max-width: 850px;
   width: 100%;
-  margin: 40px auto;
+  margin: 30px auto;
   position: relative;
 `;
 export const Msg = styled.div`
-  // padding: 10px 0 30px 0;
-  // max-width: 380px;
-  // margin: auto;
-  // small {
-  //   font-style: italic;
-  //   font-size: 13px;
-  // }
   padding: 10px 0 30px 0;
   text-align: left;
   // width: 80%;
   small {
-    // font-style: italic;
     font-size: 13px;
   }
 `;
 export const ContactDetails = styled.div`
-   opacity: 2;
-   width: 80%;
-  background-color: #0E1625;
+  opacity: 2;
+  width: 300px;
+  background-color: #0e1625;
   text-align: left;
-  border-radius: 5px;
+  border-radius: 4px;
   height: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  h3{
+  h3 {
     font-size: 13px;
     text-transform: uppercase;
     padding: 0;
@@ -75,5 +66,8 @@ export const ContactDetails = styled.div`
     opacity: 1;
     letter-spacing: 0.5px;
     font-size: 13px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;

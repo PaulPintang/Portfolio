@@ -17,14 +17,15 @@ export const Flex = styled.div`
   display: flex;
   height: 100%;
   width: 100%;
-  justify-content: ${({ center, justify }) => (center ? "center" : justify ? "space-between" : "")};
-  align-items: ${({ def }) => (def ? "space-between" :"center")};
+  justify-content: ${({ center, justify }) =>
+    center ? "center" : justify ? "space-between" : ""};
+  align-items: ${({ def }) => (def ? "space-between" : "center")};
   gap: ${({ center }) => (center ? "8px" : "15px")};
 
   max-width: ${({ contain }) => (contain ? "1100px" : "")};
   margin: ${({ contain }) => (contain ? "auto" : "0")};
   padding: ${({ contain }) => (contain ? "0 25px" : "0")};
-  flex-direction: ${({ column }) => column ? "column" : ""};
+  flex-direction: ${({ column }) => column && "column"};
   @media (max-width: 768px) {
     flex-direction: ${({ right, left, center, contain }) =>
       right || left ? "auto" : center || contain ? "row" : "column"};
