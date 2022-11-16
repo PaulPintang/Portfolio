@@ -31,24 +31,46 @@ export const Section = styled.section`
 `;
 
 export const Wrapper = styled.div`
-  padding: 25px;
+  // padding: 25px;
+  padding: 10px;
   background-color: #202a3c;
-  max-width: 900px;
+  max-width: 800px;
   width: 100%;
-  margin: auto;
+  margin: 40px auto;
   position: relative;
 `;
 export const Msg = styled.div`
-  padding: 10px 0;
-  max-width: 500px;
-  margin: auto;
+  // padding: 10px 0 30px 0;
+  // max-width: 380px;
+  // margin: auto;
+  // small {
+  //   font-style: italic;
+  //   font-size: 13px;
+  // }
+  padding: 10px 0 30px 0;
+  text-align: left;
+  // width: 80%;
   small {
-    font-style: italic;
+    // font-style: italic;
     font-size: 13px;
   }
 `;
 export const ContactDetails = styled.div`
-  padding: 20px 0;
+   opacity: 2;
+   width: 80%;
+  background-color: #0E1625;
+  text-align: left;
+  border-radius: 5px;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  h3{
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0;
+  }
   p {
     opacity: 1;
     letter-spacing: 0.5px;

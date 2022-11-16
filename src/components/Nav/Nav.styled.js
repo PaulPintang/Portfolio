@@ -43,6 +43,7 @@ export const NavLinks = styled(Links)`
 `;
 
 export const NavBar = styled(Flex)`
+  justify-content: space-between;
   @media (max-width: 768px) {
     height: ${({ click }) => (click ? "100vh" : "")};
     justify-content: ${({ click }) => (click ? "center" : "space-between")};

@@ -15,12 +15,12 @@ function App() {
     <div>
       <AnimationProvider>
         <GlobalStyles />
-        <Nav />
+        {/* <Nav />
         <Me />
         <Offer />
         <Skills />
         <Projects />
-        <Experience />
+        <Experience /> */}
         <Contacts />
         <Footer />
       </AnimationProvider>
