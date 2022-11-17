@@ -24,7 +24,7 @@ export const TextArea = styled.textarea`
   color: #f3f3f3;
   resize: none;
   &:focus {
-    outline: none;
+    outline: none !important;
     border: 1px solid #f4f4f4;
   }
 `;

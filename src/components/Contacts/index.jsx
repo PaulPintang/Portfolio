@@ -16,26 +16,32 @@ const Contacts = () => {
     user_email: "",
     message: "",
   });
+  const [loaderMsg, setLoaderMsg] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoaderMsg(true);
     emailjs
       .sendForm(
-        `${process.env.REACT_APP_SERVICE_I}`,
+        `${process.env.REACT_APP_SERVICE_ID}`,
         `${process.env.REACT_APP_TEMPLATE_ID}`,
         form.current,
         `${process.env.REACT_APP_PUBLIC_KEY}`
       )
       .then(
-        () => {
+        (result) => {
           setTimeout(() => {
             console.log("message sent");
+            console.log(result);
             e.target.reset();
+            setLoaderMsg(false);
           }, 3000);
         },
-        () => {
+        (error) => {
           setTimeout(() => {
             console.log("message not sent");
+            console.log(error);
             e.target.reset();
+            setLoaderMsg(false);
           }, 3000);
         }
       );
@@ -123,6 +129,7 @@ const Contacts = () => {
                       name="user_name"
                       value={emailSent.name}
                       onChange={handleChange}
+                      required
                     />
                     <Input
                       type="email"
@@ -130,6 +137,7 @@ const Contacts = () => {
                       name="user_email"
                       value={emailSent.email}
                       onChange={handleChange}
+                      required
                     />
                   </Flex>
                   <TextArea
@@ -137,9 +145,10 @@ const Contacts = () => {
                     placeholder="Your message"
                     value={emailSent.msg}
                     onChange={handleChange}
+                    required
                   />
                   <SendBtn red type="submit">
-                    Send
+                    {loaderMsg ? "Sending..." : "Send"}
                   </SendBtn>
                 </Flex>
               </form>
