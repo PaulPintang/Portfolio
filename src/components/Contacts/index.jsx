@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
@@ -11,25 +11,43 @@ import qoute from "../../assets/svg/left-qoute.svg";
 
 const Contacts = () => {
   const form = useRef();
+  const [emailSent, setEmailSent] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+  });
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        `${process.env.REACT_APP_SERVICE_ID}`,
+        `${process.env.REACT_APP_SERVICE_I}`,
         `${process.env.REACT_APP_TEMPLATE_ID}`,
         form.current,
         `${process.env.REACT_APP_PUBLIC_KEY}`
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          setTimeout(() => {
+            console.log("message sent");
+            e.target.reset();
+          }, 3000);
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          setTimeout(() => {
+            console.log("message not sent");
+            e.target.reset();
+          }, 3000);
         }
       );
   };
 
+  const handleChange = (e) => {
+    const { value, name } = e.target;
+    setEmailSent((prev) => {
+      return { ...prev, [name]: value };
+    });
+  };
+  console.log(emailSent.user_name);
   return (
     <Section id="contacts">
       <Container>
@@ -103,15 +121,24 @@ const Contacts = () => {
                       type="text"
                       placeholder="Your name"
                       name="user_name"
+                      value={emailSent.name}
+                      onChange={handleChange}
                     />
                     <Input
                       type="email"
                       placeholder="Your email"
                       name="user_email"
+                      value={emailSent.email}
+                      onChange={handleChange}
                     />
                   </Flex>
-                  <TextArea name="message" placeholder="Your message" />
-                  <SendBtn red type="submit" disabled>
+                  <TextArea
+                    name="message"
+                    placeholder="Your message"
+                    value={emailSent.msg}
+                    onChange={handleChange}
+                  />
+                  <SendBtn red type="submit">
                     Send
                   </SendBtn>
                 </Flex>
