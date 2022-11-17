@@ -16,7 +16,6 @@ export const Right = styled.div`
 export const Flex = styled.div`
   display: flex;
   height: 100%;
-  width: 100%;
   justify-content: ${({ center, justify }) =>
     center ? "center" : justify ? "space-between" : ""};
   align-items: ${({ def }) => (def ? "space-between" : "center")};

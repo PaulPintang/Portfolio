@@ -19,7 +19,7 @@ const Skills = () => {
         <h2>
           My <Span>Skills</Span>
         </h2>
-        <FlexContainer>
+        <FlexContainer justify>
           <ImgContainer>
             <Center>
               <img src={html} alt=""></img>

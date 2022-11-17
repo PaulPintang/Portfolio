@@ -11,12 +11,8 @@ import qoute from "../../assets/svg/left-qoute.svg";
 
 const Contacts = () => {
   const form = useRef();
-  const [emailSent, setEmailSent] = useState({
-    user_name: "",
-    user_email: "",
-    message: "",
-  });
   const [loaderMsg, setLoaderMsg] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
     setLoaderMsg(true);
@@ -47,13 +43,6 @@ const Contacts = () => {
       );
   };
 
-  const handleChange = (e) => {
-    const { value, name } = e.target;
-    setEmailSent((prev) => {
-      return { ...prev, [name]: value };
-    });
-  };
-  console.log(emailSent.user_name);
   return (
     <Section id="contacts">
       <Container>
@@ -127,24 +116,18 @@ const Contacts = () => {
                       type="text"
                       placeholder="Your name"
                       name="user_name"
-                      value={emailSent.name}
-                      onChange={handleChange}
                       required
                     />
                     <Input
                       type="email"
                       placeholder="Your email"
                       name="user_email"
-                      value={emailSent.email}
-                      onChange={handleChange}
                       required
                     />
                   </Flex>
                   <TextArea
                     name="message"
                     placeholder="Your message"
-                    value={emailSent.msg}
-                    onChange={handleChange}
                     required
                   />
                   <SendBtn red type="submit">
