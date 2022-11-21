@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import Cookies from "js-cookie";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin } from "react-icons/fa";
 import { AiOutlineClockCircle } from "react-icons/ai";
@@ -13,9 +14,9 @@ import qoute from "../../assets/svg/left-qoute.svg";
 const Contacts = () => {
   const form = useRef();
   const [loaderMsg, setLoaderMsg] = useState(false);
-  const [isSubmit, setIsSubmit] = useState(false);
-  const [minutes, setMinutes] = useState(59);
-  const [seconds, setSeconds] = useState(59);
+  const [isSubmit, setIsSubmit] = useState();
+  const [minutes, setMinutes] = useState(Cookies.get("Minutes"));
+  const [seconds, setSeconds] = useState(Cookies.get("Seconds"));
 
   useEffect(() => {
     let timer = setInterval(() => {
@@ -24,14 +25,21 @@ const Contacts = () => {
         setMinutes(minutes - 1);
         setSeconds(10);
       }
+      Cookies.set("Minutes", minutes);
+      Cookies.set("Seconds", seconds);
     }, 1000);
 
     return () => clearInterval(timer);
   });
 
+  useEffect(() => {
+    setIsSubmit(Cookies.get("Submitted"));
+  }, [isSubmit]);
+
   const testSubmit = () => {
     console.log("submit");
-    localStorage.setItem("isSubmit", true);
+    Cookies.set("Submitted", true, { expires: 1 });
+    setIsSubmit(Cookies.get("Submitted"));
   };
   const sendEmail = (e) => {
     e.preventDefault();
@@ -163,9 +171,20 @@ const Contacts = () => {
                   </SendBtn> */}
                 </Flex>
               </form>
-              <SendBtn red disabled={false} onClick={testSubmit}>
-                {loaderMsg ? "Sending..." : "Send"}
-              </SendBtn>
+              {isSubmit ? (
+                <SendBtn red disabled={true}>
+                  <Flex center>
+                    <AiOutlineClockCircle size={15} />
+                    <span>
+                      {Cookies.get("Minutes")} : {Cookies.get("Seconds")}s
+                    </span>
+                  </Flex>
+                </SendBtn>
+              ) : (
+                <SendBtn red disabled={false} onClick={testSubmit}>
+                  {loaderMsg ? "Sending..." : "Send"}
+                </SendBtn>
+              )}
             </FormContainer>
           </Flex>
         </Wrapper>
