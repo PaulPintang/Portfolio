@@ -33,10 +33,7 @@ const Contacts = () => {
       .then(
         (result) => {
           setTimeout(() => {
-            Cookies.set("Submitted", true, {
-              expires: 1,
-              domain: "netlify.app",
-            });
+            Cookies.set("Submitted", "true", { expires: 1, path: "" });
             setIsSubmit(Cookies.get("Submitted"));
             e.target.reset();
             setLoaderMsg(false);
