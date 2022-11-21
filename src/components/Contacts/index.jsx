@@ -31,18 +31,17 @@ const Contacts = () => {
         `${process.env.REACT_APP_PUBLIC_KEY}`
       )
       .then(
-        (result) => {
+        () => {
+          Cookies.set("Submitted", true, { expires: 1, path: "" });
           setTimeout(() => {
-            Cookies.set("Submitted", "true", { expires: 1, path: "" });
             setIsSubmit(Cookies.get("Submitted"));
             e.target.reset();
             setLoaderMsg(false);
           }, 3000);
         },
-        (error) => {
+        () => {
           setTimeout(() => {
             console.log("message not sent");
-            console.log(error);
             e.target.reset();
             setLoaderMsg(false);
           }, 3000);
@@ -154,7 +153,7 @@ const Contacts = () => {
               <SendBtn
                 red
                 onClick={() =>
-                  Cookies.set("name", "value", { expires: 7, path: "" })
+                  Cookies.set("Submitted", true, { expires: 7, path: "" })
                 }
               >
                 {loaderMsg ? "Sending..." : "test btn"}
