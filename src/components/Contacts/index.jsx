@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin } from "react-icons/fa";
 import { AiOutlineClockCircle } from "react-icons/ai";
@@ -13,6 +13,20 @@ import qoute from "../../assets/svg/left-qoute.svg";
 const Contacts = () => {
   const form = useRef();
   const [loaderMsg, setLoaderMsg] = useState(false);
+  const [minutes, setMinutes] = useState(59);
+  const [seconds, setSeconds] = useState(59);
+
+  useEffect(() => {
+    let timer = setInterval(() => {
+      setSeconds((prev) => prev - 1);
+      if (seconds === 1) {
+        setMinutes(minutes - 1);
+        setSeconds(10);
+      }
+    }, 1000);
+
+    return () => clearInterval(timer);
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -136,8 +150,10 @@ const Contacts = () => {
                   </SendBtn> */}
                   <SendBtn red disabled={true}>
                     <Flex center>
-                      <AiOutlineClockCircle size={18} />
-                      <span>57 : 29s</span>
+                      <AiOutlineClockCircle size={15} />
+                      <span>
+                        {minutes} : {seconds}s
+                      </span>
                     </Flex>
                   </SendBtn>
                 </Flex>
