@@ -31,13 +31,13 @@ export const TextArea = styled.textarea`
 `;
 
 export const SendBtn = styled(StyledButton)`
-  opacity: 0.3;
+  opacity: ${({ disabled }) => (disabled ? "0.3" : "")};
   width: 130px;
   font-size: 13px;
   font-weight: 600;
   margin: 0;
   &:hover {
-    pointer-events: none;
+    pointer-events: ${({ disabled }) => (disabled ? "none" : "")};
   }
   @media (max-width: 768px) {
     width: 100%;

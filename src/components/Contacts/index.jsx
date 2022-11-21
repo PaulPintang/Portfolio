@@ -13,6 +13,7 @@ import qoute from "../../assets/svg/left-qoute.svg";
 const Contacts = () => {
   const form = useRef();
   const [loaderMsg, setLoaderMsg] = useState(false);
+  const [isSubmit, setIsSubmit] = useState(false);
   const [minutes, setMinutes] = useState(59);
   const [seconds, setSeconds] = useState(59);
 
@@ -28,6 +29,10 @@ const Contacts = () => {
     return () => clearInterval(timer);
   });
 
+  const testSubmit = () => {
+    console.log("submit");
+    localStorage.setItem("isSubmit", true);
+  };
   const sendEmail = (e) => {
     e.preventDefault();
     setLoaderMsg(true);
@@ -148,16 +153,19 @@ const Contacts = () => {
                   {/* <SendBtn red type="submit">
                     {loaderMsg ? "Sending..." : "Send"}
                   </SendBtn> */}
-                  <SendBtn red disabled={true}>
+                  {/* <SendBtn red disabled={true}>
                     <Flex center>
                       <AiOutlineClockCircle size={15} />
                       <span>
                         {minutes} : {seconds}s
                       </span>
                     </Flex>
-                  </SendBtn>
+                  </SendBtn> */}
                 </Flex>
               </form>
+              <SendBtn red disabled={false} onClick={testSubmit}>
+                {loaderMsg ? "Sending..." : "Send"}
+              </SendBtn>
             </FormContainer>
           </Flex>
         </Wrapper>
