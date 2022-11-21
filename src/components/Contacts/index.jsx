@@ -32,9 +32,9 @@ const Contacts = () => {
       )
       .then(
         (result) => {
-          Cookies.set("Submitted", true, { expires: 1, path: "" });
           setTimeout(() => {
             console.log("message sent", result);
+            Cookies.set("Submitted", true, { expires: 1, path: "" });
             setIsSubmit(Cookies.get("Submitted"));
             e.target.reset();
             setLoaderMsg(false);
@@ -42,8 +42,7 @@ const Contacts = () => {
         },
         (error) => {
           setTimeout(() => {
-            console.log("message not sent", error);
-            // e.target.reset();
+            e.target.reset();
             setLoaderMsg(false);
           }, 3000);
         }
@@ -150,14 +149,6 @@ const Contacts = () => {
                   )}
                 </Flex>
               </form>
-              <SendBtn
-                red
-                onClick={() =>
-                  Cookies.set("Submitted", true, { expires: 7, path: "" })
-                }
-              >
-                {loaderMsg ? "Sending..." : "test btn"}
-              </SendBtn>
             </FormContainer>
           </Flex>
         </Wrapper>
