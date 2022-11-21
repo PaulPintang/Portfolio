@@ -31,17 +31,18 @@ const Contacts = () => {
         `${process.env.REACT_APP_PUBLIC_KEY}`
       )
       .then(
-        () => {
-          // Cookies.set("Submitted", true, { expires: 1, path: "" });
+        (result) => {
+          Cookies.set("Submitted", true, { expires: 1, path: "" });
           setTimeout(() => {
+            console.log("message sent", result);
             setIsSubmit(Cookies.get("Submitted"));
             e.target.reset();
             setLoaderMsg(false);
           }, 3000);
         },
-        () => {
+        (error) => {
           setTimeout(() => {
-            console.log("message not sent");
+            console.log("message not sent", error);
             // e.target.reset();
             setLoaderMsg(false);
           }, 3000);
@@ -115,7 +116,7 @@ const Contacts = () => {
               </Flex>
             </ContactDetails>
             <FormContainer>
-              <form ref={form} onSubmit={sendEmail} autocomplete="off">
+              <form ref={form} onSubmit={sendEmail} autoComplete="off">
                 <Flex column def>
                   <Flex justify>
                     <Input
