@@ -33,7 +33,10 @@ const Contacts = () => {
       .then(
         (result) => {
           setTimeout(() => {
-            Cookies.set("Submitted", true, { expires: 1 });
+            Cookies.set("Submitted", true, {
+              expires: 1,
+              domain: "https://paulpintang.netlify.app/",
+            });
             setIsSubmit(Cookies.get("Submitted"));
             e.target.reset();
             setLoaderMsg(false);
