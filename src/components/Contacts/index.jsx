@@ -17,13 +17,12 @@ const Contacts = () => {
   const [isSubmit, setIsSubmit] = useState(null);
 
   useEffect(() => {
-    isSubmit && setIsSubmit(Cookies.get("Submitted"));
+    setIsSubmit(Cookies.get("Submitted"));
   }, [isSubmit]);
 
   const sendEmail = (e) => {
     e.preventDefault();
     setLoaderMsg(true);
-    Cookies.set("Submitted", true, { expires: 1, path: "" });
     emailjs
       .sendForm(
         `${process.env.REACT_APP_SERVICE_ID}`,
@@ -33,6 +32,7 @@ const Contacts = () => {
       )
       .then(
         () => {
+          Cookies.set("Submitted", true, { expires: 1, path: "" });
           setTimeout(() => {
             setIsSubmit(Cookies.get("Submitted"));
             e.target.reset();
@@ -42,7 +42,7 @@ const Contacts = () => {
         () => {
           setTimeout(() => {
             console.log("message not sent");
-            e.target.reset();
+            // e.target.reset();
             setLoaderMsg(false);
           }, 3000);
         }
@@ -125,7 +125,6 @@ const Contacts = () => {
                       required
                     />
                     <Input
-                      type="email"
                       placeholder="Your email"
                       name="user_email"
                       required
