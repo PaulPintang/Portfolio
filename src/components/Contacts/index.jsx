@@ -35,7 +35,7 @@ const Contacts = () => {
           setTimeout(() => {
             Cookies.set("Submitted", true, {
               expires: 1,
-              domain: "https://paulpintang.netlify.app/",
+              domain: "netlify.app",
             });
             setIsSubmit(Cookies.get("Submitted"));
             e.target.reset();
@@ -140,7 +140,7 @@ const Contacts = () => {
                     placeholder="Your message"
                     required
                   />
-                  {isSubmit ? (
+                  {/* {isSubmit ? (
                     <Info>
                       <Flex def>
                         <BsCheck2Circle size={17} />
@@ -151,9 +151,17 @@ const Contacts = () => {
                     <SendBtn red type="submit">
                       {loaderMsg ? "Sending..." : "Send"}
                     </SendBtn>
-                  )}
+                  )} */}
                 </Flex>
               </form>
+              <SendBtn
+                red
+                onClick={() =>
+                  Cookies.set("name", "value", { expires: 7, path: "" })
+                }
+              >
+                {loaderMsg ? "Sending..." : "Send"}
+              </SendBtn>
             </FormContainer>
           </Flex>
         </Wrapper>
