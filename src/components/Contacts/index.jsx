@@ -3,12 +3,20 @@ import Cookies from "js-cookie";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin } from "react-icons/fa";
 import { BsCheck2Circle } from "react-icons/bs";
+import { HiInformationCircle } from "react-icons/hi";
 import { GrMail } from "react-icons/gr";
 import { MdLocalPhone } from "react-icons/md";
 import { RiMessengerFill } from "react-icons/ri";
 import { Container, Span, Center, Flex } from "../styles/Reusable.styled";
 import { Section, Wrapper, ContactDetails, Msg } from "./Contact.styled";
-import { FormContainer, Input, SendBtn, TextArea, Info } from "./Form.styled";
+import {
+  FormContainer,
+  Input,
+  SendBtn,
+  TextArea,
+  Info,
+  Note,
+} from "./Form.styled";
 import qoute from "../../assets/svg/left-qoute.svg";
 
 const Contacts = () => {
@@ -31,16 +39,15 @@ const Contacts = () => {
         `${process.env.REACT_APP_PUBLIC_KEY}`
       )
       .then(
-        (result) => {
+        () => {
           setTimeout(() => {
-            console.log("message sent", result);
             Cookies.set("Submitted", true, { expires: 1, path: "" });
             setIsSubmit(Cookies.get("Submitted"));
             e.target.reset();
             setLoaderMsg(false);
           }, 3000);
         },
-        (error) => {
+        () => {
           setTimeout(() => {
             e.target.reset();
             setLoaderMsg(false);
@@ -125,6 +132,7 @@ const Contacts = () => {
                       required
                     />
                     <Input
+                      type="email"
                       placeholder="Your email"
                       name="user_email"
                       required
@@ -137,9 +145,14 @@ const Contacts = () => {
                   />
                   {isSubmit ? (
                     <Info>
-                      <Flex def>
-                        <BsCheck2Circle size={17} />
-                        <span>Your message has been sent successfully!</span>
+                      <Flex def justify>
+                        <Flex def left>
+                          <BsCheck2Circle size={17} />
+                          <span>Your message has been sent successfully!</span>
+                        </Flex>
+                        <Note>
+                          <HiInformationCircle size={15} />
+                        </Note>
                       </Flex>
                     </Info>
                   ) : (

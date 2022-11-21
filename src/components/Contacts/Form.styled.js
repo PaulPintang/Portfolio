@@ -47,3 +47,17 @@ export const Info = styled.div`
     gap: 10px;
   }
 `;
+
+export const Note = styled.div`
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  /* transition */
+  -webkit-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
