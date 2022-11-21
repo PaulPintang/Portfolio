@@ -147,7 +147,7 @@ const Contacts = () => {
                     required
                   />
                   {isSubmit ? (
-                    <Info>
+                    <Info onMouseLeave={() => setIsShown(false)}>
                       <Flex def justify>
                         <Flex def left>
                           <BsCheck2Circle size={17} />
@@ -157,16 +157,16 @@ const Contacts = () => {
                           <HiInformationCircle
                             size={15}
                             onMouseEnter={() => setIsShown(true)}
-                            onMouseLeave={() => setIsShown(false)}
                           />
                         </Note>
                         {isShown && (
                           <>
                             <ArrowUp></ArrowUp>
-                            <Popover>
+                            <Popover onClick={() => setIsShown(false)}>
                               <span>
-                                Please enjoy, and let us know if there’s
-                                anything else we can help you with.
+                                <b>Thanks for reaching out!</b> <br /> You can
+                                send me another email using this form the next
+                                day. Cheers!
                               </span>
                             </Popover>
                           </>

@@ -69,12 +69,17 @@ export const Popover = styled.div`
   padding: 12px;
   position: absolute;
   right: -80px;
-  bottom: -56px;
+  bottom: -73px;
+  opacity: 0.8;
+  -webkit-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
 `;
 
 export const ArrowUp = styled.div`
   width: 0;
   height: 0;
+  opacity: 0.8;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-bottom: 7px solid #151c31;
