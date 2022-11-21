@@ -13,16 +13,17 @@ import qoute from "../../assets/svg/left-qoute.svg";
 
 const Contacts = () => {
   const form = useRef();
-  const [loaderMsg, setLoaderMsg] = useState(false);
-  const [isSubmit, setIsSubmit] = useState();
+  const [loaderMsg, setLoaderMsg] = useState(null);
+  const [isSubmit, setIsSubmit] = useState(null);
 
   useEffect(() => {
-    setIsSubmit(Cookies.get("Submitted"));
+    isSubmit && setIsSubmit(Cookies.get("Submitted"));
   }, [isSubmit]);
 
   const sendEmail = (e) => {
     e.preventDefault();
     setLoaderMsg(true);
+    Cookies.set("Submitted", true, { expires: 1, path: "" });
     emailjs
       .sendForm(
         `${process.env.REACT_APP_SERVICE_ID}`,
@@ -32,7 +33,6 @@ const Contacts = () => {
       )
       .then(
         () => {
-          Cookies.set("Submitted", true, { expires: 1, path: "" });
           setTimeout(() => {
             setIsSubmit(Cookies.get("Submitted"));
             e.target.reset();
