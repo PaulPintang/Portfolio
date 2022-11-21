@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin } from "react-icons/fa";
+import { AiOutlineClockCircle } from "react-icons/ai";
 import { GrMail } from "react-icons/gr";
 import { MdLocalPhone } from "react-icons/md";
 import { RiMessengerFill } from "react-icons/ri";
@@ -130,8 +131,14 @@ const Contacts = () => {
                     placeholder="Your message"
                     required
                   />
-                  <SendBtn red type="submit">
+                  {/* <SendBtn red type="submit">
                     {loaderMsg ? "Sending..." : "Send"}
+                  </SendBtn> */}
+                  <SendBtn red disabled={true}>
+                    <Flex center>
+                      <AiOutlineClockCircle size={18} />
+                      <span>57 : 29s</span>
+                    </Flex>
                   </SendBtn>
                 </Flex>
               </form>

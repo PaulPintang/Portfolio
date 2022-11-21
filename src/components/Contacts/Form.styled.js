@@ -1,3 +1,4 @@
+import { toBeDisabled } from "@testing-library/jest-dom/dist/matchers";
 import styled from "styled-components";
 import { StyledButton } from "../Me/Me.styled";
 
@@ -30,10 +31,14 @@ export const TextArea = styled.textarea`
 `;
 
 export const SendBtn = styled(StyledButton)`
-  width: 125px;
+  opacity: 0.3;
+  width: 130px;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 600;
   margin: 0;
+  &:hover {
+    pointer-events: none;
+  }
   @media (max-width: 768px) {
     width: 100%;
   }
