@@ -140,7 +140,7 @@ const Contacts = () => {
                     placeholder="Your message"
                     required
                   />
-                  {/* {isSubmit ? (
+                  {isSubmit ? (
                     <Info>
                       <Flex def>
                         <BsCheck2Circle size={17} />
@@ -151,17 +151,17 @@ const Contacts = () => {
                     <SendBtn red type="submit">
                       {loaderMsg ? "Sending..." : "Send"}
                     </SendBtn>
-                  )} */}
+                  )}
+                  <SendBtn
+                    red
+                    onClick={() =>
+                      Cookies.set("name", "value", { expires: 7, path: "" })
+                    }
+                  >
+                    {loaderMsg ? "Sending..." : "test btn"}
+                  </SendBtn>
                 </Flex>
               </form>
-              <SendBtn
-                red
-                onClick={() =>
-                  Cookies.set("name", "value", { expires: 7, path: "" })
-                }
-              >
-                {loaderMsg ? "Sending..." : "Send"}
-              </SendBtn>
             </FormContainer>
           </Flex>
         </Wrapper>
