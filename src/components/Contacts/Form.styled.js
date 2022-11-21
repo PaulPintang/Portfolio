@@ -69,23 +69,16 @@ export const Popover = styled.div`
   padding: 12px;
   position: absolute;
   right: -80px;
-  bottom: -50px;
-  &:after {
-    content: "";
-    position: absolute;
+  bottom: -56px;
+`;
 
-    /* position tooltip correctly */
-    left: 100%;
-    margin-left: -5px;
-
-    /* vertically center */
-    top: 50%;
-    transform: translateY(-50%);
-
-    /* the arrow */
-    border: 10px solid #000;
-    border-color: transparent black transparent transparent;
-
-    display: none;
-  }
+export const ArrowUp = styled.div`
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #151c31;
+  position: absolute;
+  right: 12px;
+  bottom: 17px;
 `;

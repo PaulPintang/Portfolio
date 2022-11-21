@@ -17,6 +17,7 @@ import {
   Info,
   Note,
   Popover,
+  ArrowUp,
 } from "./Form.styled";
 import qoute from "../../assets/svg/left-qoute.svg";
 
@@ -160,12 +161,15 @@ const Contacts = () => {
                           />
                         </Note>
                         {isShown && (
-                          <Popover>
-                            <span>
-                              Please enjoy, and let us know if there’s anything
-                              else we can help you with.
-                            </span>
-                          </Popover>
+                          <>
+                            <ArrowUp></ArrowUp>
+                            <Popover>
+                              <span>
+                                Please enjoy, and let us know if there’s
+                                anything else we can help you with.
+                              </span>
+                            </Popover>
+                          </>
                         )}
                       </Flex>
                     </Info>
