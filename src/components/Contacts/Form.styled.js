@@ -61,3 +61,31 @@ export const Note = styled.div`
     display: none;
   }
 `;
+
+export const Popover = styled.div`
+  width: 200px;
+  font-size: 11px;
+  background-color: #151c31;
+  padding: 12px;
+  position: absolute;
+  right: -80px;
+  bottom: -50px;
+  &:after {
+    content: "";
+    position: absolute;
+
+    /* position tooltip correctly */
+    left: 100%;
+    margin-left: -5px;
+
+    /* vertically center */
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* the arrow */
+    border: 10px solid #000;
+    border-color: transparent black transparent transparent;
+
+    display: none;
+  }
+`;

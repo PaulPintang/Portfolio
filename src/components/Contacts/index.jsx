@@ -16,6 +16,7 @@ import {
   TextArea,
   Info,
   Note,
+  Popover,
 } from "./Form.styled";
 import qoute from "../../assets/svg/left-qoute.svg";
 
@@ -23,6 +24,7 @@ const Contacts = () => {
   const form = useRef();
   const [loaderMsg, setLoaderMsg] = useState(null);
   const [isSubmit, setIsSubmit] = useState(null);
+  const [isShown, setIsShown] = useState(false);
 
   useEffect(() => {
     setIsSubmit(Cookies.get("Submitted"));
@@ -151,8 +153,20 @@ const Contacts = () => {
                           <span>Your message has been sent successfully!</span>
                         </Flex>
                         <Note>
-                          <HiInformationCircle size={15} />
+                          <HiInformationCircle
+                            size={15}
+                            onMouseEnter={() => setIsShown(true)}
+                            onMouseLeave={() => setIsShown(false)}
+                          />
                         </Note>
+                        {isShown && (
+                          <Popover>
+                            <span>
+                              Please enjoy, and let us know if there’s anything
+                              else we can help you with.
+                            </span>
+                          </Popover>
+                        )}
                       </Flex>
                     </Info>
                   ) : (
