@@ -4,6 +4,10 @@ import { StyledButton } from "../Me/Me.styled";
 export const FormContainer = styled.section`
   width: 100%;
   height: 100%;
+  @media (max-width: 768px) {
+    background-color: #0e1625;
+    padding: 15px;
+  }
 `;
 export const Input = styled.input`
   width: 100%;

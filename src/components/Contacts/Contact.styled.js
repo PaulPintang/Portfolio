@@ -41,7 +41,6 @@ export const Wrapper = styled.div`
 export const Msg = styled.div`
   padding: 10px 0 30px 0;
   text-align: left;
-  // width: 80%;
   small {
     font-size: 13px;
   }
@@ -49,7 +48,7 @@ export const Msg = styled.div`
 export const ContactDetails = styled.div`
   opacity: 2;
   width: 300px;
-  background-color: #0e1625;
+  background-color: #081327;
   text-align: left;
   border-radius: 4px;
   height: 100%;
