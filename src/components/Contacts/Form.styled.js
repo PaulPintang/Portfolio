@@ -31,15 +31,20 @@ export const TextArea = styled.textarea`
 `;
 
 export const SendBtn = styled(StyledButton)`
-  opacity: ${({ disabled }) => (disabled ? "0.3" : "")};
-  width: 130px;
+  width: 135px;
   font-size: 13px;
   font-weight: 600;
   margin: 0;
-  &:hover {
-    pointer-events: ${({ disabled }) => (disabled ? "none" : "")};
-  }
   @media (max-width: 768px) {
     width: 100%;
+  }
+`;
+
+export const Info = styled.div`
+  font-size: 12px;
+  color: #b1b3b8;
+  padding: 10px 0;
+  div {
+    gap: 10px;
   }
 `;
