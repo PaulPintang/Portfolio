@@ -152,16 +152,16 @@ const Contacts = () => {
                       {loaderMsg ? "Sending..." : "Send"}
                     </SendBtn>
                   )}
-                  <SendBtn
-                    red
-                    onClick={() =>
-                      Cookies.set("name", "value", { expires: 7, path: "" })
-                    }
-                  >
-                    {loaderMsg ? "Sending..." : "test btn"}
-                  </SendBtn>
                 </Flex>
               </form>
+              <SendBtn
+                red
+                onClick={() =>
+                  Cookies.set("name", "value", { expires: 7, path: "" })
+                }
+              >
+                {loaderMsg ? "Sending..." : "test btn"}
+              </SendBtn>
             </FormContainer>
           </Flex>
         </Wrapper>
