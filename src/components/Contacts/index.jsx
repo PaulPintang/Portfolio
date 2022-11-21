@@ -32,7 +32,7 @@ const Contacts = () => {
       )
       .then(
         () => {
-          Cookies.set("Submitted", true, { expires: 1, path: "" });
+          // Cookies.set("Submitted", true, { expires: 1, path: "" });
           setTimeout(() => {
             setIsSubmit(Cookies.get("Submitted"));
             e.target.reset();
