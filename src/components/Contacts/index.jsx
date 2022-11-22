@@ -7,13 +7,7 @@ import { HiInformationCircle } from "react-icons/hi";
 import { GrMail } from "react-icons/gr";
 import { MdLocalPhone } from "react-icons/md";
 import { RiMessengerFill } from "react-icons/ri";
-import {
-  Container,
-  Span,
-  Center,
-  Flex,
-  Right,
-} from "../styles/Reusable.styled";
+import { Container, Span, Center, Flex } from "../styles/Reusable.styled";
 import { Section, Wrapper, ContactDetails, Msg } from "./Contact.styled";
 import {
   FormContainer,
