@@ -5,8 +5,9 @@ export const FormContainer = styled.section`
   width: 100%;
   height: 100%;
   @media (max-width: 768px) {
-    background-color: #0e1625;
+    background-color: #081327;
     padding: 15px;
+    border-radius: 4px;
   }
 `;
 export const Input = styled.input`
@@ -62,7 +63,7 @@ export const Note = styled.div`
   -ms-transition: all 200ms linear;
   transition: all 200ms linear;
   @media (max-width: 768px) {
-    display: none;
+    /* display: none; */
   }
 `;
 
@@ -78,6 +79,12 @@ export const Popover = styled.div`
   -webkit-transition: all 200ms linear;
   -ms-transition: all 200ms linear;
   transition: all 200ms linear;
+  @media (max-width: 768px) {
+    /* right: 33px; */
+    right: 0px;
+    bottom: -58px;
+    /* bottom: -55px; */
+  }
 `;
 
 export const ArrowUp = styled.div`
@@ -90,4 +97,8 @@ export const ArrowUp = styled.div`
   position: absolute;
   right: 12px;
   bottom: 17px;
+  @media (max-width: 768px) {
+    right: 27px;
+    bottom: 30px;
+  }
 `;

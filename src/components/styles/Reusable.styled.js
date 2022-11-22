@@ -26,8 +26,8 @@ export const Flex = styled.div`
   padding: ${({ contain }) => (contain ? "0 25px" : "0")};
   flex-direction: ${({ column }) => column && "column"};
   @media (max-width: 768px) {
-    flex-direction: ${({ right, left, center, contain }) =>
-      right || left ? "auto" : center || contain ? "row" : "column"};
+    flex-direction: ${({ right, left, center, containmobile }) =>
+      right || left ? "auto" : center || containmobile ? "row" : "column"};
   }
 `;
 

@@ -44,7 +44,7 @@ const Nav = () => {
 
   return (
     <Header navHeight={navHeight} click={click}>
-      <NavBar click={click} contain>
+      <NavBar click={click} containmobile contain>
         {!click && (
           <Logo>
             <a href="https://paulpintang.netlify.app/" rel="noreferrer">

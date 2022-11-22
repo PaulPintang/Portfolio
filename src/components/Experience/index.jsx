@@ -19,7 +19,7 @@ const Experience = () => {
           <h4>Pixel8 Web Solutions & Consultancy Inc.</h4>
           <h4>Feb 2022 - May 2022</h4>
         </FlexContent>
-        <FlexContent contain>
+        <FlexContent containmobile>
           <Line></Line>
           <section>
             <h5>Web Developer Intern</h5>
@@ -51,7 +51,7 @@ const Experience = () => {
           <h4>Snack Software, LLC</h4>
           <h4>July 2021 - Aug 2021</h4>
         </FlexContent>
-        <FlexContent contain>
+        <FlexContent containmobile>
           <Line></Line>
           <section>
             <h5>Front-end Developer Intern</h5>

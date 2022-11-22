@@ -7,7 +7,13 @@ import { HiInformationCircle } from "react-icons/hi";
 import { GrMail } from "react-icons/gr";
 import { MdLocalPhone } from "react-icons/md";
 import { RiMessengerFill } from "react-icons/ri";
-import { Container, Span, Center, Flex } from "../styles/Reusable.styled";
+import {
+  Container,
+  Span,
+  Center,
+  Flex,
+  Right,
+} from "../styles/Reusable.styled";
 import { Section, Wrapper, ContactDetails, Msg } from "./Contact.styled";
 import {
   FormContainer,
@@ -148,15 +154,16 @@ const Contacts = () => {
                   />
                   {isSubmit ? (
                     <Info onMouseLeave={() => setIsShown(false)}>
-                      <Flex def justify>
+                      <Flex def justify containmobile>
                         <Flex def left>
                           <BsCheck2Circle size={17} />
-                          <span>Your message has been sent successfully!</span>
+                          <span>Your message has been sent!</span>
                         </Flex>
                         <Note>
                           <HiInformationCircle
                             size={15}
                             onMouseEnter={() => setIsShown(true)}
+                            onClick={() => setIsShown(true)}
                           />
                         </Note>
                         {isShown && (
