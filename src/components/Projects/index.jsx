@@ -161,18 +161,15 @@ const Projects = () => {
                 </h4>
               </Right>
 
-              <h3>Covid-19 Tracker</h3>
+              <h3>Covid-19 Tracker V1</h3>
             </div>
 
             <Description>
               <p>
                 This is my first project while learning javascript. I made this
                 Covid-19 Tracker app after learning how to use an API on a
-                website. Here's a link to the covid API that I used for this
-                project:
-                <a href="https://disease.sh" target="_blank" rel="noreferrer">
-                  <Span>Covid-19 API</Span>
-                </a>
+                website. Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. lorem5 met consectetur adipisicin
               </p>
             </Description>
 
