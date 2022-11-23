@@ -9,7 +9,7 @@ import {
   Description,
   LinkToProject,
 } from "./Projects.styled";
-import img1 from "../../assets/img/projects/2.png";
+import img1 from "../../assets/img/projects/1.png";
 import img2 from "../../assets/img/projects/2.png";
 import img3 from "../../assets/img/projects/3.png";
 import img4 from "../../assets/img/projects/4.png";
@@ -26,7 +26,7 @@ const Projects = () => {
         <ProjectContainer>
           <div>
             <a
-              href="https://sharp-heyrovsky-44e00e.netlify.app/"
+              href="https://github.com/PaulPintang/Pintern"
               target="_blank"
               rel="noreferrer"
             >
@@ -37,7 +37,7 @@ const Projects = () => {
             <div>
               <Right>
                 <h4>
-                  No.<Span>01</Span>
+                  No. <Span>01</Span>
                 </h4>
               </Right>
 
@@ -46,39 +46,40 @@ const Projects = () => {
 
             <Description>
               <p>
-                The frontendmentor.io website serves as a classroom setting for
-                me to improve my development skills. This project challenged me
-                to design the navigation bar from scratch. Lorem ipsum, dolor
-                sit amet consectetur adipisicing.
+                <b>Pintern</b> was built on the MERN stack and this is what I'm
+                <b> currently building.</b> This is a full-stack website that
+                can help companies to manage the everyday tasks of their
+                trainees. Users can join or create teams through an invitation
+                code.
               </p>
             </Description>
 
             <Flex right>
-              <small>REACT</small>
-              <small>EXPRESS</small>
-              <small>MONGODB</small>
-              <small>MANTINE</small>
+              <small>React</small>
+              <small>Express</small>
+              <small>MongoDB</small>
+              <small>MantineUI</small>
             </Flex>
 
             <LinkToProject>
               <li>
                 <a
-                  href="https://github.com/PaulPintang/easybank-landing-page"
+                  href="https://github.com/PaulPintang/Pintern"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <BsGithub />
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
-                  href="https://sharp-heyrovsky-44e00e.netlify.app/"
+                  href="https://github.com/PaulPintang/Pintern"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <FiExternalLink size={21} />
                 </a>
-              </li>
+              </li> */}
             </LinkToProject>
           </ProjectInfo>
         </ProjectContainer>
@@ -88,25 +89,24 @@ const Projects = () => {
           <ProjectInfo left>
             <div>
               <h4>
-                No.<Span>02</Span>
+                No. <Span>02</Span>
               </h4>
               <h3>Covid-19 Tracker V2</h3>
             </div>
 
             <Description>
               <p>
-                This is a frontendmentor.io landing page challenge to help me
-                practice creating responsive websites. This task was quite
-                beneficial in terms of learning CSS best practices. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Corporis,
-                accusamus?
+                A nicer look and another version of my covid tracker website
+                built with React and Tailwind CSS. Added features include
+                filtering by continents, top countries with active covid cases,
+                and detailed covid stats by countries.
               </p>
             </Description>
 
             <Flex left>
-              <small>REACT</small>
-              <small>TAILWINDCSS</small>
-              <small>JAVASCRIPT</small>
+              <small>React</small>
+              <small>Tailwind CSS</small>
+              <small>Javascript</small>
               <small>API</small>
             </Flex>
 
@@ -157,7 +157,7 @@ const Projects = () => {
             <div>
               <Right>
                 <h4>
-                  No.<Span>03</Span>
+                  No. <Span>03</Span>
                 </h4>
               </Right>
 
@@ -166,17 +166,16 @@ const Projects = () => {
 
             <Description>
               <p>
-                This is my first project while learning javascript. I made this
-                Covid-19 Tracker app after learning how to use an API on a
-                website. Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. lorem5 met consectetur adipisicin
+                The first website I designed and built in 2020. This is a simple
+                covid tracker website with the use of API. This is the time I
+                got interested in learning more about web development.
               </p>
             </Description>
 
             <Flex right>
               <small>HTML</small>
               <small>CSS</small>
-              <small>JAVASCRIPT</small>
+              <small>Javascript</small>
               <small>API</small>
             </Flex>
 
@@ -208,24 +207,23 @@ const Projects = () => {
           <ProjectInfo left>
             <div>
               <h4>
-                No.<Span>04</Span>
+                No. <Span>04</Span>
               </h4>
               <h3>Portfolio Website</h3>
             </div>
 
             <Description>
               <p>
-                This frontendmentor.io challenge put me to a test in javascript.
-                This simple project improved my understanding of DOM
-                manipulation and javascript event listerner implementation.
-                Lorem ipsum dolor sit amet, consectetur adipisicing.
+                The first portfolio website I designed and built in 2021. I was
+                interested in learning React.Js, so I build this with React to
+                improve my learning about the library.
               </p>
             </Description>
 
             <Flex left>
-              <small>REACT</small>
-              <small>STYLED-COMPONENTS</small>
-              <small>JAVASCRIPT</small>
+              <small>React</small>
+              <small>Styled Components</small>
+              <small>Javascript</small>
             </Flex>
 
             <LinkToProject>

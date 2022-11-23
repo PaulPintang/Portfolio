@@ -16,7 +16,7 @@ export const ProjectContainer = styled(Flex)`
   margin: auto;
   position: relative;
   img {
-    width: 630px;
+    width: 627px;
     transition: transform 0.2s ease-in;
     &:hover {
       cursor: pointer;
