@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <small>Designed by Paul Pintang &copy; 2022</small>
           </div>
-          <small>Built using React.Js</small>
+          <small>Built with React.Js</small>
           <Flex center>
             <HiLocationMarker />
             <small>Philippines</small>

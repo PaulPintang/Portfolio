@@ -144,7 +144,11 @@ const Nav = () => {
           )}
 
           <li>
-            <a href="https://drive.google.com/file/d/1g6palLjOPwLrxL2AjSK3oEPE_HwBdD-x/view?usp=sharing">
+            <a
+              href="https://drive.google.com/file/d/11pdYyj6SzOhSCt3Ehi1K_mEVj5bdHN3B/view?usp=share_link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Button nav>RESUME</Button>
             </a>
           </li>

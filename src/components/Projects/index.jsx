@@ -48,7 +48,7 @@ const Projects = () => {
               <p>
                 <b>Pintern</b> was built on the MERN stack and this is what I'm
                 <b> currently building.</b> This is a full-stack website that
-                can help companies to manage the everyday tasks of their
+                aim to help companies to manage the everyday tasks of their
                 trainees. Users can join or create teams through an invitation
                 code.
               </p>
