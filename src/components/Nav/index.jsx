@@ -145,7 +145,7 @@ const Nav = () => {
 
           <li>
             <a
-              href="https://drive.google.com/file/d/1pLsFkeB-V6-DOSvAG_8IpJU01t9_4rbx/view?usp=sharing"
+              href="https://drive.google.com/file/d/1MDYJWelmMLw_XEK1NoQJWTN7TxUzF3h7/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
