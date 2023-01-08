@@ -29,12 +29,13 @@ const Me = () => {
               </h1>
               <TextAnimated>I'm a Front-End Developer</TextAnimated>
               <BtnControl>
-                <a href="#contacts">
+                <Link to="contacts" smooth={true} offset={-100} duration={500}>
                   <StyledButton red>Let's work together</StyledButton>
-                </a>
-                <a href="#projects">
+                </Link>
+
+                <Link to="projects" smooth={true} offset={-100} duration={500}>
                   <StyledButton>Check out my projects</StyledButton>
-                </a>
+                </Link>
               </BtnControl>
             </div>
             <Link to="services" smooth={true} offset={-100} duration={500}>
