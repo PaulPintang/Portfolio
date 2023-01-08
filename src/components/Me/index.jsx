@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-scroll";
 import AnimationContext from "../../context/AnimationContext";
 import {
   Container,
@@ -36,12 +37,14 @@ const Me = () => {
                 </a>
               </BtnControl>
             </div>
-            <ScrollDown>
-              <ArrowDown></ArrowDown>
-              <a href="#services">
-                <ScrollTitle>scroll down</ScrollTitle>
-              </a>
-            </ScrollDown>
+            <Link to="services" smooth={true} offset={-100} duration={500}>
+              <ScrollDown>
+                <ArrowDown></ArrowDown>
+                <a href="#services">
+                  <ScrollTitle>scroll down</ScrollTitle>
+                </a>
+              </ScrollDown>
+            </Link>
           </Column>
         </Section>
       </Reveal>

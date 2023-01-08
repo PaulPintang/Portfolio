@@ -28,6 +28,9 @@ h3 {
 p {
   opacity: 0.5;
 }
+li:hover{
+  cursor: pointer;
+}
 a{
   text-decoration: none;
 }

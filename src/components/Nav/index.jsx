@@ -43,25 +43,6 @@ const Nav = () => {
     setClick(!click);
   };
 
-  const menuItems = [
-    {
-      id: 1,
-      title: "services",
-    },
-    {
-      id: 2,
-      title: "projects",
-    },
-    {
-      id: 3,
-      title: "experience",
-    },
-    {
-      id: 4,
-      title: "contacts",
-    },
-  ];
-
   return (
     <Header navHeight={navHeight} click={click}>
       <NavBar click={click} containmobile contain>
@@ -91,8 +72,11 @@ const Nav = () => {
 
         <NavLinks click={click}>
           <li>
-            <a
-              href="#services"
+            <Link
+              to="services"
+              smooth={true}
+              offset={-105}
+              duration={50}
               onClick={() => {
                 setClick(false);
                 setShowMenu(true);
@@ -100,11 +84,14 @@ const Nav = () => {
             >
               <Span>S</Span>
               ervices
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#projects"
+            <Link
+              to="projects"
+              smooth={true}
+              offset={-105}
+              duration={50}
               onClick={() => {
                 setClick(false);
                 setShowMenu(true);
@@ -112,11 +99,14 @@ const Nav = () => {
             >
               <Span>P</Span>
               rojects
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#experience"
+            <Link
+              to="experience"
+              smooth={true}
+              offset={-105}
+              duration={50}
               onClick={() => {
                 setClick(false);
                 setShowMenu(true);
@@ -124,11 +114,14 @@ const Nav = () => {
             >
               <Span>E</Span>
               xperience
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contacts"
+            <Link
+              to="contacts"
+              smooth={true}
+              offset={-105}
+              duration={50}
               onClick={() => {
                 setClick(false);
                 setShowMenu(true);
@@ -136,32 +129,25 @@ const Nav = () => {
             >
               <Span>C</Span>
               ontacts
+            </Link>
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/PaulPintang"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {click ? (
+                <>
+                  <Span>G</Span>
+                  ithub
+                </>
+              ) : (
+                <BsGithub size={16} />
+              )}
             </a>
           </li>
-          {click ? (
-            <li>
-              <a
-                href="#services"
-                onClick={() => {
-                  setClick(false);
-                  setShowMenu(true);
-                }}
-              >
-                <Span>G</Span>
-                ithub
-              </a>
-            </li>
-          ) : (
-            <li>
-              <a
-                href="https://github.com/PaulPintang"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <BsGithub size={16} />
-              </a>
-            </li>
-          )}
 
           <li>
             <a
