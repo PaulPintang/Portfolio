@@ -47,7 +47,7 @@ const Nav = () => {
       <NavBar click={click} containmobile contain>
         {!click && (
           <Logo>
-            <a href="https://paulpintang.netlify.app/" rel="noreferrer">
+            <a href="https://paulpintang.com" rel="noreferrer">
               <h1>
                 <Span>P</Span>IN<Span>.</Span>
               </h1>

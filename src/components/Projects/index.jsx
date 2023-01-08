@@ -238,7 +238,7 @@ const Projects = () => {
               </li>
               <li>
                 <a
-                  href="https://paulpintang.netlify.app/"
+                  href="https://paulpintang.com"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -248,11 +248,7 @@ const Projects = () => {
             </LinkToProject>
           </ProjectInfo>
           <div>
-            <a
-              href="https://paulpintang.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://paulpintang.com" target="_blank" rel="noreferrer">
               <img src={img4} alt="" />
             </a>
           </div>
