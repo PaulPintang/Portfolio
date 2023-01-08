@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import { BsGithub } from "react-icons/bs";
 import { MdOutlineClose } from "react-icons/md";
 import { Span, Button, ToggleNav } from "../styles/Reusable.styled";
@@ -41,6 +42,25 @@ const Nav = () => {
     setShowMenu(!showMenu);
     setClick(!click);
   };
+
+  const menuItems = [
+    {
+      id: 1,
+      title: "services",
+    },
+    {
+      id: 2,
+      title: "projects",
+    },
+    {
+      id: 3,
+      title: "experience",
+    },
+    {
+      id: 4,
+      title: "contacts",
+    },
+  ];
 
   return (
     <Header navHeight={navHeight} click={click}>
