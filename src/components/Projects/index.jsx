@@ -9,7 +9,7 @@ import {
   Description,
   LinkToProject,
 } from "./Projects.styled";
-import img1 from "../../assets/img/projects/1.png";
+import img1 from "../../assets/img/projects/01.png";
 import img2 from "../../assets/img/projects/2.png";
 import img3 from "../../assets/img/projects/3.png";
 import img4 from "../../assets/img/projects/4.png";
@@ -46,11 +46,11 @@ const Projects = () => {
 
             <Description>
               <p>
-                <b>Pintern</b> was built on the MERN stack and this is what I'm
-                <b> currently building.</b> This is a full-stack website that
-                aim to help companies to manage the everyday tasks of their
-                trainees. Users can join or create teams through an invitation
-                code.
+                <b>Pintern</b> was built on the MERN stack and this is
+                <b> currently under development.</b> This is a full-stack
+                website that aim to help companies to manage the everyday tasks
+                of their trainees. Users can join or create teams through an
+                invitation code.
               </p>
             </Description>
 
