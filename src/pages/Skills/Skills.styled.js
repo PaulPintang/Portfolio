@@ -12,6 +12,7 @@ export const FlexContainer = styled(Flex)`
   width: 730px;
   margin: auto;
   flex-wrap: wrap;
+  justify-content: center;
   @media (max-width: 768px) {
     justify-content: center;
     flex-direction: unset;

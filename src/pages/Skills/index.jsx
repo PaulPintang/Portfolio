@@ -6,9 +6,13 @@ import css from "../../assets/img/skills/css-3.svg";
 import twc from "../../assets/img/skills/tailwindcss.svg";
 import sass from "../../assets/img/skills/sass.svg";
 import js from "../../assets/img/skills/javascript.svg";
+import ts from "../../assets/img/skills/typescript.png";
+import node from "../../assets/img/skills/nodejs.png";
+import express from "../../assets/img/skills/express.png";
+import mongo from "../../assets/img/skills/mongodb.svg";
 import git from "../../assets/img/skills/git.svg";
-import netlify from "../../assets/img/skills/netlify.svg";
 import react from "../../assets/img/skills/react.png";
+import redux from "../../assets/img/skills/redux.png";
 import mantine from "../../assets/img/skills/mantine.svg";
 import styled from "../../assets/img/skills/sc.png";
 
@@ -47,19 +51,13 @@ const Skills = () => {
           <ImgContainer>
             <Center>
               <img src={js} alt=""></img>
-              <p>Javascript</p>
+              <p>JavaScript</p>
             </Center>
           </ImgContainer>
           <ImgContainer>
             <Center>
-              <img src={react} alt=""></img>
-              <p>React</p>
-            </Center>
-          </ImgContainer>
-          <ImgContainer>
-            <Center>
-              <img src={styled} alt=""></img>
-              <p>Styled</p>
+              <img src={ts} alt=""></img>
+              <p>TypeScript</p>
             </Center>
           </ImgContainer>
           <ImgContainer>
@@ -70,14 +68,44 @@ const Skills = () => {
           </ImgContainer>
           <ImgContainer>
             <Center>
+              <img src={styled} alt=""></img>
+              <p>Styled</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
               <img src={git} alt=""></img>
               <p>Git</p>
             </Center>
           </ImgContainer>
           <ImgContainer>
             <Center>
-              <img src={netlify} alt=""></img>
-              <p>Netlify</p>
+              <img src={redux} alt=""></img>
+              <p>Redux Toolkit</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={mongo} alt=""></img>
+              <p>MongoDB</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={express} alt=""></img>
+              <p>Express.Js</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={react} alt=""></img>
+              <p>React.Js</p>
+            </Center>
+          </ImgContainer>
+          <ImgContainer>
+            <Center>
+              <img src={node} alt=""></img>
+              <p>Node.Js</p>
             </Center>
           </ImgContainer>
         </FlexContainer>
