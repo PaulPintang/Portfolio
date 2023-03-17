@@ -9,7 +9,7 @@ const Footer = () => {
       <Container>
         <Center>
           <div>
-            <small>Designed by Paul Pintang &copy; 2022</small>
+            <small>Designed by Paul Pintang &copy; 2023</small>
           </div>
           <small>Built with React.Js</small>
           <Flex center>

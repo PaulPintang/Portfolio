@@ -165,9 +165,9 @@ const Contacts = () => {
                             <ArrowUp></ArrowUp>
                             <Popover onClick={() => setIsShown(false)}>
                               <span>
-                                <b>Thanks for reaching out!</b> <br /> You can
-                                send me another email using this form the next
-                                day. Cheers!
+                                <b>Thanks for reaching out!</b> <br /> I will
+                                reply to you as soon as possible. Cheers! <br />{" "}
+                                ~ Paul
                               </span>
                             </Popover>
                           </>

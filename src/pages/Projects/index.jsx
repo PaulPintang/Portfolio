@@ -13,6 +13,7 @@ import img1 from "../../assets/img/projects/01.png";
 import img2 from "../../assets/img/projects/2.png";
 import img3 from "../../assets/img/projects/3.png";
 import img4 from "../../assets/img/projects/4.png";
+import img5 from "../../assets/img/projects/5.png";
 
 const Projects = () => {
   return (
@@ -252,6 +253,66 @@ const Projects = () => {
               <img src={img4} alt="" />
             </a>
           </div>
+        </ProjectContainer>
+
+        {/* No 5 */}
+        <ProjectContainer>
+          <div>
+            <a
+              href="https://lingks.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={img5} alt="" />
+            </a>
+          </div>
+          <ProjectInfo right>
+            <div>
+              <Right>
+                <h4>
+                  No. <Span>05</Span>
+                </h4>
+              </Right>
+
+              <h3>Lingks</h3>
+            </div>
+
+            <Description>
+              <p>
+                Bookmark web app built with MERN Stack, Redux Toolkit and with
+                TypeScript. This helps to saved important links and make them
+                easily to find if needed.
+              </p>
+            </Description>
+
+            <Flex right>
+              <small>React TypeScript</small>
+              <small>Redux Toolkit</small>
+              <small>MongoDB</small>
+              <small>API</small>
+            </Flex>
+
+            <LinkToProject>
+              <li>
+                <a
+                  href="https://github.com/PaulPintang/lingks"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <BsGithub />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://lingks.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FiExternalLink size={21} />
+                </a>
+              </li>
+            </LinkToProject>
+          </ProjectInfo>
         </ProjectContainer>
       </Container>
     </Section>
