@@ -2,4 +2,4 @@
 
 Project Link: https://paulpintang.com <br>
 Screenshot:
-![This is an image](/src/assets/screenshot.png)
+![This is an image](/public/prev.png)
