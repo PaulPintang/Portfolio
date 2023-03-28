@@ -8,6 +8,7 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
 import GlobalStyles from "./pages/styles/GlobalStyles";
+import Experience from "./pages/Experience";
 
 function App() {
   return (
