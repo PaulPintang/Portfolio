@@ -48,11 +48,11 @@ const Projects = () => {
 
             <Description>
               <p>
-                <b>Pintern</b> was built on the MERN stack and this is
-                <b> currently under development.</b> This is a full-stack
-                website that aim to help companies to manage the everyday tasks
-                of their trainees. Users can join or create teams through an
-                invitation code.
+                <b>Pintern</b> was built on the MERN stack and is
+                <b> currently under development.</b> It is a full-stack website
+                that aims to help companies manage the everyday tasks of their
+                trainees. Users can join or create teams using an invitation
+                code.
               </p>
             </Description>
 
@@ -206,9 +206,9 @@ const Projects = () => {
 
             <Description>
               <p>
-                The first portfolio website I designed and built in 2021. I was
-                interested in learning React.Js, so I build this with React to
-                improve my learning about the library.
+                This is the first portfolio website I designed and built in
+                2021. As I was interested in learning React.js, I built it using
+                React to enhance my understanding of the library.
               </p>
             </Description>
 
@@ -320,9 +320,10 @@ const Projects = () => {
 
             <Description>
               <p>
-                The first website I designed and built in 2020. This is a simple
-                covid tracker website with the use of API. This is the time I
-                got interested in learning more about web development.
+                This is my first project when I started studying web
+                development. This is a simple covid tracker website with the use
+                of API. This is the time I got interested in learning more about
+                web development.
               </p>
             </Description>
 
