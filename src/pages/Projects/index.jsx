@@ -9,11 +9,12 @@ import {
   Description,
   LinkToProject,
 } from "./Projects.styled";
-import img1 from "../../assets/img/projects/01.png";
+import img1 from "../../assets/img/projects/1.png";
 import img2 from "../../assets/img/projects/2.png";
 import img3 from "../../assets/img/projects/3.png";
 import img4 from "../../assets/img/projects/4.png";
 import img5 from "../../assets/img/projects/5.png";
+import img6 from "../../assets/img/projects/6.png";
 
 const Projects = () => {
   return (
@@ -147,7 +148,7 @@ const Projects = () => {
         <ProjectContainer>
           <div>
             <a
-              href="https://paulpintang.github.io/Covid-19-Tracker-App/"
+              href="https://hrc-store.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -162,37 +163,27 @@ const Projects = () => {
                 </h4>
               </Right>
 
-              <h3>Covid-19 Tracker V1</h3>
+              <h3>HRC E-Commerce Store</h3>
             </div>
 
             <Description>
               <p>
-                The first website I designed and built in 2020. This is a simple
-                covid tracker website with the use of API. This is the time I
-                got interested in learning more about web development.
+                A clothing line business e-commerce store build using MERN
+                Stack.
               </p>
             </Description>
 
             <Flex right>
-              <small>HTML</small>
-              <small>CSS</small>
-              <small>Javascript</small>
-              <small>API</small>
+              <small>React TS</small>
+              <small>Redux Toolkit</small>
+              <small>MongoDB</small>
+              <small>Express</small>
             </Flex>
 
             <LinkToProject>
               <li>
                 <a
-                  href="https://github.com/PaulPintang/Covid-19-Tracker-App"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <BsGithub />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://paulpintang.github.io/Covid-19-Tracker-App/"
+                  href="https://hrc-store.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -286,10 +277,10 @@ const Projects = () => {
             </Description>
 
             <Flex right>
-              <small>React TypeScript</small>
+              <small>React TS</small>
               <small>Redux Toolkit</small>
               <small>MongoDB</small>
-              <small>API</small>
+              <small>Express</small>
             </Flex>
 
             <LinkToProject>
@@ -313,6 +304,65 @@ const Projects = () => {
               </li>
             </LinkToProject>
           </ProjectInfo>
+        </ProjectContainer>
+
+        <ProjectContainer>
+          <ProjectInfo left>
+            <div>
+              <Right>
+                <h4>
+                  No. <Span>06</Span>
+                </h4>
+              </Right>
+
+              <h3>Covid-19 Tracker V1</h3>
+            </div>
+
+            <Description>
+              <p>
+                The first website I designed and built in 2020. This is a simple
+                covid tracker website with the use of API. This is the time I
+                got interested in learning more about web development.
+              </p>
+            </Description>
+
+            <Flex right>
+              <small>HTML</small>
+              <small>CSS</small>
+              <small>Javascript</small>
+              <small>API</small>
+            </Flex>
+
+            <LinkToProject>
+              <li>
+                <a
+                  href="https://github.com/PaulPintang/Covid-19-Tracker-App"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <BsGithub />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://paulpintang.github.io/Covid-19-Tracker-App/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FiExternalLink size={21} />
+                </a>
+              </li>
+            </LinkToProject>
+          </ProjectInfo>
+          <div>
+            <a
+              href="https://paulpintang.github.io/Covid-19-Tracker-App/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={img6} alt="" />
+            </a>
+          </div>
         </ProjectContainer>
       </Container>
     </Section>
