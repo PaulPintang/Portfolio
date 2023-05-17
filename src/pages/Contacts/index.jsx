@@ -108,7 +108,7 @@ const Contacts = () => {
 
               <Flex left>
                 <MdLocalPhone />
-                <a href="tel:09553054546" target="_blank" rel="noreferrer">
+                <a href="tel:09269959411" target="_blank" rel="noreferrer">
                   <p>+63 926 995 9411</p>
                 </a>
               </Flex>
