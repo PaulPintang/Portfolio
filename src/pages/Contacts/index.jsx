@@ -36,10 +36,10 @@ const Contacts = () => {
     setLoaderMsg(true);
     emailjs
       .sendForm(
-        `${process.env.REACT_APP_SERVICE_ID}`,
-        `${process.env.REACT_APP_TEMPLATE_ID}`,
+        `${import.meta.env.VITE_SERVICE_ID}`,
+        `${import.meta.env.VITE_TEMPLATE_ID}`,
         form.current,
-        `${process.env.REACT_APP_PUBLIC_KEY}`
+        `${import.meta.env.VITE_PUBLIC_KEY}`
       )
       .then(
         () => {
@@ -175,7 +175,11 @@ const Contacts = () => {
                       </Flex>
                     </Info>
                   ) : (
-                    <SendBtn red type="submit">
+                    <SendBtn
+                      red
+                      type="submit"
+                      disabled={loaderMsg ? true : false}
+                    >
                       {loaderMsg ? "Sending..." : "Send"}
                     </SendBtn>
                   )}
