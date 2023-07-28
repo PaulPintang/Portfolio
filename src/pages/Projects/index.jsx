@@ -28,7 +28,7 @@ const Projects = () => {
         <ProjectContainer>
           <div>
             <a
-              href="https://github.com/PaulPintang/Pintern"
+              href="https://traineetasker.up.railway.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -43,45 +43,43 @@ const Projects = () => {
                 </h4>
               </Right>
 
-              <h3>Pintern</h3>
+              <h3>TraineeTasker</h3>
             </div>
 
             <Description>
               <p>
-                <b>Pintern</b> was built on the MERN stack and is
-                <b> currently under development.</b> It is a full-stack website
-                that aims to help companies manage the everyday tasks of their
-                trainees. Users can join or create teams using an invitation
-                code.
+                An online platform that facilitates efficient task management
+                and record-keeping for trainees, enabling seamless tracking of
+                tasks, timesheets, and daily work records.
               </p>
             </Description>
 
             <Flex right>
-              <small>React</small>
+              <small>React TS</small>
+              <small>RTK Query</small>
+              <small>Socket.IO</small>
               <small>Express</small>
-              <small>MongoDB</small>
-              <small>MantineUI</small>
             </Flex>
 
             <LinkToProject>
               <li>
                 <a
-                  href="https://github.com/PaulPintang/Pintern"
+                  href="https://github.com/PaulPintang/pixel8-traineetasker"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <BsGithub />
                 </a>
               </li>
-              {/* <li>
+              <li>
                 <a
-                  href="https://github.com/PaulPintang/Pintern"
+                  href="https://traineetasker.up.railway.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <FiExternalLink size={21} />
                 </a>
-              </li> */}
+              </li>
             </LinkToProject>
           </ProjectInfo>
         </ProjectContainer>
