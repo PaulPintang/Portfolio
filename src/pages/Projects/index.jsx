@@ -317,7 +317,7 @@ const Projects = () => {
 							</li>
 							<li>
 								<a
-									href="https://paulpintang.com"
+									href="https://paulpintang.vercel.app"
 									target="_blank"
 									rel="noreferrer"
 								>
@@ -327,7 +327,11 @@ const Projects = () => {
 						</LinkToProject>
 					</ProjectInfo>
 					<div>
-						<a href="https://paulpintang.com" target="_blank" rel="noreferrer">
+						<a
+							href="https://paulpintang.vercel.app"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<img src={img4} alt="" />
 						</a>
 					</div>

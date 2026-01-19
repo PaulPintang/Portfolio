@@ -151,7 +151,7 @@ const Nav = () => {
 
 					<li>
 						<a
-							href="https://paulpintang.com/resume.pdf"
+							href="https://paulpintang.vercel.app/resume.pdf"
 							target="_blank"
 							rel="noreferrer"
 						>
