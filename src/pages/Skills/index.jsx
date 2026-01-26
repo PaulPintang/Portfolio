@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { reveal } from "../../utils/animation";
 import {
 	Center,
@@ -31,13 +31,13 @@ import styled from "../../assets/img/skills/sc.png";
 const Skills = () => {
 	const sectionRef = useRef(null);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		if (sectionRef.current) reveal(sectionRef.current);
 	}, []);
 
 	return (
-		<Container>
-			<Section ref={sectionRef}>
+		<Section ref={sectionRef} className="reveal">
+			<Container>
 				<Center paddingBottom="60px">
 					<h2>
 						My <Span>Skills</Span>
@@ -170,8 +170,8 @@ const Skills = () => {
 						</Center>
 					</ImgContainer>
 				</FlexContainer>
-			</Section>
-		</Container>
+			</Container>
+		</Section>
 	);
 };
 

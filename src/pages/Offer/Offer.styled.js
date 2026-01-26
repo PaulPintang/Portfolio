@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Center } from "../styles/Reusable.styled";
 
 export const Section = styled.section`
 	@media (max-width: 768px) {

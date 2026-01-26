@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useContext } from "react";
+import React, { useRef, useLayoutEffect } from "react";
 import { reveal } from "../../utils/animation";
 
 import { BsGithub } from "react-icons/bs";
@@ -24,7 +24,7 @@ const Projects = () => {
 	const projectRefs = useRef([]);
 	const sectionRef = useRef(null);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		if (sectionRef.current) reveal(sectionRef.current);
 
 		projectRefs.current.forEach((ref, index) => {
@@ -33,7 +33,7 @@ const Projects = () => {
 	}, []);
 
 	return (
-		<Section id="projects" ref={sectionRef}>
+		<Section id="projects" ref={sectionRef} className="reveal">
 			<Container>
 				<Center paddingBottom="60px">
 					<h2>
@@ -48,6 +48,7 @@ const Projects = () => {
 					<ProjectContainer
 						key={project.id}
 						ref={(el) => (projectRefs.current[index] = el)}
+						className={index === 0 ? "" : "reveal"}
 					>
 						{project.right ? (
 							<>

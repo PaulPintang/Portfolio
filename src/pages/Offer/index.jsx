@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import {
 	Container,
 	Flex,
@@ -15,12 +15,12 @@ import { reveal } from "../../utils/animation";
 const Offer = () => {
 	const sectionRef = useRef(null);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		if (sectionRef.current) reveal(sectionRef.current);
 	}, []);
 
 	return (
-		<Section id="services" ref={sectionRef}>
+		<Section id="services" ref={sectionRef} className="reveal">
 			<Container>
 				<Center paddingBottom="60px">
 					<h2>

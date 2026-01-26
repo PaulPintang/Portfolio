@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Button, Flex } from "../styles/Reusable.styled";
 
 export const Section = styled.section`
+	opacity: 0;
 	margin-top: 120px;
 	text-align: center;
 `;

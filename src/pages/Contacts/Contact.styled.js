@@ -46,6 +46,9 @@ export const Msg = styled.div`
 	small {
 		font-size: 13px;
 	}
+	@media (max-width: 768px) {
+		max-width: 94%;
+	}
 `;
 export const ContactDetails = styled.div`
 	opacity: 2;

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect, useContext } from "react";
+import React, { useRef, useState, useEffect, useLayoutEffect } from "react";
 import Cookies from "js-cookie";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin } from "react-icons/fa";
@@ -34,7 +34,7 @@ const Contacts = () => {
 		setIsSubmit(Cookies.get("Submitted"));
 	}, [isSubmit]);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		if (sectionRef.current) reveal(sectionRef.current);
 	}, []);
 
@@ -67,7 +67,7 @@ const Contacts = () => {
 	};
 
 	return (
-		<Section id="contacts" ref={sectionRef}>
+		<Section id="contacts" ref={sectionRef} className="reveal">
 			<Container>
 				<Center>
 					<h1>

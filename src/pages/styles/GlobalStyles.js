@@ -12,19 +12,6 @@ html, body {
   overflow: hidden;
 }
 
-#smooth-wrapper {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-#smooth-content {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -54,6 +41,24 @@ li:hover{
 a{
   text-decoration: none;
 }
+
+.reveal {
+  opacity: 0;
+}
+
+#smooth-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#smooth-content {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 /* custom scrollbar */
 #scrollbar::-webkit-scrollbar {
   width: 6px;

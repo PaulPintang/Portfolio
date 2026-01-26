@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { reveal, scrollToSection } from "../../utils/animation";
 
 import {
@@ -19,13 +19,13 @@ import {
 const Me = () => {
 	const sectionRef = useRef(null);
 
-	useEffect(() => {
-		if (sectionRef.current) reveal(sectionRef.current);
+	useLayoutEffect(() => {
+		if (sectionRef.current) reveal(sectionRef.current, { delay: 0.3 });
 	}, []);
 
 	return (
-		<Container>
-			<Section ref={sectionRef} style={{ opacity: 0 }}>
+		<Section ref={sectionRef}>
+			<Container>
 				<Column>
 					<div>
 						<h1>
@@ -34,26 +34,23 @@ const Me = () => {
 						<TextAnimated>I'm a Web Developer</TextAnimated>
 
 						<BtnControl>
-							<StyledButton
-								red
-								onClick={() => scrollToSection("contacts", -100)}
-							>
+							<StyledButton red onClick={() => scrollToSection("contacts")}>
 								Let's work together
 							</StyledButton>
 
-							<StyledButton onClick={() => scrollToSection("projects", -100)}>
+							<StyledButton onClick={() => scrollToSection("projects")}>
 								Check out my projects
 							</StyledButton>
 						</BtnControl>
 					</div>
 
-					<ScrollDown onClick={() => scrollToSection("services", -100)}>
+					<ScrollDown onClick={() => scrollToSection("services")}>
 						<ArrowDown />
 						<ScrollTitle>scroll down</ScrollTitle>
 					</ScrollDown>
 				</Column>
-			</Section>
-		</Container>
+			</Container>
+		</Section>
 	);
 };
 
