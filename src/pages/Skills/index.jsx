@@ -1,6 +1,11 @@
-import { useContext, useEffect, useRef } from "react";
-import AnimationContext from "../../context/AnimationContext";
-import { Center, Container, Span } from "../styles/Reusable.styled";
+import { useEffect, useRef } from "react";
+import { reveal } from "../../utils/animation";
+import {
+	Center,
+	Container,
+	SectionDescription,
+	Span,
+} from "../styles/Reusable.styled";
 import { Section, FlexContainer, ImgContainer } from "./Skills.styled";
 import html from "../../assets/img/skills/html.svg";
 import css from "../../assets/img/skills/css-3.svg";
@@ -24,12 +29,11 @@ import mantine from "../../assets/img/skills/mantine.svg";
 import styled from "../../assets/img/skills/sc.png";
 
 const Skills = () => {
-	const { reveal } = useContext(AnimationContext);
 	const sectionRef = useRef(null);
 
 	useEffect(() => {
 		if (sectionRef.current) reveal(sectionRef.current);
-	}, [reveal]);
+	}, []);
 
 	return (
 		<Container>
@@ -38,7 +42,9 @@ const Skills = () => {
 					<h2>
 						My <Span>Skills</Span>
 					</h2>
-					<p>Technologies and tools I use to build web applications.</p>
+					<SectionDescription>
+						Technologies and tools I use to build web applications.
+					</SectionDescription>
 				</Center>
 
 				<FlexContainer justify>
@@ -68,8 +74,20 @@ const Skills = () => {
 					</ImgContainer>
 					<ImgContainer>
 						<Center>
+							<img src={styled} alt=""></img>
+							<p>Styled</p>
+						</Center>
+					</ImgContainer>
+					<ImgContainer>
+						<Center>
 							<img src={gsap} alt=""></img>
 							<p>GSAP</p>
+						</Center>
+					</ImgContainer>
+					<ImgContainer>
+						<Center>
+							<img src={mantine} alt=""></img>
+							<p>Mantine</p>
 						</Center>
 					</ImgContainer>
 					<ImgContainer>
@@ -96,22 +114,17 @@ const Skills = () => {
 							<p>Wordpress</p>
 						</Center>
 					</ImgContainer>
-					<ImgContainer>
-						<Center>
-							<img src={mantine} alt=""></img>
-							<p>Mantine</p>
-						</Center>
-					</ImgContainer>
-					<ImgContainer>
-						<Center>
-							<img src={styled} alt=""></img>
-							<p>Styled</p>
-						</Center>
-					</ImgContainer>
+
 					<ImgContainer>
 						<Center>
 							<img src={git} alt=""></img>
 							<p>Git</p>
+						</Center>
+					</ImgContainer>
+					<ImgContainer>
+						<Center>
+							<img src={react} alt=""></img>
+							<p>React.Js</p>
 						</Center>
 					</ImgContainer>
 					<ImgContainer>
@@ -136,12 +149,6 @@ const Skills = () => {
 						<Center>
 							<img src={express} alt=""></img>
 							<p>Express.Js</p>
-						</Center>
-					</ImgContainer>
-					<ImgContainer>
-						<Center>
-							<img src={react} alt=""></img>
-							<p>React.Js</p>
 						</Center>
 					</ImgContainer>
 					<ImgContainer>

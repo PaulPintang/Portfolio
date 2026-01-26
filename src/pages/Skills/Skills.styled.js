@@ -6,14 +6,19 @@ export const Section = styled.section`
 `;
 
 export const FlexContainer = styled(Flex)`
-	width: 800px;
+	max-width: 800px;
 	margin: auto;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
+	padding: 0 16px;
+	gap: 35px;
+
 	@media (max-width: 768px) {
 		justify-content: center;
 		flex-direction: unset;
 		width: 100%;
+		padding: 0;
 		gap: 0;
 		row-gap: 5px;
 	}

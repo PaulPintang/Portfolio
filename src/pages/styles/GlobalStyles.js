@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
 
 html, body {
   height: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 #smooth-wrapper {
@@ -25,7 +25,6 @@ html, body {
   flex-direction: column;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -33,7 +32,6 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
-  background-color: #0e1625;
   color: #dddddd;
 }
 

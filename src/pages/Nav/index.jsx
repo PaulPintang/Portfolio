@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { scrollToSection } from "../../utils/scrollToSection";
+import { scrollToSection } from "../../utils/animation";
 import { BsGithub } from "react-icons/bs";
 import { MdOutlineClose } from "react-icons/md";
 import { Span, Button, ToggleNav } from "../styles/Reusable.styled";

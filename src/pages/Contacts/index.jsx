@@ -20,12 +20,12 @@ import {
 	ArrowUp,
 } from "./Form.styled";
 import qoute from "../../assets/svg/left-qoute.svg";
-import AnimationContext from "../../context/AnimationContext";
+import { reveal } from "../../utils/animation";
 
 const Contacts = () => {
 	const form = useRef();
-	const { reveal } = useContext(AnimationContext); // use GSAP reveal
 	const sectionRef = useRef(null);
+
 	const [loaderMsg, setLoaderMsg] = useState(null);
 	const [isSubmit, setIsSubmit] = useState(null);
 	const [isShown, setIsShown] = useState(false);
@@ -36,7 +36,7 @@ const Contacts = () => {
 
 	useEffect(() => {
 		if (sectionRef.current) reveal(sectionRef.current);
-	}, [reveal]);
+	}, []);
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -87,8 +87,8 @@ const Contacts = () => {
 								</h3>
 								<Msg>
 									<small>
-										If you have a good opportunity that matches my skills then
-										don't hesitate to contact me.
+										If you have an opportunity that matches my skills, feel free
+										to reach out. Let’s connect.
 									</small>
 								</Msg>
 							</div>

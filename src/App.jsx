@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
-import { AnimationProvider } from "./context/AnimationContext";
 import Nav from "./pages/Nav";
 import Me from "./pages/Me";
 import Offer from "./pages/Offer";
@@ -34,11 +33,11 @@ function App() {
 	}, []);
 
 	return (
-		<div id="smooth-wrapper">
+		<div>
+			<GlobalStyles />
 			<Nav />
-			<div id="smooth-content">
-				<AnimationProvider>
-					<GlobalStyles />
+			<div id="smooth-wrapper">
+				<div id="smooth-content">
 					<Me />
 					<Offer />
 					<Skills />
@@ -46,7 +45,7 @@ function App() {
 					<Experience />
 					<Contacts />
 					<Footer />
-				</AnimationProvider>
+				</div>
 			</div>
 		</div>
 	);

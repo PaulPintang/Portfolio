@@ -4,7 +4,6 @@ import {
 	WorkContainer,
 	WorkContent,
 	FlexContent,
-	Line,
 	Tools,
 	Badge,
 } from "./Experience.styled";
@@ -16,13 +15,12 @@ const Experience = () => {
 			</h2>
 			<WorkContent>
 				<FlexContent nogap>
-					<h4>iKnow Academic Hub</h4>
-					<h4>Jan 2025 - Aug 2025</h4>
+					<h3>iKnow Academic Hub</h3>
+					<h3>Jan 2025 - Aug 2025</h3>
 				</FlexContent>
 				<FlexContent containmobile>
-					<Line></Line>
 					<section>
-						<h5>Full-Stack Developer</h5>
+						<h4>Full-Stack Developer</h4>
 						<p>
 							Designed and implemented RESTful APIs to support core application
 							features and data flow. Developed a custom WordPress theme from
@@ -52,13 +50,12 @@ const Experience = () => {
 			</WorkContent>
 			<WorkContent>
 				<FlexContent nogap>
-					<h4>Dotty Solutions Inc.</h4>
-					<h4>Sept 2023 - Nov 2024</h4>
+					<h3>Dotty Solutions Inc.</h3>
+					<h3>Sept 2023 - Nov 2024</h3>
 				</FlexContent>
 				<FlexContent containmobile>
-					<Line></Line>
 					<section>
-						<h5>Front-End Developer</h5>
+						<h4>Front-End Developer</h4>
 						<p>
 							Managed, maintained, and updated multiple WordPress websites,
 							ensuring security, performance optimization, and content accuracy.
@@ -88,13 +85,12 @@ const Experience = () => {
 			</WorkContent>
 			<WorkContent>
 				<FlexContent nogap>
-					<h4>Pixel8 Web Solutions & Consultancy Inc.</h4>
-					<h4>Feb 2022 - May 2022</h4>
+					<h3>Pixel8 Web Solutions & Consultancy Inc.</h3>
+					<h3>Feb 2022 - May 2022</h3>
 				</FlexContent>
 				<FlexContent containmobile>
-					<Line></Line>
 					<section>
-						<h5>Web Developer Intern</h5>
+						<h4>Web Developer Intern</h4>
 						<p>
 							Developing front-end features, responsive designs, writing clean
 							code, and convert Adobe XD UI designs on Vue.Js and Quasar
@@ -120,13 +116,12 @@ const Experience = () => {
 			</WorkContent>
 			<WorkContent>
 				<FlexContent nogap>
-					<h4>Snack Software, LLC</h4>
-					<h4>July 2021 - Aug 2021</h4>
+					<h3>Snack Software, LLC</h3>
+					<h3>July 2021 - Aug 2021</h3>
 				</FlexContent>
 				<FlexContent containmobile>
-					<Line></Line>
 					<section>
-						<h5>Front-End Developer Intern</h5>
+						<h4>Front-End Developer Intern</h4>
 						<p>
 							Responsible for coding the front-end designs, converting the given
 							UI mockups, and maintain a fast and easily maintainable code base

@@ -1,9 +1,6 @@
-import { useContext, useEffect, useRef } from "react";
-import gsap from "gsap";
-import { scrollToSection } from "../../utils/scrollToSection";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { useEffect, useRef } from "react";
+import { reveal, scrollToSection } from "../../utils/animation";
 
-import AnimationContext from "../../context/AnimationContext";
 import {
 	Container,
 	Bolder,
@@ -19,17 +16,12 @@ import {
 	StyledButton,
 } from "./Me.styled";
 
-gsap.registerPlugin(ScrollToPlugin);
-
 const Me = () => {
-	const { reveal } = useContext(AnimationContext);
 	const sectionRef = useRef(null);
 
 	useEffect(() => {
-		if (sectionRef.current) {
-			reveal(sectionRef.current, { scrollTrigger: { start: "top 80%" } });
-		}
-	}, [reveal]);
+		if (sectionRef.current) reveal(sectionRef.current);
+	}, []);
 
 	return (
 		<Container>

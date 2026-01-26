@@ -1,4 +1,6 @@
 import React, { useRef, useEffect, useContext } from "react";
+import { reveal } from "../../utils/animation";
+
 import { BsGithub } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
 import {
@@ -7,6 +9,7 @@ import {
 	Span,
 	Right,
 	Center,
+	SectionDescription,
 } from "../styles/Reusable.styled";
 import {
 	Section,
@@ -16,29 +19,29 @@ import {
 	LinkToProject,
 } from "./Projects.styled";
 import { projectsData } from "./projects";
-import AnimationContext from "../../context/AnimationContext";
 
 const Projects = () => {
-	const { reveal } = useContext(AnimationContext);
 	const projectRefs = useRef([]);
 	const sectionRef = useRef(null);
 
 	useEffect(() => {
 		if (sectionRef.current) reveal(sectionRef.current);
 
-		projectRefs.current.forEach((ref) => {
-			if (ref) reveal(ref);
+		projectRefs.current.forEach((ref, index) => {
+			if (ref && index !== 0) reveal(ref); // skip first
 		});
-	}, [reveal]);
+	}, []);
 
 	return (
-		<Container>
-			<Section id="projects" ref={sectionRef}>
+		<Section id="projects" ref={sectionRef}>
+			<Container>
 				<Center paddingBottom="60px">
 					<h2>
 						My <Span>Projects</Span>
 					</h2>
-					<p>Some of the web applications and projects I’ve built recently.</p>
+					<SectionDescription>
+						Some of the web applications and projects I’ve built recently.
+					</SectionDescription>
 				</Center>
 
 				{projectsData.map((project, index) => (
@@ -156,8 +159,8 @@ const Projects = () => {
 						)}
 					</ProjectContainer>
 				))}
-			</Section>
-		</Container>
+			</Container>
+		</Section>
 	);
 };
 

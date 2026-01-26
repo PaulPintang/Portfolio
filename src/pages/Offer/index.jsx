@@ -1,27 +1,34 @@
-import { useContext, useEffect, useRef } from "react";
-import AnimationContext from "../../context/AnimationContext";
-import { Container, Flex, Span, Center } from "../styles/Reusable.styled";
+import { useEffect, useRef } from "react";
+import {
+	Container,
+	Flex,
+	Span,
+	Center,
+	SectionDescription,
+} from "../styles/Reusable.styled";
 import { Section, OfferCards } from "./Offer.styled";
 import responsive from "../../assets/svg/responsive.svg";
 import design from "../../assets/svg/design.svg";
 import team from "../../assets/svg/team.svg";
+import { reveal } from "../../utils/animation";
 
 const Offer = () => {
-	const { reveal } = useContext(AnimationContext);
 	const sectionRef = useRef(null);
 
 	useEffect(() => {
 		if (sectionRef.current) reveal(sectionRef.current);
-	}, [reveal]);
+	}, []);
 
 	return (
-		<Container>
-			<Section id="services" ref={sectionRef}>
+		<Section id="services" ref={sectionRef}>
+			<Container>
 				<Center paddingBottom="60px">
 					<h2>
 						What I <Span>Offer</Span>
 					</h2>
-					<p>Building complete, scalable web applications</p>
+					<SectionDescription>
+						Building complete, scalable web applications
+					</SectionDescription>
 				</Center>
 				<Flex justify>
 					<OfferCards className="offer-card">
@@ -55,8 +62,8 @@ const Offer = () => {
 						</Center>
 					</OfferCards>
 				</Flex>
-			</Section>
-		</Container>
+			</Container>
+		</Section>
 	);
 };
 
