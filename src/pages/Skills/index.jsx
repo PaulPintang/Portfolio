@@ -1,4 +1,5 @@
-import React from "react";
+import { useContext, useEffect, useRef } from "react";
+import AnimationContext from "../../context/AnimationContext";
 import { Center, Container, Span } from "../styles/Reusable.styled";
 import { Section, FlexContainer, ImgContainer } from "./Skills.styled";
 import html from "../../assets/img/skills/html.svg";
@@ -23,12 +24,23 @@ import mantine from "../../assets/img/skills/mantine.svg";
 import styled from "../../assets/img/skills/sc.png";
 
 const Skills = () => {
+	const { reveal } = useContext(AnimationContext);
+	const sectionRef = useRef(null);
+
+	useEffect(() => {
+		if (sectionRef.current) reveal(sectionRef.current);
+	}, [reveal]);
+
 	return (
-		<Section>
-			<Container>
-				<h2>
-					My <Span>Skills</Span>
-				</h2>
+		<Container>
+			<Section ref={sectionRef}>
+				<Center paddingBottom="60px">
+					<h2>
+						My <Span>Skills</Span>
+					</h2>
+					<p>Technologies and tools I use to build web applications.</p>
+				</Center>
+
 				<FlexContainer justify>
 					<ImgContainer>
 						<Center>
@@ -151,8 +163,8 @@ const Skills = () => {
 						</Center>
 					</ImgContainer>
 				</FlexContainer>
-			</Container>
-		</Section>
+			</Section>
+		</Container>
 	);
 };
 

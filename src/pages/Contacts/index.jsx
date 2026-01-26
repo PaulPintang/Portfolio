@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useContext } from "react";
 import Cookies from "js-cookie";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin } from "react-icons/fa";
@@ -20,9 +20,12 @@ import {
 	ArrowUp,
 } from "./Form.styled";
 import qoute from "../../assets/svg/left-qoute.svg";
+import AnimationContext from "../../context/AnimationContext";
 
 const Contacts = () => {
 	const form = useRef();
+	const { reveal } = useContext(AnimationContext); // use GSAP reveal
+	const sectionRef = useRef(null);
 	const [loaderMsg, setLoaderMsg] = useState(null);
 	const [isSubmit, setIsSubmit] = useState(null);
 	const [isShown, setIsShown] = useState(false);
@@ -30,6 +33,10 @@ const Contacts = () => {
 	useEffect(() => {
 		setIsSubmit(Cookies.get("Submitted"));
 	}, [isSubmit]);
+
+	useEffect(() => {
+		if (sectionRef.current) reveal(sectionRef.current);
+	}, [reveal]);
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -60,7 +67,7 @@ const Contacts = () => {
 	};
 
 	return (
-		<Section id="contacts">
+		<Section id="contacts" ref={sectionRef}>
 			<Container>
 				<Center>
 					<h1>

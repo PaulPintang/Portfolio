@@ -6,15 +6,37 @@ const GlobalStyles = createGlobalStyle`
   margin: 0;
   box-sizing: border-box;
 }
+
+html, body {
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+#smooth-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#smooth-content {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   background-color: #0e1625;
   color: #dddddd;
 }
+
 h2 {
   text-align: center;
   font-size: 30px;

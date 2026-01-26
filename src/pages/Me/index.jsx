@@ -1,5 +1,7 @@
-import React, { useContext } from "react";
-import { Link } from "react-scroll";
+import React, { useContext, useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
 import AnimationContext from "../../context/AnimationContext";
 import {
 	Container,
@@ -16,39 +18,59 @@ import {
 	StyledButton,
 } from "./Me.styled";
 
+gsap.registerPlugin(ScrollToPlugin);
+
 const Me = () => {
-	const { Reveal, revealAnimation } = useContext(AnimationContext);
+	const { reveal } = useContext(AnimationContext);
+	const sectionRef = useRef(null);
+
+	// Reveal animation
+	useEffect(() => {
+		if (sectionRef.current) {
+			reveal(sectionRef.current, { scrollTrigger: { start: "top 80%" } });
+		}
+	}, [reveal]);
+
+	// Smooth scroll function
+	const scrollToSection = (selector, offset = 0, duration = 1) => {
+		const target = document.querySelector(selector);
+		if (!target) return;
+
+		const top =
+			target.getBoundingClientRect().top + window.pageYOffset + offset;
+		gsap.to(window, { duration, scrollTo: top, ease: "power1.inOut" });
+	};
+
 	return (
 		<Container>
-			<Reveal keyframes={revealAnimation}>
-				<Section>
-					<Column>
-						<div>
-							<h1>
-								Hey, I'm <Bolder>Paul Pintang.</Bolder>
-							</h1>
-							<TextAnimated>I'm a Web Developer</TextAnimated>
-							<BtnControl>
-								<Link to="contacts" smooth={true} offset={-100} duration={500}>
-									<StyledButton red>Let's work together</StyledButton>
-								</Link>
+			<Section ref={sectionRef} style={{ opacity: 0 }}>
+				<Column>
+					<div>
+						<h1>
+							Hey, I'm <Bolder>Paul Pintang.</Bolder>
+						</h1>
+						<TextAnimated>I'm a Web Developer</TextAnimated>
 
-								<Link to="projects" smooth={true} offset={-100} duration={500}>
-									<StyledButton>Check out my projects</StyledButton>
-								</Link>
-							</BtnControl>
-						</div>
-						<Link to="services" smooth={true} offset={-100} duration={500}>
-							<ScrollDown>
-								<ArrowDown></ArrowDown>
-								<a href="#services">
-									<ScrollTitle>scroll down</ScrollTitle>
-								</a>
-							</ScrollDown>
-						</Link>
-					</Column>
-				</Section>
-			</Reveal>
+						<BtnControl>
+							<StyledButton
+								red
+								onClick={() => scrollToSection("#contacts", -100)}
+							>
+								Let's work together
+							</StyledButton>
+
+							<StyledButton onClick={() => scrollToSection("#projects", -100)}>
+								Check out my projects
+							</StyledButton>
+						</BtnControl>
+					</div>
+
+					<ScrollDown onClick={() => scrollToSection("#services", -100)}>
+						<ArrowDown />
+						<ScrollTitle>scroll down</ScrollTitle>
+					</ScrollDown>
+				</Column>
+			</Section>
 		</Container>
 	);
 };

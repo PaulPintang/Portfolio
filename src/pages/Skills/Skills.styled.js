@@ -3,9 +3,6 @@ import { Flex } from "../styles/Reusable.styled";
 
 export const Section = styled.section`
 	padding: 70px 0;
-	h2 {
-		padding-bottom: 45px;
-	}
 `;
 
 export const FlexContainer = styled(Flex)`

@@ -1,19 +1,23 @@
 import styled from "styled-components";
+import { Center } from "../styles/Reusable.styled";
 
 export const Section = styled.section`
-  height: calc(100vh - 130px);
-  div {
-    padding-bottom: 12px;
-  }
-  @media (max-width: 768px) {
-    height: 100%;
-  }
+	@media (max-width: 768px) {
+		height: 100%;
+	}
 `;
 
 export const OfferCards = styled.div`
-  width: 300px;
-  img {
-    width: 100%;
-    height: 280px;
-  }
+	img {
+		width: 90%;
+		height: 280px;
+		@media (max-width: 768px) {
+			height: 100%;
+			padding-bottom: 20px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		padding-bottom: 30px;
+	}
 `;
