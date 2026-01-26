@@ -17,7 +17,7 @@ const Offer = () => {
 	return (
 		<Container>
 			<Section id="services" ref={sectionRef}>
-				<Center paddingBottom="10px">
+				<Center paddingBottom="60px">
 					<h2>
 						What I <Span>Offer</Span>
 					</h2>

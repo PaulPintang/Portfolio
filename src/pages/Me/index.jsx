@@ -1,5 +1,6 @@
-import React, { useContext, useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import gsap from "gsap";
+import { scrollToSection } from "../../utils/scrollToSection";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 import AnimationContext from "../../context/AnimationContext";
@@ -24,22 +25,11 @@ const Me = () => {
 	const { reveal } = useContext(AnimationContext);
 	const sectionRef = useRef(null);
 
-	// Reveal animation
 	useEffect(() => {
 		if (sectionRef.current) {
 			reveal(sectionRef.current, { scrollTrigger: { start: "top 80%" } });
 		}
 	}, [reveal]);
-
-	// Smooth scroll function
-	const scrollToSection = (selector, offset = 0, duration = 1) => {
-		const target = document.querySelector(selector);
-		if (!target) return;
-
-		const top =
-			target.getBoundingClientRect().top + window.pageYOffset + offset;
-		gsap.to(window, { duration, scrollTo: top, ease: "power1.inOut" });
-	};
 
 	return (
 		<Container>
@@ -54,18 +44,18 @@ const Me = () => {
 						<BtnControl>
 							<StyledButton
 								red
-								onClick={() => scrollToSection("#contacts", -100)}
+								onClick={() => scrollToSection("contacts", -100)}
 							>
 								Let's work together
 							</StyledButton>
 
-							<StyledButton onClick={() => scrollToSection("#projects", -100)}>
+							<StyledButton onClick={() => scrollToSection("projects", -100)}>
 								Check out my projects
 							</StyledButton>
 						</BtnControl>
 					</div>
 
-					<ScrollDown onClick={() => scrollToSection("#services", -100)}>
+					<ScrollDown onClick={() => scrollToSection("services", -100)}>
 						<ArrowDown />
 						<ScrollTitle>scroll down</ScrollTitle>
 					</ScrollDown>

@@ -9,11 +9,12 @@ export const Section = styled.section`
 
 export const OfferCards = styled.div`
 	img {
-		width: 90%;
+		width: 280px;
 		height: 280px;
 		@media (max-width: 768px) {
 			height: 100%;
-			padding-bottom: 20px;
+			/* width: 100%; */
+			padding-bottom: 25px;
 		}
 	}
 

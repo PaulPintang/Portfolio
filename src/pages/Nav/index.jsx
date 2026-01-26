@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { scrollToSection } from "../../utils/scrollToSection";
 import { BsGithub } from "react-icons/bs";
 import { MdOutlineClose } from "react-icons/md";
 import { Span, Button, ToggleNav } from "../styles/Reusable.styled";
@@ -72,64 +72,51 @@ const Nav = () => {
 
 				<NavLinks click={click}>
 					<li>
-						<Link
-							to="services"
-							smooth={true}
-							offset={-105}
-							duration={50}
+						<a
 							onClick={() => {
+								scrollToSection("services");
 								setClick(false);
 								setShowMenu(true);
 							}}
 						>
-							<Span>S</Span>
-							ervices
-						</Link>
+							<Span>S</Span>ervices
+						</a>
 					</li>
+
 					<li>
-						<Link
-							to="projects"
-							smooth={true}
-							offset={-105}
-							duration={50}
+						<a
 							onClick={() => {
+								scrollToSection("projects");
 								setClick(false);
 								setShowMenu(true);
 							}}
 						>
-							<Span>P</Span>
-							rojects
-						</Link>
+							<Span>P</Span>rojects
+						</a>
 					</li>
+
 					<li>
-						<Link
-							to="experience"
-							smooth={true}
-							offset={-105}
-							duration={50}
+						<a
 							onClick={() => {
+								scrollToSection("experience");
 								setClick(false);
 								setShowMenu(true);
 							}}
 						>
-							<Span>E</Span>
-							xperience
-						</Link>
+							<Span>E</Span>xperience
+						</a>
 					</li>
+
 					<li>
-						<Link
-							to="contacts"
-							smooth={true}
-							offset={-105}
-							duration={50}
+						<a
 							onClick={() => {
+								scrollToSection("contacts");
 								setClick(false);
 								setShowMenu(true);
 							}}
 						>
-							<Span>C</Span>
-							ontacts
-						</Link>
+							<Span>C</Span>ontacts
+						</a>
 					</li>
 
 					<li>
@@ -140,8 +127,7 @@ const Nav = () => {
 						>
 							{click ? (
 								<>
-									<Span>G</Span>
-									ithub
+									<Span>G</Span>ithub
 								</>
 							) : (
 								<BsGithub size={16} />
