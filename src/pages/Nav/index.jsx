@@ -48,7 +48,7 @@ const Nav = () => {
 			<NavBar click={click} containmobile contain>
 				{!click && (
 					<Logo>
-						<a href="https://paulpintang.vercel.app" rel="noreferrer">
+						<a href="./" rel="noreferrer">
 							<h1>
 								<Span>P</Span>IN<Span>.</Span>
 							</h1>
