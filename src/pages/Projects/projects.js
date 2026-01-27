@@ -37,7 +37,7 @@ export const projectsData = [
 			"An online platform that facilitates efficient task management and record-keeping for trainees, enabling seamless tracking of tasks, timesheets, and daily work records.",
 		img: img1,
 		tech: ["React TS", "RTK Query", "Web Socket", "Express"],
-		link: "https://github.com/PaulPintang/pixel8-traineetasker",
+		github: "https://github.com/PaulPintang/pixel8-traineetasker",
 		external: false,
 		right: true,
 	},
