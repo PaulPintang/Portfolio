@@ -23,7 +23,7 @@ export const projectsData = [
 		id: 2,
 		title: "iKnow Academic Hub",
 		description:
-			"Educational website designed to promote and manage online academic review programs. The platform functions as a comprehensive learning and review center, helping students prepare for college entrance exams and strengthen academic mastery.",
+			"Educational website developed for a client to promote and manage online academic review programs. The platform functions as a comprehensive learning and review center, helping students prepare for exams and strengthen academic mastery.",
 		img: iknow,
 		tech: ["React TS", "Redux", "Web Socket", "Express"],
 		link: "https://iknowacademichub.com/",
@@ -57,7 +57,7 @@ export const projectsData = [
 		id: 5,
 		title: "HRC E-Commerce Store",
 		description:
-			"A clothing line business e-commerce store built using MERN Stack. Features include email notification, order verification using OTP, order tracking, and a shopping cart system.",
+			"E-commerce store for a clothing line built from scratch using the MERN Stack. Features include a full shopping cart system, email notifications, OTP-based order verification, and an admin panel for managing products and orders. Created to help the client transition from a Facebook-only presence to a fully functional online store.",
 		img: img3,
 		tech: ["React TS", "Redux Toolkit", "MongoDB", "Express"],
 		link: "https://hrc-store.vercel.app/",
